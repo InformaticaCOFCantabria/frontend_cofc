@@ -1,0 +1,465 @@
+/* =========================================
+   CSS PARA LISTADO DE COLEGIADOS
+   ========================================= */
+
+/* Main Content */
+.main-content {
+    padding: 60px 0;
+    min-height: 60vh;
+    background-color: #f8f9fa;
+}
+
+/* Content Article */
+.content-article {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* Article Header */
+.article-header {
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 3px solid var(--primary-color);
+    text-align: center;
+}
+
+.article-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.article-subtitle {
+    margin-top: 10px;
+}
+
+.article-subtitle h2 {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--text-color);
+    margin: 0;
+}
+
+/* Article Body */
+.article-body {
+    line-height: 1.8;
+    color: var(--text-color);
+}
+
+/* Search Section */
+.search-section {
+    margin-bottom: 40px;
+}
+
+.search-card {
+    background: linear-gradient(135deg, #f0f9e8 0%, #e8f5d8 100%);
+    border-radius: 12px;
+    padding: 30px;
+    border-left: 5px solid var(--primary-color);
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.search-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.search-icon {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+}
+
+.search-content {
+    flex: 1;
+}
+
+.search-label {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--heading-color);
+    margin-bottom: 12px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 16px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-family: 'Inter', sans-serif;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(190, 225, 100, 0.1);
+}
+
+.search-hint {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.search-hint i {
+    color: var(--primary-color);
+}
+
+/* Table Section */
+.table-section {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.table-header {
+    background: var(--primary-color);
+    padding: 25px 30px;
+    color: white;
+}
+
+.table-header h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0 0 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.table-header h3 i {
+    font-size: 24px;
+}
+
+.table-description {
+    margin: 0;
+    font-size: 14px;
+    opacity: 0.95;
+    font-weight: 500;
+}
+
+/* Table Wrapper */
+.table-wrapper {
+    position: relative;
+}
+
+.table-container {
+    max-height: 600px;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+/* Custom Scrollbar */
+.table-container::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.table-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 5px;
+}
+
+.table-container::-webkit-scrollbar-thumb:hover {
+    background: #9AB459;
+}
+
+/* Table Styles */
+#colegiadosTable {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+}
+
+#colegiadosTable thead {
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+#colegiadosTable thead th {
+    padding: 20px 25px;
+    text-align: left;
+    font-weight: 700;
+    color: var(--heading-color);
+    border-bottom: 2px solid var(--primary-color);
+    background: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.th-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.th-content i {
+    color: var(--primary-color);
+    font-size: 16px;
+}
+
+#colegiadosTable tbody tr {
+    border-bottom: 1px solid #f0f0f0;
+    transition: all 0.2s ease;
+}
+
+#colegiadosTable tbody tr:hover {
+    background-color: #f8f9fa;
+    transform: scale(1.001);
+}
+
+#colegiadosTable tbody tr:last-child {
+    border-bottom: none;
+}
+
+#colegiadosTable tbody td {
+    padding: 18px 25px;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.numero-colegiado {
+    text-align: center;
+    font-weight: 700 !important;
+    color: var(--primary-color) !important;
+    font-size: 16px;
+    font-family: 'Courier New', monospace;
+}
+
+/* No Results */
+.no-results {
+    display: none;
+    padding: 60px 30px;
+    text-align: center;
+    color: #999;
+}
+
+.no-results.active {
+    display: block;
+}
+
+.no-results i {
+    font-size: 48px;
+    color: #ddd;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.no-results p {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .content-article {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        padding: 30px 0;
+    }
+    
+    .content-article {
+        padding: 30px 20px;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    
+    .article-title {
+        font-size: 28px;
+    }
+    
+    .article-subtitle h2 {
+        font-size: 18px;
+    }
+    
+    .search-card {
+        flex-direction: column;
+        padding: 25px;
+    }
+    
+    .search-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+    
+    .search-label {
+        font-size: 16px;
+    }
+    
+    .search-input {
+        font-size: 15px;
+        padding: 12px 15px;
+    }
+    
+    .table-header {
+        padding: 20px;
+    }
+    
+    .table-header h3 {
+        font-size: 18px;
+    }
+    
+    .table-description {
+        font-size: 13px;
+    }
+    
+    .table-container {
+        max-height: 500px;
+    }
+    
+    #colegiadosTable {
+        font-size: 14px;
+    }
+    
+    #colegiadosTable thead th {
+        padding: 15px 12px;
+        font-size: 11px;
+    }
+    
+    .th-content {
+        gap: 6px;
+    }
+    
+    .th-content i {
+        font-size: 14px;
+    }
+    
+    #colegiadosTable tbody td {
+        padding: 14px 12px;
+    }
+    
+    .numero-colegiado {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .article-title {
+        font-size: 24px;
+    }
+    
+    .article-subtitle h2 {
+        font-size: 16px;
+    }
+    
+    .search-section {
+        margin-bottom: 30px;
+    }
+    
+    .search-card {
+        padding: 20px;
+    }
+    
+    .search-label {
+        font-size: 15px;
+    }
+    
+    .search-input {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+    
+    .search-hint {
+        font-size: 12px;
+    }
+    
+    .table-header h3 {
+        font-size: 16px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    
+    .table-container {
+        max-height: 400px;
+    }
+    
+    #colegiadosTable {
+        font-size: 13px;
+    }
+    
+    #colegiadosTable thead th {
+        padding: 12px 8px;
+        font-size: 10px;
+    }
+    
+    .th-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+    
+    #colegiadosTable tbody td {
+        padding: 12px 8px;
+    }
+    
+    .numero-colegiado {
+        font-size: 13px;
+    }
+    
+    .no-results {
+        padding: 40px 20px;
+    }
+    
+    .no-results i {
+        font-size: 36px;
+    }
+    
+    .no-results p {
+        font-size: 14px;
+    }
+}
+
+/* Animación de carga */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.article-body {
+    animation: fadeIn 0.5s ease-out;
+}

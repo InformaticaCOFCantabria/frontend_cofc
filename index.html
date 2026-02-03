@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COF Cantabria - Colegio Oficial de Farmacéuticos de Cantabria</title>
+    <!-- Fuentes Google (Eliminada Roboto que no se usaba) -->
+    <!-- Fuentes Google (Actualizado a Inter para soporte de la nueva tipografía) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google Material Symbols -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/sponsors-carousel.css">
+</head>
+<body>
+
+    <!-- Header Redes Sociales y Acceso Colegiados -->
+    <div class="top-bar">
+        <div class="container">
+            <!-- Redes Sociales -->
+            <div class="social-icons">
+                <a href="https://www.instagram.com/cofcantabria/" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/cofcantabria" target="_blank" title="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>    
+                <a href="https://www.facebook.com/people/Colegio-de-Farmac%C3%A9uticos-de-Cantabria/100063216339209/" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>    
+                <a href="https://www.tiktok.com/@cofcantabria" target="_blank" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>    
+                <a href="https://www.youtube.com/@cofcantabria9919" target="_blank" title="YouTube"><i class="fa-brands fa-youtube"></i></a>    
+                <a href="https://www.linkedin.com/company/colegio-oficial-de-farmac%C3%A9uticos-de-cantabria/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>    
+                <a href="https://bsky.app/profile/cofcantabria.bsky.social" target="_blank" title="Bluesky"><i class="fa-brands fa-bluesky"></i></a>
+            </div>
+            <!-- Acceso Colegiados y Correo electrónico -->    
+            <div class="top-links">
+                <a href="#" class="login-link btn-acceso">
+                    <i class="fas fa-lock"></i> Acceso Colegiado
+                </a>    
+                <a href="https://www.arsys.es/clientes" target="_blank" class="login-link">
+                    <i class="fas fa-envelope"></i> Web Mail
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header y Navegador -->
+    <header class="main-header">
+        <div class="container header-container">
+            <!-- Logo COFCantabria -->
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="./assets/img/Logos/COFC_11.png" alt="COFCantabria Logo" class="logo-img">
+                </a>
+            </div>
+            <!-- Navegador Ordenador -->
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="./index.html" class="active">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="./pages/PTpresentacion.html">Portal de Transparencia <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="./pages/PTpresentacion.html">Presentación</a></li>
+                            <li><a href="./pages/PTjuntadegobierno.html">Junta de Gobierno</a></li>
+                            <li><a href="./pages/PTorganigrama.html">Organigrama COF</a></li>
+                            <li><a href="./pages/PTestatutosmemoria.html">Estatutos y Memoria Gestión</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="./pages/BEoferta.html">Bolsa de Empleo <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="./pages/BEoferta.html">Oferta (Ofrezco trabajo)</a></li>
+                            <li><a href="./pages/BEdemanda.html">Demanda (Busco trabajo)</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="./pages/VUlistadocolegiados.html">Ventanilla Única <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Colegiación</a></li>
+                            <li><a href="#">Trámites (solicitudes, certificados...)</a></li>
+                            <li><a href="./pages/VUcodigodeontologico.html">Código Deontológico</a></li>
+                            <li><a href="./pages/VUlistadocolegiados.html">Listado de Colegiados</a></li>
+                            <li><a href="#">Atención Ciudadanía y Reclamaciones</a></li>
+                            <li><a href="#">Canal de Denuncias</a></li>
+                            <li><a href="#">Listado de Peritos Judiciales</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Ciudadanía <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Campañas de Vacunación</a></li>
+                            <li><a href="#">Receta Electrónica</a></li>
+                            <li><a href="https://www.farmaceuticos.com/tu-farmaceutico-informa/escuela-con-pacientes-3/?_gl=1*mxu1nm*_up*MQ..&gclid=Cj0KCQiA4eHLBhCzARIsAJ2NZoK6bNyY0Lm33wj3GtXtWr8gx_CXSZ2INHI_YE0QTOMpP6ohcT7ti9kaAjlwEALw_wcB&gbraid=0AAAAADztVhhujVjlzM5GV8Wxabyo8EN3R">Escuela con Pacientes</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Botón buscador -->
+            <div class="header-actions">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+                <button id="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobile-menu">
+        <button id="close-menu-btn"><i class="fas fa-times"></i></button>
+        <ul class="nav-list">
+            <li><a href="#" class="active">Inicio</a></li>
+            <li class="dropdown">
+                <a href="#">Portal de Transparencia <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="../Portal de Transparencia - Presentacion/PTpresentacion.html">Presentación</a></li>
+                    <li><a href="../Portal de Transparencia - Junta de Gobierno/PTjuntadegobierno.html">Junta de Gobierno</a></li>
+                    <li><a href="../Portal de Transparencia - Organigrama COF/PTorganigrama.html">Organigrama COF</a></li>
+                    <li><a href="../Portal de Transparencia - Estatutos/PTestatutos.html">Estatutos y Código Deontológico</a></li>
+                    <li><a href="#">Memoria Gestión</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Bolsa de Empleo <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="../Bolsa de Empleo - Oferta/BEoferta.html">Oferta (Ofrezco trabajo)</a></li>
+                    <li><a href="../Bolsa de Empleo - Demanda/BEdemanda.html">Demanda (Busco trabajo)</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Ventanilla Única <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Colegiación</a></li>
+                    <li><a href="#">Trámites</a></li>
+                    <li><a href="../Ventanilla Unica - Listado de Colegiados/VUlistadocolegiados.html">Listado de Colegiados</a></li>
+                    <li><a href="#">Atención Ciudadanía y Reclamaciones</a></li>
+                    <li><a href="#">Canal de Denuncias</a></li>
+                    <li><a href="#">Listado de Peritos Judiciales</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Ciudadania <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Campañas de vacunación</a></li>
+                    <li><a href="#">Receta Electrónica</a></li>
+                    <li><a href="https://www.farmaceuticos.com/tu-farmaceutico-informa/escuela-con-pacientes-3/">Escuela con pacientes</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Hero Slider -->
+    <section class="hero-slider">
+        <div class="slide active" style="background-image: url('./assets/img/Carrusel_Inicio/IMG_4208.jpg');">
+            <div class="slide-content">
+                <h2>Bienvenidos al<br><span class="highlight-green">Colegio Oficial de Farmacéuticos de Cantabria</span></h2>
+            </div>
+        </div>
+        <div class="slide" style="background-image: url('./assets/img/Carrusel_Inicio/IMG_4210.jpg');">
+            <div class="slide-content">
+                <h2>Bienvenidos al<br><span class="highlight-green">Colegio Oficial de Farmacéuticos de Cantabria</span></h2>
+            </div>
+        </div>  
+        <div class="slide" style="background-image: url('./assets/img/Carrusel_Inicio/IMG_4211.jpg');">
+            <div class="slide-content">
+                <h2>Bienvenidos al<br><span class="highlight-green">Colegio Oficial de Farmacéuticos de Cantabria</span></h2>
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button class="prev-slide"><i class="fas fa-chevron-left"></i></button>
+            <button class="next-slide"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- Tarjetas de Acceso Rápido (Overlay) -->
+    <section class="cards-overlay-section">
+        <div class="container">
+            <div class="cards-grid-overlay">
+                
+                <!-- Tarjeta 1: Listado de Farmacias y Botiquines (Icono: Cruz) -->
+                <a href="./pages/TarjetaFarmaciasBotiquines.html" class="info-card-overlay">
+                    <div class="card-icon-box">
+                        <!-- Icono Cruz de Farmacia -->
+                        <span class="material-symbols-outlined">local_hospital</span>
+                    </div>
+                    <h3>Listado de Farmacias y Botiquines</h3>
+                </a>
+
+                <!-- Tarjeta 2: Farmacias de Guardia (Icono: Reloj Nest) -->
+                <a href="https://cofcantabria.org/cofguardiasclient/" class="info-card-overlay">
+                    <div class="card-icon-box">
+                        <!-- Icono Reloj Nest -->
+                        <span class="material-symbols-outlined">nest_clock_farsight_analog</span>
+                    </div>
+                    <h3>Farmacias de Guardia</h3>
+                </a>
+
+                <!-- Tarjeta 3: Servicios Concertados (Icono: Notas Clínicas) -->
+                <a href="./pages/TarjetaFarmaciasServiciosConcertados.html" class="info-card-overlay">
+                    <div class="card-icon-box">
+                        <!-- Icono Notas Clínicas -->
+                        <span class="material-symbols-outlined">clinical_notes</span>
+                    </div>
+                    <h3>Servicios Concertados</h3>
+                </a>
+                
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Aplicación -->
+    <section class="section section-jobs">
+        <div class="container grid-2">
+            <div class="text-col">
+                <h2>Nuestra nueva aplicación.</h2>
+                <p>Toda la información que necesitas a un solo click.</p>
+                <div class="btn-group">
+                    <a href="https://play.google.com/store/apps/details?id=com.cofcantabria.social&hl=es_419" class="btn btn-primary">Descarga la aplicación</a>
+                </div>
+            </div>
+            <div class="image-col">
+                <img src="./assets/img/imagenes/imgapp.png" alt="Aplicacion COFCantabria">
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+    
+    <!-- Section: Noticias -->
+    <section class="section section-pharmacy">
+        <div class="container grid-2">
+            <div class="image-col-noticias">
+                <img src="./assets/img/imagenes/img2.png" alt="Noticias Consejo Farmacéuticos">
+            </div>
+            <div class="text-col">
+                <h2>Consulta aquí las últimas noticia del<br>Consejo de Farmacéuticos</h2>
+                <p>Encuentra en un solo click la noticias mas recientes.</p>
+                <div class="btn-group">
+                    <a href="https://www.farmaceuticos.com/noticias/?_gl=1*bejzsf*_up*MQ..*_gs*MQ..&gclid=Cj0KCQiA4eHLBhCzARIsAJ2NZoK6bNyY0Lm33wj3GtXtWr8gx_CXSZ2INHI_YE0QTOMpP6ohcT7ti9kaAjlwEALw_wcB&gbraid=0AAAAADztVhhujVjlzM5GV8Wxabyo8EN3R" class="btn btn-primary">NOTICIAS</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+   <!-- Section: Dónde Encontrarnos -->
+    <section class="section section-location">
+        <div class="container grid-2 reverse-mobile">
+            <!-- Columna de Texto -->
+            <div class="text-col">
+                <h2>¿Dónde encontrarnos?</h2>
+                <p>Estamos a tu disposición en nuestra sede. Puedes visitarnos para realizar tus gestiones o consultas presenciales.</p>
+                
+                <ul class="custom-list" style="margin-top: 20px;">
+                    <li><strong>Dirección:</strong> C. Castilla, 13, 39009 Santander, Cantabria.</li>
+                    <li><strong>Horario:</strong> Lunes a Viernes de 8:00 a 15:00h y de 16:00 a 18:00h.</li>
+                    <li><strong>Correo Electrónico:</strong> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="97f4f8f1f4f6f9e3f6f5e5fef6d7f4f8f1f4f6f9e3f6f5e5fef6b9f8e5f0">[email&#160;protected]</a></li>
+                    <li><strong>Número de Teléfono:</strong> (+34) 942 31 44 18</li>
+                </ul>
+
+                <div class="btn-group">
+                    <a href="https://www.google.com/maps/search/?api=1&query=C.+Castilla+13+39009+Santander+Cantabria" target="_blank" class="btn btn-primary">
+                        <i class="fas fa-location-arrow"></i> Cómo llegar
+                    </a>
+                    <a href="tel:945230721" class="btn btn-outline">
+                        <i class="fas fa-phone"></i> Llamar
+                    </a>
+                </div>
+            </div>
+
+            <!-- Columna del Mapa -->
+            <div class="map-col">
+                <iframe 
+                    src="https://maps.google.com/maps?q=C.+Castilla%2C+13%2C+39009+Santander%2C+Cantabria&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                    width="100%" 
+                    height="400" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Section: Junta de Gobierno -->
+    <section class="section section-training">
+        <div class="container grid-2">
+            <div class="image-col">
+                <img src="./assets/img/imagenes/img.jpg" alt="Junta de Gobierno">
+            </div>
+            <div class="text-col">
+                <h2>Nuestra Junta de Gobierno</h2>
+                <p>Pulsa aquí para ver quiénes integran nuestra Junta de Gobierno.</p>
+                <div class="btn-group">
+                    <a href="./pages/PTjuntadegobierno.html" class="btn btn-primary">Ver la Junta de Gobierno</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Section: Bolsa de Trabajo -->
+    <section class="section section-jobs">
+        <div class="container grid-2">
+            <div class="text-col">
+                <h2>Bolsa de trabajo</h2>
+                <p>Tanto si buscas empleo en el sector como si estás buscando ampliar tu equipo.</p>
+                
+                <div class="jobs-grid">
+                    <div class="job-card">
+                        <i class="fas fa-search job-icon"></i>
+                        <h3>Busco Trabajo</h3>
+                        <a href="./pages/BEdemanda.html" class="link-arrow">Ver demandas <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="job-card">
+                        <i class="fas fa-briefcase job-icon"></i>
+                        <h3>Ofrezco trabajo</h3>
+                        <a href="./pages/BEoferta.html" class="link-arrow">Ver ofertas <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="image-col">
+                <img src="https://cofalava.org/wp-content/uploads/farma-panor.jpg" alt="Farmacia">
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Sección Patrocinadores -->
+    <section class="sponsors-section">
+        <div class="container">           
+            <div class="sponsors-carousel">
+                <div class="sponsors-track">
+                    <div class="sponsor-slide">
+                        <a href="https://www.amaseguros.com/" target="_blank" rel="noopener noreferrer">
+                            <img src="./assets/img/Colaboradores/ama.png" alt="AMA" class="sponsor-logo">
+                        </a>
+                    </div>
+                    <div class="sponsor-slide">
+                        <a href="https://cbnk.es/personas" target="_blank" rel="noopener noreferrer">
+                            <img src="./assets/img/Colaboradores/cbnk.png" alt="CBNK" class="sponsor-logo">
+                        </a>
+                    </div>
+                    <div class="sponsor-slide">
+                        <a href="https://www.farmaceuticos.com/" target="_blank" rel="noopener noreferrer">
+                            <img src="./assets/img/Colaboradores/ConsejoFarmaceuticos.png" alt="Consejo de Farmacéuticos" class="sponsor-logo">
+                        </a>
+                    </div>
+                    <div class="sponsor-slide">
+                        <a href="https://psn.es/" target="_blank" rel="noopener noreferrer">
+                            <img src="./assets/img/Colaboradores/psn.png" alt="PSN" class="sponsor-logo">
+                        </a>
+                    </div>
+                    <div class="sponsor-slide">
+                        <a href="https://sigre.es/" target="_blank" rel="noopener noreferrer">
+                            <img src="./assets/img/Colaboradores/sigre.png" alt="SIGRE" class="sponsor-logo">
+                        </a>
+                    </div>
+                    <!-- Duplicar para efecto infinito -->
+                    <div class="sponsor-slide">
+                        <a href="https://www.amaseguros.com/" target="_blank" rel="noopener noreferrer">
+                            <img src="./assets/img/Colaboradores/ama.png" alt="AMA" class="sponsor-logo">
+                        </a>
+                    </div>
+                    <div class="sponsor-slide">
+                        <a href="https://cbnk.es/personas" target="_blank" rel="noopener noreferrer">
+                            <img src="./assets/img/Colaboradores/cbnk.png" alt="CBNK" class="sponsor-logo">
+                        </a>
+                    </div>
+                    <div class="sponsor-slide">
+                        <a href="https://www.farmaceuticos.com/" target="_blank" rel="noopener noreferrer">
+                            <img src="./assets/img/Colaboradores/ConsejoFarmaceuticos.png" alt="Consejo de Farmacéuticos" class="sponsor-logo">
+                        </a>
+                    </div>
+                    <div class="sponsor-slide">
+                        <a href="https://psn.es/" target="_blank" rel="noopener noreferrer">
+                            <img src="./assets/img/Colaboradores/psn.png" alt="PSN" class="sponsor-logo">
+                        </a>
+                    </div>
+                    <div class="sponsor-slide">
+                        <a href="https://sigre.es/" target="_blank" rel="noopener noreferrer">
+                            <img src="./assets/img/Colaboradores/sigre.png" alt="SIGRE" class="sponsor-logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Logo y nombre -->
+            <div class="footer-section logo-section">
+                <img src="./assets/img/Logos/cof.png" alt="Logo COF" class="footer-logo">
+            </div>
+
+            <!-- Contacto -->
+            <div class="footer-section">
+                <h4 class="section-title">CONTACTO</h4>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:cofcantabria@cofcantabria.org">cofcantabria@cofcantabria.org</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:942314418">942 31 44 18</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>C/ Castilla, 13 - 7º y 8º<br>39009 Santander</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Síguenos -->
+            <div class="footer-section">
+                <h4 class="section-title">SÍGUENOS</h4>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/cofcantabria/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/people/Colegio-de-Farmac%C3%A9uticos-de-Cantabria/100063216339209/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@cofcantabria4819/featured" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://x.com/cofcantabria" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@cofcantabria" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/colegio-oficial-de-farmac%C3%A9uticos-de-cantabria/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://bsky.app/profile/cofcantabria.bsky.social" target="_blank" rel="noopener noreferrer" aria-label="BlueSky">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364.136-.02.275-.039.415-.056-.138.022-.276.04-.415.056-3.912.58-7.387 2.005-2.83 7.078 5.013 5.19 6.87-1.113 7.823-4.308.953 3.195 2.05 9.271 7.733 4.308 4.267-4.308 1.172-6.498-2.74-7.078a8.741 8.741 0 0 1-.415-.056c.14.017.279.036.415.056 2.67.297 5.568-.628 6.383-3.364.246-.828.624-5.79.624-6.478 0-.69-.139-1.861-.902-2.206-.659-.298-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8Z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="footer-bottom">
+            <p>© 2026 COLEGIO OFICIAL DE FARMACÉUTICOS DE CANTABRIA.</p>
+            <div class="footer-links">
+                <a href="#aviso-legal">AVISO LEGAL</a>
+                <a href="#privacidad">PRIVACIDAD</a>
+                <a href="#cookies">COOKIE</a>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/js/global-auth.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
