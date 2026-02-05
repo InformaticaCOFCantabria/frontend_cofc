@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolsa de Empleo - COF Cantabria</title>
+    <!-- Fuentes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Leaflet para el mapa -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/bolsaempleo.css">
+</head>
+<body>
+
+    <!-- Header Redes Sociales y Acceso Colegiados -->
+    <div class="top-bar">
+        <div class="container">
+            <!-- Redes Sociales -->
+            <div class="social-icons">
+                <a href="https://www.instagram.com/cofcantabria/" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/cofcantabria" target="_blank" title="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>    
+                <a href="https://www.facebook.com/people/Colegio-de-Farmac%C3%A9uticos-de-Cantabria/100063216339209/" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>    
+                <a href="https://www.tiktok.com/@cofcantabria" target="_blank" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>    
+                <a href="https://www.youtube.com/@cofcantabria9919" target="_blank" title="YouTube"><i class="fa-brands fa-youtube"></i></a>    
+                <a href="https://www.linkedin.com/company/colegio-oficial-de-farmac%C3%A9uticos-de-cantabria/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>    
+                <a href="https://bsky.app/profile/cofcantabria.bsky.social" target="_blank" title="Bluesky"><i class="fa-brands fa-bluesky"></i></a>
+            </div>
+            <!-- Acceso Colegiados y Correo electrónico -->    
+            <div class="top-links">
+                <a href="#" class="login-link btn-acceso">
+                    <i class="fas fa-lock"></i> Acceso Colegiado
+                </a>    
+                <a href="https://www.arsys.es/clientes" target="_blank" class="login-link">
+                    <i class="fas fa-envelope"></i> Web Mail
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header y Navegador -->
+    <header class="main-header">
+        <div class="container header-container">
+            <!-- Logo COFCantabria -->
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../assets/img/Logos/COFC_11.png" alt="COFCantabria Logo" class="logo-img">
+                </a>
+            </div>
+            <!-- Navegador Ordenador -->
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="./PTpresentacion.html">Portal de Transparencia <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="./PTpresentacion.html">Presentación</a></li>
+                            <li><a href="./PTjuntadegobierno.html">Junta de Gobierno</a></li>
+                            <li><a href="./PTorganigrama.html">Organigrama COF</a></li>
+                            <li><a href="./PTestatutosmemoria.html">Estatutos y Memoria Gestión</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./BolsaEmpleo.html" class="active">Bolsa de Empleo</a></li>
+                    </li>
+                    <li class="dropdown">
+                        <a href="./VUlistadocolegiados.html">Ventanilla Única <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Colegiación</a></li>
+                            <li><a href="#">Trámites (solicitudes, certificados...)</a></li>
+                            <li><a href="./VUcodigodeontologico.html">Código Deontológico</a></li>
+                            <li><a href="./VUlistadocolegiados.html">Listado de Colegiados</a></li>
+                            <li><a href="#">Atención Ciudadanía y Reclamaciones</a></li>
+                            <li><a href="#">Canal de Denuncias</a></li>
+                            <li><a href="#">Listado de Peritos Judiciales</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Ciudadanía <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Campañas de Vacunación</a></li>
+                            <li><a href="#">Receta Electrónica</a></li>
+                            <li><a href="https://www.farmaceuticos.com/tu-farmaceutico-informa/escuela-con-pacientes-3/?_gl=1*mxu1nm*_up*MQ..&gclid=Cj0KCQiA4eHLBhCzARIsAJ2NZoK6bNyY0Lm33wj3GtXtWr8gx_CXSZ2INHI_YE0QTOMpP6ohcT7ti9kaAjlwEALw_wcB&gbraid=0AAAAADztVhhujVjlzM5GV8Wxabyo8EN3R">Escuela con Pacientes</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Botón buscador -->
+            <div class="header-actions">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+                <button id="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobile-menu">
+        <button id="close-menu-btn"><i class="fas fa-times"></i></button>
+        <ul class="nav-list">
+            <li><a href="../index.html">Inicio</a></li>
+            <li class="dropdown">
+                <a href="#">Portal de Transparencia <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="./PTpresentacion.html">Presentación</a></li>
+                    <li><a href="./PTjuntadegobierno.html">Junta de Gobierno</a></li>
+                    <li><a href="./PTorganigrama.html">Organigrama COF</a></li>
+                    <li><a href="./PTestatutos.html">Estatutos y Código Deontológico</a></li>
+                    <li><a href="#">Memoria Gestión</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="active">Bolsa de Empleo <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="./BolsaEmpleo.html">Bolsa de Empleo</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Ventanilla Única <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Colegiación</a></li>
+                    <li><a href="#">Trámites</a></li>
+                    <li><a href="./VUlistadocolegiados.html">Listado de Colegiados</a></li>
+                    <li><a href="#">Atención Ciudadanía y Reclamaciones</a></li>
+                    <li><a href="#">Canal de Denuncias</a></li>
+                    <li><a href="#">Listado de Peritos Judiciales</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Contenido Principal -->
+    <main class="main-content">
+        <!-- Header de la Página -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Bolsa de Empleo</h1>
+                <p>Conectamos farmacéuticos titulares con profesionales que buscan empleo</p>
+            </div>
+        </section>
+
+        <!-- Sección de Dos Columnas: Titulares y Busco Empleo -->
+        <section class="dual-section">
+            <div class="container">
+                <div class="dual-grid">
+                    <!-- Columna 1: Farmacéuticos Titulares -->
+                    <div class="action-card">
+                        <div class="card-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h2>Farmacéuticos Titulares</h2>
+                        <p>Si eres farmacéutico titular de una farmacia, y quieres ampliar tu equipo, publica aquí tu oferta de trabajo.</p>
+                        <button class="btn btn-primary btn-large" id="show-offer-form">
+                            <i class="fas fa-plus-circle"></i> Publica la Oferta
+                        </button>
+                    </div>
+
+                    <!-- Columna 2: Busco Empleo -->
+                    <div class="action-card">
+                        <div class="card-icon">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <h2>Busco Empleo</h2>
+                        <p>Si eres un farmacéutico y buscas empleo, publica aquí tu demanda de trabajo.</p>
+                        <button class="btn btn-primary btn-large" id="show-demand-form">
+                            <i class="fas fa-plus-circle"></i> Publica tu Demanda
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulario de Oferta de Trabajo (Oculto inicialmente) -->
+        <div class="form-container" id="offer-form-container" style="display: none;">
+            <div class="container">
+                <div class="form-section">
+                    <div class="form-header">
+                        <h2><i class="fas fa-briefcase"></i> Publicar Oferta de Trabajo</h2>
+                        <button class="btn btn-outline btn-small" id="close-offer-form">
+                            <i class="fas fa-times"></i> Cerrar
+                        </button>
+                    </div>
+
+                    <form id="job-offer-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="job-position">Puesto Ofrecido <span class="required">*</span></label>
+                                <select id="job-position" name="job-position" required>
+                                    <option value="">Seleccione el puesto</option>
+                                    <option value="Farmacéutico Adjunto">Farmacéutico Adjunto</option>
+                                    <option value="Farmacéutico Sustituto">Farmacéutico Sustituto</option>
+                                    <option value="Técnico en Farmacia">Técnico en Farmacia</option>
+                                    <option value="Auxiliar de Farmacia">Auxiliar de Farmacia</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="job-schedule">Jornada <span class="required">*</span></label>
+                                <select id="job-schedule" name="job-schedule" required>
+                                    <option value="">Seleccione jornada</option>
+                                    <option value="Completa">Completa</option>
+                                    <option value="Mañana">Mañana</option>
+                                    <option value="Tarde">Tarde</option>
+                                    <option value="Parcial">Parcial</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="job-contract">Tipo de Contrato <span class="required">*</span></label>
+                                <select id="job-contract" name="job-contract" required>
+                                    <option value="">Seleccione tipo de contrato</option>
+                                    <option value="Indefinido">Indefinido</option>
+                                    <option value="Temporal">Temporal</option>
+                                    <option value="Sustitución">Sustitución</option>
+                                    <option value="Prácticas">Prácticas</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="job-location">Ubicación <span class="required">*</span></label>
+                                <input type="text" id="job-location" name="job-location" placeholder="Ej: Santander, Cantabria" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="job-info">Información Extra</label>
+                            <textarea id="job-info" name="job-info" rows="5" placeholder="Describa los detalles adicionales de la oferta, requisitos, beneficios, etc."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large">
+                            <i class="fas fa-paper-plane"></i> Publicar Oferta
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Formulario de Demanda de Empleo (Oculto inicialmente) -->
+        <div class="form-container" id="demand-form-container" style="display: none;">
+            <div class="container">
+                <div class="form-section">
+                    <div class="form-header">
+                        <h2><i class="fas fa-user-md"></i> Publicar Demanda de Empleo</h2>
+                        <button class="btn btn-outline btn-small" id="close-demand-form">
+                            <i class="fas fa-times"></i> Cerrar
+                        </button>
+                    </div>
+
+                    <form id="job-demand-form">
+                        <!-- Sección 1: Datos Personales -->
+                        <div class="form-subsection">
+                            <h3 class="subsection-title"><i class="fas fa-user"></i> Datos Personales</h3>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="demand-name">Nombre <span class="required">*</span></label>
+                                    <input type="text" id="demand-name" name="demand-name" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="demand-surname">Apellidos <span class="required">*</span></label>
+                                    <input type="text" id="demand-surname" name="demand-surname" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="demand-nif">NIF/Pasaporte <span class="required">*</span></label>
+                                    <input type="text" id="demand-nif" name="demand-nif" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="demand-phone">Teléfono <span class="required">*</span></label>
+                                    <input type="tel" id="demand-phone" name="demand-phone" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="demand-email">Email <span class="required">*</span></label>
+                                <input type="email" id="demand-email" name="demand-email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="demand-address">Dirección <span class="required">*</span></label>
+                                <input type="text" id="demand-address" name="demand-address" required>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="demand-city">Población <span class="required">*</span></label>
+                                    <input type="text" id="demand-city" name="demand-city" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="demand-postal">CP <span class="required">*</span></label>
+                                    <input type="text" id="demand-postal" name="demand-postal" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="demand-country">País <span class="required">*</span></label>
+                                    <input type="text" id="demand-country" name="demand-country" value="España" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="demand-province">Provincia <span class="required">*</span></label>
+                                    <input type="text" id="demand-province" name="demand-province" value="Cantabria" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sección 2: Información a Publicar -->
+                        <div class="form-subsection">
+                            <h3 class="subsection-title"><i class="fas fa-file-alt"></i> Información a Publicar</h3>
+                            
+                            <div class="form-group">
+                                <label for="demand-title">Título <span class="required">*</span></label>
+                                <input type="text" id="demand-title" name="demand-title" placeholder="Ej: Farmacéutico Adjunto - Disponibilidad inmediata" required>
+                                <small>Este título aparecerá en la lista de demandas</small>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="demand-description">Descripción <span class="required">*</span></label>
+                                <textarea id="demand-description" name="demand-description" rows="4" placeholder="Breve descripción de tu perfil profesional y disponibilidad" required></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="demand-studies">Estudios Realizados <span class="required">*</span></label>
+                                <textarea id="demand-studies" name="demand-studies" rows="3" placeholder="Licenciatura/Grado en Farmacia, Másters, Cursos de especialización..." required></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="demand-presentation">Presentación</label>
+                                <textarea id="demand-presentation" name="demand-presentation" rows="5" placeholder="Cuéntanos sobre tu experiencia profesional, habilidades y lo que te hace un buen candidato..."></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="demand-cv">Curriculum Vitae (PDF) <span class="required">*</span></label>
+                                <input type="file" id="demand-cv" name="demand-cv" accept=".pdf" required>
+                                <small>Formato PDF, tamaño máximo 5MB</small>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large">
+                            <i class="fas fa-paper-plane"></i> Publicar Demanda
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lista de Ofertas de Farmacias -->
+        <section class="jobs-section">
+            <div class="container">
+                <h2 class="section-title">
+                    <i class="fas fa-briefcase"></i> Ofertas de Empleo en Farmacias
+                </h2>
+                
+                <div class="table-container">
+                    <table class="jobs-table">
+                        <thead>
+                            <tr>
+                                <th>Puesto</th>
+                                <th>Ubicación</th>
+                                <th>Tipo</th>
+                                <th>Jornada</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody id="jobs-table-body">
+                            <!-- Las ofertas se cargarán dinámicamente aquí -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Explorador de Ofertas con Mapa -->
+        <section class="explorer-section">
+            <div class="container">
+                <h2 class="section-title"><i class="fas fa-map-marked-alt"></i> Mapa de Ofertas</h2>
+                
+                <div class="search-filters">
+                    <div class="filter-group">
+                        <label for="search-keyword">Palabra clave:</label>
+                        <input type="text" id="search-keyword" placeholder="Buscar por puesto o ubicación...">
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="search-type">Tipo:</label>
+                        <select id="search-type">
+                            <option value="Todos los tipos">Todos los tipos</option>
+                            <option value="Adjunto">Adjunto</option>
+                            <option value="Sustituto">Sustituto</option>
+                            <option value="Técnico">Técnico</option>
+                        </select>
+                    </div>
+                    
+                    <button class="btn btn-primary" onclick="applyFilters()">
+                        <i class="fas fa-filter"></i> Aplicar Filtros
+                    </button>
+                </div>
+
+                <!-- Mapa -->
+                <div class="map-container">
+                    <div id="map"></div>
+                </div>
+
+                <!-- Panel de Información de la Oferta -->
+                <div class="info-panel" id="info-panel" style="display: none;">
+                    <div class="info-header">
+                        <h3 id="job-title">Título de la Oferta</h3>
+                        <span class="job-badge" id="job-badge">Tipo</span>
+                    </div>
+                    <div class="info-body">
+                        <p class="job-location"><i class="fas fa-map-marker-alt"></i> <span id="job-location">Ubicación</span></p>
+                        <p class="job-desc" id="job-desc">Descripción de la oferta</p>
+                    </div>
+                    <div class="info-actions">
+                        <button class="btn btn-primary">
+                            <i class="fas fa-envelope"></i> Contactar
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Estado Vacío -->
+                <div class="empty-state" id="empty-state">
+                    <i class="fas fa-search-location"></i>
+                    <p>Haz clic en un marcador del mapa para ver los detalles de la oferta</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lista de Farmacéuticos que Buscan Empleo -->
+        <section class="demands-section">
+            <div class="container">
+                <h2 class="section-title">
+                    <i class="fas fa-users"></i> Farmacéuticos que Buscan Empleo
+                </h2>
+                
+                <div class="table-container">
+                    <table class="demands-table">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Apellidos</th>
+                                <th>Título</th>
+                                <th>Estudios</th>
+                                <th>Teléfono</th>
+                                <th>Email</th>
+                                <th>Detalles</th>
+                            </tr>
+                        </thead>
+                        <tbody id="demands-table-body">
+                            <!-- Las demandas se cargarán dinámicamente aquí -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal de Detalles de Farmacéutico -->
+    <div class="modal" id="demand-details-modal">
+        <div class="modal-content large-modal">
+            <span class="close-modal" id="close-demand-details">&times;</span>
+            <div class="modal-header">
+                <h2><i class="fas fa-user-circle"></i> Perfil del Farmacéutico</h2>
+            </div>
+            <div class="modal-body" id="demand-details-content">
+                <!-- El contenido se cargará dinámicamente -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Logo y nombre -->
+            <div class="footer-section logo-section">
+                <img src="../assets/img/Logos/cof.png" alt="Logo COF" class="footer-logo">
+            </div>
+
+            <!-- Contacto -->
+            <div class="footer-section">
+                <h4 class="section-title">CONTACTO</h4>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:cofcantabria@cofcantabria.org">cofcantabria@cofcantabria.org</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:942314418">942 31 44 18</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>C/ Castilla, 13 - 7º y 8º<br>39009 Santander</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Síguenos -->
+            <div class="footer-section">
+                <h4 class="section-title">SÍGUENOS</h4>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/cofcantabria/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/people/Colegio-de-Farmac%C3%A9uticos-de-Cantabria/100063216339209/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.youtube.com/@cofcantabria4819/featured" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://x.com/cofcantabria" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                    <a href="https://www.tiktok.com/@cofcantabria" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.linkedin.com/company/colegio-oficial-de-farmac%C3%A9uticos-de-cantabria/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="footer-bottom">
+            <p>© 2026 COLEGIO OFICIAL DE FARMACÉUTICOS DE CANTABRIA.</p>
+            <div class="footer-links">
+                <a href="#aviso-legal">AVISO LEGAL</a>
+                <a href="#privacidad">PRIVACIDAD</a>
+                <a href="#cookies">COOKIES</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Leaflet para el mapa -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <!-- Scripts -->
+    <script src="../assets/js/global-auth.js"></script>
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/bolsaempleo.js"></script>
+</body>
+</html>

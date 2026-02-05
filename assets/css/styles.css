@@ -496,16 +496,19 @@ img {
 
 /* --- Sección Bolsa de Trabajo (Cards) --- */
 .jobs-grid {
-    display: flex;
-    gap: 20px;
+    display: block;
     margin-top: 30px;
+}
+
+.jobs-grid .link-arrow {
+    display: block;
+    width: 100%;
 }
 
 .job-card {
     background: var(--white);
     box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-    padding: 20px;
-    flex: 1;
+    padding: 30px;
     text-align: center;
     border-radius: 4px;
     border-top: 3px solid var(--primary-color);

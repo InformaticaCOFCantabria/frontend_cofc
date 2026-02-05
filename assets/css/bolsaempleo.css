@@ -1,5 +1,5 @@
 /* =========================================
-   CSS ESPECÍFICO PARA BEdemanda.html
+   CSS PARA BOLSA DE EMPLEO FUSIONADA
    ========================================= */
 
 /* Contenido Principal */
@@ -29,49 +29,116 @@
 }
 
 /* =========================================
-   PANTALLA DE LOGIN
+   SECCIÓN DUAL (Titulares y Busco Empleo)
    ========================================= */
 
-.login-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 60px 20px;
-    min-height: 60vh;
+.dual-section {
+    padding: 60px 0;
+    background: var(--bg-light);
 }
 
-.login-card {
+.dual-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.action-card {
     background: var(--white);
     padding: 50px 40px;
     border-radius: 12px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 450px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.login-icon {
+.action-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.card-icon {
     font-size: 80px;
     color: var(--primary-color);
     margin-bottom: 25px;
 }
 
-.login-card h2 {
-    font-size: 26px;
+.action-card h2 {
+    font-size: 28px;
     font-weight: 700;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     color: var(--heading-color);
 }
 
-.login-card p {
-    font-size: 15px;
+.action-card p {
+    font-size: 16px;
     color: var(--text-color);
-    margin-bottom: 35px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+/* =========================================
+   FORMULARIOS
+   ========================================= */
+
+.form-container {
+    padding: 60px 0;
+    background: var(--bg-light);
+}
+
+.form-section {
+    background: var(--white);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 40px;
+}
+
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.form-header h2 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+}
+
+.form-header h2 i {
+    color: var(--primary-color);
+}
+
+.form-subsection {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    border-left: 4px solid var(--primary-color);
+}
+
+.subsection-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--heading-color);
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.subsection-title i {
+    color: var(--primary-color);
 }
 
 .form-group {
     margin-bottom: 25px;
-    text-align: left;
 }
 
 .form-group label {
@@ -82,90 +149,69 @@
     font-size: 14px;
 }
 
+.form-group .required {
+    color: #e74c3c;
+}
+
 .form-group input[type="text"],
-.form-group input[type="password"] {
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="password"],
+.form-group input[type="file"],
+.form-group select,
+.form-group textarea {
     width: 100%;
-    padding: 14px 18px;
+    padding: 12px 15px;
     border: 2px solid #e0e0e0;
-    border-radius: 6px;
-    font-size: 15px;
+    border-radius: 4px;
+    font-size: 14px;
     font-family: var(--font-main);
     transition: border-color 0.3s;
 }
 
 .form-group input[type="text"]:focus,
-.form-group input[type="password"]:focus {
+.form-group input[type="email"]:focus,
+.form-group input[type="tel"]:focus,
+.form-group input[type="password"]:focus,
+.form-group input[type="file"]:focus,
+.form-group select:focus,
+.form-group textarea:focus {
     outline: none;
     border-color: var(--primary-color);
 }
 
-.error-message {
-    color: #e74c3c;
-    font-size: 14px;
-    margin: 15px 0;
-    display: none;
-    padding: 12px;
-    background: #ffe6e6;
-    border-radius: 6px;
-    text-align: left;
+.form-group small {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+    font-size: 12px;
 }
 
-.error-message.show {
-    display: block;
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
 .btn-large {
     padding: 16px 40px;
     font-size: 16px;
-    border-radius: 6px;
-    width: 100%;
+    border-radius: 4px;
 }
 
 .btn-small {
     padding: 8px 16px;
-    font-size: 13px;
+    font-size: 12px;
 }
 
 /* =========================================
-   BARRA DE USUARIO
+   TABLAS DE OFERTAS Y DEMANDAS
    ========================================= */
 
-.user-bar {
+.jobs-section,
+.demands-section {
+    padding: 60px 0;
     background: var(--white);
-    border-bottom: 1px solid #e0e0e0;
-    padding: 15px 0;
-    margin-bottom: 40px;
-}
-
-.user-bar .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.user-info {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    font-size: 15px;
-    color: var(--text-color);
-}
-
-.user-info i {
-    font-size: 28px;
-    color: var(--primary-color);
-}
-
-.user-info strong {
-    color: var(--heading-color);
-}
-
-/* =========================================
-   SECCIÓN DE OFERTAS (TABLA)
-   ========================================= */
-
-.jobs-section {
-    padding: 40px 0 60px;
 }
 
 .section-title {
@@ -190,16 +236,19 @@
     margin-bottom: 40px;
 }
 
-.jobs-table {
+.jobs-table,
+.demands-table {
     width: 100%;
     border-collapse: collapse;
 }
 
-.jobs-table thead {
+.jobs-table thead,
+.demands-table thead {
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
 }
 
-.jobs-table thead th {
+.jobs-table thead th,
+.demands-table thead th {
     padding: 18px 20px;
     text-align: left;
     font-weight: 700;
@@ -209,20 +258,24 @@
     letter-spacing: 0.5px;
 }
 
-.jobs-table tbody tr {
+.jobs-table tbody tr,
+.demands-table tbody tr {
     border-bottom: 1px solid #f0f0f0;
     transition: background-color 0.2s;
 }
 
-.jobs-table tbody tr:hover {
+.jobs-table tbody tr:hover,
+.demands-table tbody tr:hover {
     background-color: #fafafa;
 }
 
-.jobs-table tbody tr:last-child {
+.jobs-table tbody tr:last-child,
+.demands-table tbody tr:last-child {
     border-bottom: none;
 }
 
-.jobs-table tbody td {
+.jobs-table tbody td,
+.demands-table tbody td {
     padding: 18px 20px;
     font-size: 14px;
     color: var(--text-color);
@@ -247,7 +300,8 @@
     color: #f57c00;
 }
 
-.job-type-badge.tecnico {
+.job-type-badge.tecnico,
+.job-type-badge.técnico {
     background: #f3e5f5;
     color: #7b1fa2;
 }
@@ -305,6 +359,26 @@
 .btn-contact:hover {
     background: var(--primary-color);
     color: #333;
+}
+
+.btn-details {
+    padding: 8px 16px;
+    background: var(--primary-color);
+    color: #333;
+    border: none;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.btn-details:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
 }
 
 /* =========================================
@@ -463,18 +537,171 @@
 }
 
 /* =========================================
+   MODAL DE DETALLES DE DEMANDA
+   ========================================= */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    background-color: var(--white);
+    margin: 5% auto;
+    padding: 0;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 700px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    animation: slideDown 0.3s ease-out;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.large-modal {
+    max-width: 900px;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.close-modal {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+    padding: 10px;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+    color: #000;
+}
+
+.modal-header {
+    padding: 30px 40px 20px;
+    border-bottom: 2px solid var(--bg-light);
+}
+
+.modal-header h2 {
+    margin: 0;
+    color: var(--heading-color);
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.modal-header h2 i {
+    color: var(--primary-color);
+}
+
+.modal-body {
+    padding: 30px 40px;
+}
+
+.detail-section {
+    margin-bottom: 30px;
+}
+
+.detail-section h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--heading-color);
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--bg-light);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.detail-section h3 i {
+    color: var(--primary-color);
+}
+
+.detail-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.detail-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-label {
+    font-weight: 600;
+    color: var(--heading-color);
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.detail-value {
+    color: var(--text-color);
+    font-size: 14px;
+}
+
+.detail-full {
+    margin-bottom: 15px;
+}
+
+.cv-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 20px;
+    background: var(--primary-color);
+    color: #333;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.cv-download:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+/* =========================================
    RESPONSIVE
    ========================================= */
 
 @media (max-width: 1024px) {
+    .dual-grid {
+        gap: 30px;
+    }
+    
+    .action-card {
+        padding: 40px 30px;
+    }
+    
     .search-filters {
         gap: 15px;
     }
     
-    .jobs-table thead th,
-    .jobs-table tbody td {
-        padding: 15px 18px;
-        font-size: 13px;
+    .form-section {
+        padding: 35px 25px;
     }
 }
 
@@ -492,30 +719,64 @@
         font-size: 15px;
     }
 
-    /* Login Container */
-    .login-container {
-        padding: 40px 20px;
-        min-height: 50vh;
+    /* Dual Section */
+    .dual-section {
+        padding: 40px 0;
     }
 
-    /* Login Card */
-    .login-card {
+    .dual-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .action-card {
         padding: 35px 25px;
     }
 
-    .login-icon {
+    .card-icon {
         font-size: 60px;
         margin-bottom: 20px;
     }
-    
-    .login-card h2 {
-        font-size: 22px;
-        margin-bottom: 12px;
+
+    .action-card h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .action-card p {
+        font-size: 15px;
+        margin-bottom: 25px;
+    }
+
+    /* Form */
+    .form-container {
+        padding: 40px 0;
+    }
+
+    .form-section {
+        padding: 30px 20px;
     }
     
-    .login-card p {
-        font-size: 14px;
+    .form-header {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
         margin-bottom: 25px;
+        padding-bottom: 15px;
+    }
+    
+    .form-header h2 {
+        font-size: 20px;
+    }
+    
+    .form-subsection {
+        padding: 25px 20px;
+        margin-bottom: 25px;
+    }
+
+    .subsection-title {
+        font-size: 18px;
+        margin-bottom: 20px;
     }
     
     .form-group {
@@ -527,68 +788,54 @@
     }
     
     .form-group input[type="text"],
-    .form-group input[type="password"] {
-        padding: 12px 16px;
-        font-size: 14px;
-    }
-    
-    .error-message {
+    .form-group input[type="email"],
+    .form-group input[type="tel"],
+    .form-group input[type="password"],
+    .form-group input[type="file"],
+    .form-group select,
+    .form-group textarea {
+        padding: 10px 12px;
         font-size: 13px;
-        padding: 10px;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
     }
 
-    /* User Bar */
-    .user-bar {
-        padding: 12px 0;
-        margin-bottom: 30px;
-    }
-    
-    .user-bar .container {
-        flex-direction: column;
-        gap: 12px;
-        align-items: flex-start;
-    }
-    
-    .user-info {
-        font-size: 14px;
-        gap: 10px;
-    }
-    
-    .user-info i {
-        font-size: 24px;
+    /* Tables */
+    .jobs-section,
+    .demands-section {
+        padding: 40px 0;
     }
 
-    /* Jobs Section */
-    .jobs-section {
-        padding: 30px 0 40px;
-    }
-    
     .section-title {
-        font-size: 24px;
-        margin-bottom: 25px;
+        font-size: 22px;
         gap: 10px;
     }
     
     .section-title i {
-        font-size: 26px;
+        font-size: 24px;
     }
 
-    /* Table */
     .table-container {
         overflow-x: auto;
         margin-bottom: 30px;
     }
 
-    .jobs-table {
+    .jobs-table,
+    .demands-table {
         min-width: 700px;
     }
     
-    .jobs-table thead th {
+    .jobs-table thead th,
+    .demands-table thead th {
         padding: 15px 18px;
         font-size: 13px;
     }
     
-    .jobs-table tbody td {
+    .jobs-table tbody td,
+    .demands-table tbody td {
         padding: 15px 18px;
         font-size: 13px;
     }
@@ -599,22 +846,16 @@
     }
     
     .btn-view,
-    .btn-contact {
+    .btn-contact,
+    .btn-details {
         padding: 7px 14px;
         font-size: 12px;
-    }
-
-    /* Explorer Section */
-    .explorer-section {
-        padding: 40px 0;
     }
 
     /* Search Filters */
     .search-filters {
         flex-direction: column;
         padding: 20px;
-        gap: 15px;
-        margin-bottom: 25px;
     }
 
     .filter-group {
@@ -623,7 +864,6 @@
     
     .filter-group label {
         font-size: 13px;
-        margin-bottom: 6px;
     }
     
     .filter-group input,
@@ -633,10 +873,6 @@
     }
 
     /* Map */
-    .map-container {
-        margin-bottom: 25px;
-    }
-    
     #map {
         height: 350px;
     }
@@ -644,36 +880,23 @@
     /* Info Panel */
     .info-panel {
         padding: 25px 20px;
-        margin-top: 25px;
+        margin-top: 20px;
     }
     
     .info-header {
         flex-direction: column;
-        gap: 10px;
+        gap: 12px;
         align-items: flex-start;
-        margin-bottom: 18px;
-        padding-bottom: 12px;
     }
     
     .info-header h3 {
         font-size: 20px;
     }
-    
-    .job-badge {
-        padding: 5px 12px;
-        font-size: 11px;
-    }
-    
-    .info-body {
-        margin-bottom: 18px;
-    }
-    
+
     .job-location {
         font-size: 14px;
-        margin-bottom: 12px;
-        gap: 6px;
     }
-    
+
     .job-desc {
         font-size: 14px;
     }
@@ -688,6 +911,46 @@
         justify-content: center;
     }
 
+    /* Modal */
+    .modal-content {
+        margin: 10% auto;
+        width: 95%;
+    }
+    
+    .modal-header {
+        padding: 25px 20px 15px;
+    }
+
+    .modal-header h2 {
+        font-size: 20px;
+    }
+    
+    .modal-body {
+        padding: 25px 20px;
+    }
+
+    .detail-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .detail-section h3 {
+        font-size: 16px;
+    }
+
+    /* Empty State */
+    .empty-state {
+        padding: 40px 20px;
+    }
+    
+    .empty-state i {
+        font-size: 48px;
+    }
+    
+    .empty-state p {
+        font-size: 14px;
+    }
+
     /* Job Actions in Table */
     .job-actions {
         flex-direction: column;
@@ -695,23 +958,10 @@
     }
 
     .btn-view,
-    .btn-contact {
+    .btn-contact,
+    .btn-details {
         width: 100%;
         justify-content: center;
-    }
-    
-    /* Empty State */
-    .empty-state {
-        padding: 40px 20px;
-    }
-    
-    .empty-state i {
-        font-size: 50px;
-        margin-bottom: 18px;
-    }
-    
-    .empty-state p {
-        font-size: 15px;
     }
 }
 
@@ -724,34 +974,60 @@
     .page-header h1 {
         font-size: 22px;
     }
-    
+
     .page-header p {
         font-size: 14px;
     }
 
-    /* Login Container */
-    .login-container {
-        padding: 30px 15px;
+    /* Dual Section */
+    .dual-section {
+        padding: 30px 0;
     }
 
-    /* Login Card */
-    .login-card {
+    .action-card {
         padding: 30px 20px;
     }
-    
-    .login-icon {
+
+    .card-icon {
         font-size: 50px;
-        margin-bottom: 18px;
+        margin-bottom: 15px;
     }
 
-    .login-card h2 {
+    .action-card h2 {
         font-size: 20px;
-        margin-bottom: 10px;
+        margin-bottom: 12px;
+    }
+
+    .action-card p {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .btn-large {
+        padding: 12px 30px;
+        font-size: 14px;
+    }
+
+    /* Form */
+    .form-container {
+        padding: 30px 0;
+    }
+
+    .form-section {
+        padding: 25px 15px;
     }
     
-    .login-card p {
-        font-size: 13px;
-        margin-bottom: 20px;
+    .form-header h2 {
+        font-size: 18px;
+    }
+    
+    .form-subsection {
+        padding: 20px 15px;
+    }
+
+    .subsection-title {
+        font-size: 16px;
+        margin-bottom: 15px;
     }
     
     .form-group {
@@ -763,45 +1039,21 @@
         margin-bottom: 6px;
     }
     
-    .form-group input[type="text"],
-    .form-group input[type="password"] {
-        padding: 10px 14px;
-        font-size: 13px;
-    }
-    
-    .btn-large {
-        padding: 12px 30px;
-        font-size: 14px;
-    }
-    
-    .btn-small {
-        padding: 6px 12px;
-        font-size: 11px;
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 9px 11px;
+        font-size: 12px;
     }
 
-    /* User Bar */
-    .user-bar {
-        padding: 10px 0;
-        margin-bottom: 25px;
-    }
-    
-    .user-info {
-        font-size: 13px;
-        gap: 8px;
-    }
-    
-    .user-info i {
-        font-size: 22px;
+    /* Tables */
+    .jobs-section,
+    .demands-section {
+        padding: 35px 0;
     }
 
-    /* Jobs Section */
-    .jobs-section {
-        padding: 25px 0 35px;
-    }
-    
     .section-title {
         font-size: 20px;
-        margin-bottom: 20px;
         flex-direction: column;
         align-items: flex-start;
         gap: 8px;
@@ -811,17 +1063,19 @@
         font-size: 22px;
     }
 
-    /* Table */
     .table-container {
         margin-bottom: 25px;
     }
     
-    .jobs-table {
+    .jobs-table,
+    .demands-table {
         min-width: 600px;
     }
 
     .jobs-table thead th,
-    .jobs-table tbody td {
+    .demands-table thead th,
+    .jobs-table tbody td,
+    .demands-table tbody td {
         padding: 12px 15px;
         font-size: 12px;
     }
@@ -832,20 +1086,11 @@
     }
     
     .btn-view,
-    .btn-contact {
+    .btn-contact,
+    .btn-details {
         padding: 6px 12px;
         font-size: 11px;
         gap: 4px;
-    }
-    
-    .btn-view i,
-    .btn-contact i {
-        font-size: 11px;
-    }
-
-    /* Explorer Section */
-    .explorer-section {
-        padding: 35px 0;
     }
 
     /* Search Filters */
@@ -899,17 +1144,58 @@
         margin-bottom: 15px;
     }
     
-    .job-location {
-        font-size: 13px;
-        margin-bottom: 10px;
-    }
-    
+    .job-location,
     .job-desc {
         font-size: 13px;
     }
     
     .info-actions {
         gap: 8px;
+    }
+
+    /* Modal */
+    .modal-content {
+        margin: 5% auto;
+        width: 98%;
+    }
+    
+    .modal-header {
+        padding: 20px 15px 12px;
+    }
+
+    .modal-header h2 {
+        font-size: 18px;
+    }
+    
+    .close-modal {
+        font-size: 24px;
+    }
+
+    .modal-body {
+        padding: 20px 15px;
+    }
+
+    .detail-section {
+        margin-bottom: 20px;
+    }
+
+    .detail-section h3 {
+        font-size: 15px;
+        margin-bottom: 12px;
+        padding-bottom: 8px;
+    }
+
+    .detail-label {
+        font-size: 12px;
+    }
+
+    .detail-value {
+        font-size: 13px;
+    }
+
+    .cv-download {
+        padding: 10px 16px;
+        font-size: 13px;
     }
 
     /* Empty State */
@@ -923,6 +1209,11 @@
     }
     
     .empty-state p {
-        font-size: 14px;
+        font-size: 13px;
+    }
+    
+    /* Explorer Section */
+    .explorer-section {
+        padding: 40px 0;
     }
 }
