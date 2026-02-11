@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trámites - COF Cantabria</title>
+    <!-- Fuentes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google Material Symbols -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/VUtramites.css">
+</head>
+<body>
+
+    <!-- Header Redes Sociales y Acceso Colegiados -->
+    <div class="top-bar">
+        <div class="container">
+            <!-- Redes Sociales -->
+            <div class="social-icons">
+                <a href="https://www.instagram.com/cofcantabria/" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/cofcantabria" target="_blank" title="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>    
+                <a href="https://www.facebook.com/people/Colegio-de-Farmac%C3%A9uticos-de-Cantabria/100063216339209/" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>    
+                <a href="https://www.tiktok.com/@cofcantabria" target="_blank" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>    
+                <a href="https://www.youtube.com/@cofcantabria9919" target="_blank" title="YouTube"><i class="fa-brands fa-youtube"></i></a>    
+                <a href="https://www.linkedin.com/company/colegio-oficial-de-farmac%C3%A9uticos-de-cantabria/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>    
+                <a href="https://bsky.app/profile/cofcantabria.bsky.social" target="_blank" title="Bluesky"><i class="fa-brands fa-bluesky"></i></a>
+            </div>
+            <!-- Acceso Colegiados y Correo electrónico -->    
+            <div class="top-links">
+                <a href="#" class="login-link btn-acceso">
+                    <i class="fas fa-lock"></i> Acceso Colegiado
+                </a>    
+                <a href="https://serviciodecorreo.es/" target="_blank" class="login-link">
+                    <i class="fas fa-envelope"></i> Web Mail
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header y Navegador -->
+    <header class="main-header">
+        <div class="container header-container">
+            <!-- Logo COFCantabria -->
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../assets/img/Logos/COFC_11.png" alt="COFCantabria Logo" class="logo-img">
+                </a>
+            </div>
+            <!-- Navegador Ordenador -->
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="./PTpresentacion.html">Portal de Transparencia <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="./PTpresentacion.html">Presentación</a></li>
+                            <li><a href="./PTjuntadegobierno.html">Junta de Gobierno</a></li>
+                            <li><a href="./PTorganigrama.html">Organigrama COF</a></li>
+                            <li><a href="./PTestatutosmemoria.html">Estatutos y Memoria Gestión</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./BolsaEmpleo.html">Bolsa de Empleo</a></li>
+                    <li class="dropdown">
+                        <a href="./VUlistadocolegiados.html" class="active">Ventanilla Única <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="./VUcolegiacion.html">Colegiación</a></li>
+                            <li><a href="./VUtramites.html" class="active">Trámites (solicitudes, certificados...)</a></li>
+                            <li><a href="./VUcodigodeontologico.html">Código Deontológico</a></li>
+                            <li><a href="./VUlistadocolegiados.html">Listado de Colegiados</a></li>
+                            <li><a href="#">Atención Ciudadanía y Reclamaciones</a></li>
+                            <li><a href="#">Canal de Denuncias</a></li>
+                            <li><a href="./VUlistadoperitos.html">Listado de Peritos Judiciales</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Ciudadanía <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="https://view.genially.com/6981a6424032400e563879c4">Campañas de Vacunación</a></li>
+                            <li><a href="./CIrecetaelectronica.html">Receta Electrónica</a></li>
+                            <li><a href="https://www.farmaceuticos.com/tu-farmaceutico-informa/escuela-con-pacientes-3/?_gl=1*mxu1nm*_up*MQ..&gclid=Cj0KCQiA4eHLBhCzARIsAJ2NZoK6bNyY0Lm33wj3GtXtWr8gx_CXSZ2INHI_YE0QTOMpP6ohcT7ti9kaAjlwEALw_wcB&gbraid=0AAAAADztVhhujVjlzM5GV8Wxabyo8EN3R">Escuela con Pacientes</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Botón buscador -->
+            <div class="header-actions">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+                <button id="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobile-menu">
+        <button id="close-menu-btn"><i class="fas fa-times"></i></button>
+        <ul class="nav-list">
+            <li><a href="../index.html">Inicio</a></li>
+            <li class="dropdown">
+                <a href="#">Portal de Transparencia <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="./PTpresentacion.html">Presentación</a></li>
+                    <li><a href="./PTjuntadegobierno.html">Junta de Gobierno</a></li>
+                    <li><a href="./PTorganigrama.html">Organigrama COF</a></li>
+                    <li><a href="./PTestatutosmemoria.html">Estatutos y Memoria Gestión</a></li>
+                </ul>
+            </li>
+            <li><a href="./BolsaEmpleo.html">Bolsa de Empleo</a></li>
+            <li class="dropdown">
+                <a href="#">Ventanilla Única <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="./VUcolegiacion.html">Colegiación</a></li>
+                    <li><a href="./VUtramites.html" class="active">Trámites</a></li>
+                    <li><a href="./VUcodigodeontologico.html">Código Deontológico</a></li>
+                    <li><a href="./VUlistadocolegiados.html">Listado de Colegiados</a></li>
+                    <li><a href="#">Atención Ciudadanía y Reclamaciones</a></li>
+                    <li><a href="#">Canal de Denuncias</a></li>
+                    <li><a href="./VUlistadoperitos.html">Listado de Peritos Judiciales</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Ciudadanía <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="https://view.genially.com/6981a6424032400e563879c4">Campañas de Vacunación</a></li>
+                    <li><a href="./CIrecetaelectronica.html">Receta Electrónica</a></li>
+                    <li><a href="https://www.farmaceuticos.com/tu-farmaceutico-informa/escuela-con-pacientes-3/?_gl=1*mxu1nm*_up*MQ..&gclid=Cj0KCQiA4eHLBhCzARIsAJ2NZoK6bNyY0Lm33wj3GtXtWr8gx_CXSZ2INHI_YE0QTOMpP6ohcT7ti9kaAjlwEALw_wcB&gbraid=0AAAAADztVhhujVjlzM5GV8Wxabyo8EN3R">Escuela con Pacientes</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Sección Principal: Trámites -->
+    <section class="tramites-section">
+        <div class="container">
+            <!-- Header con fondo blanco -->
+            <div class="page-header-box">
+                <h1 class="page-title">TRÁMITES</h1>
+                <p class="page-subtitle">Ventanilla Única</p>
+                <div class="header-divider"></div>
+            </div>
+
+            <!-- Acordeón de Trámites -->
+            <div class="accordion-container">
+                
+                <!-- Trámite 1 -->
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span class="accordion-title">
+                            <i class="fas fa-user-edit"></i>
+                            Modificación de datos personales
+                        </span>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="content-inner">
+                            <p>Contenido pendiente de información...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trámite 2 -->
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span class="accordion-title">
+                            <i class="fas fa-user-times"></i>
+                            Baja de Colegiación
+                        </span>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="content-inner">
+                            <!-- Formulario de Baja de Colegiación -->
+                            <form id="form-baja-colegiacion" class="tramite-form">
+                                
+                                <!-- Sección: Datos del solicitante -->
+                                <div class="form-section">
+                                    <h3 class="form-section-title">Datos del solicitante</h3>
+                                    
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="nombre">Nombre:</label>
+                                            <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="apellido1">Apellido 1:</label>
+                                            <input type="text" id="apellido1" name="apellido1" placeholder="Apellido 1">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="apellido2">Apellido 2:</label>
+                                            <input type="text" id="apellido2" name="Apellido 2" placeholder="Apellido 2">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="nif">NIF/Pasaporte:</label>
+                                            <input type="text" id="nif" name="nif" placeholder="12345678A">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group form-group-direccion">
+                                            <label for="direccion">Dirección:</label>
+                                            <input type="text" id="direccion" name="direccion" placeholder="C. Castilla, 13, 39009 Santander, Cantabria">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group form-group-poblacion">
+                                            <label for="poblacion">Población:</label>
+                                            <div class="input-with-buttons">
+                                                <input type="text" id="poblacion" name="poblacion" placeholder="Santander">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="cp">CP:</label>
+                                            <input type="text" id="cp" name="cp" placeholder="39009">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="pais">País:</label>
+                                            <select id="pais" name="pais">
+                                                <option value="ESPAÑA">ESPAÑA</option>
+                                                <option value="FRANCIA">FRANCIA</option>
+                                                <option value="PORTUGAL">PORTUGAL</option>
+                                                <option value="ALEMANIA">ALEMANIA</option>
+                                                <option value="ITALIA">ITALIA</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="provincia">Provincia:</label>
+                                            <select id="provincia" name="provincia">
+                                                <option value="CANTABRIA">CANTABRIA</option>
+                                                <option value="VIZCAYA">VIZCAYA</option>
+                                                <option value="ASTURIAS">ASTURIAS</option>
+                                                <option value="MADRID">MADRID</option>
+                                                <option value="BARCELONA">BARCELONA</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="telefono">Teléfono:</label>
+                                            <input type="tel" id="telefono" name="telefono" placeholder="942314418">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="email">Email:</label>
+                                            <input type="email" id="email" name="email" placeholder="cofcantabria@cofcantabria.org">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Sección: EXPONE -->
+                                <div class="form-section">
+                                    <h3 class="form-section-title">EXPONE</h3>
+                                    <p class="form-description">
+                                        Que estando al corriente de todos sus deberes y obligaciones colegiales, desea causar baja como colegiado/a en este Colegio Oficial de Farmacéuticos de Cantabria, a petición propia
+                                    </p>
+
+                                    <div class="form-group">
+                                        <label>Motivos:</label>
+                                        <div class="checkbox-group">
+                                            <label class="checkbox-label">
+                                                <input type="checkbox" name="motivo" value="traslado">
+                                                <span>Traslado otro Colegio (especificar cuál)</span>
+                                                <div class="form-group">
+                                                    <label for="traslado-cof">Traslado al COF:</label>
+                                                    <input type="text" id="traslado-cof" name="traslado-cof">
+                                                </div>
+                                            </label>
+                                            <label class="checkbox-label">
+                                                <input type="checkbox" name="motivo" value="voluntaria">
+                                                <span>Voluntaria</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Sección: SOLICITA -->
+                                <div class="form-section">
+                                    <h3 class="form-section-title">SOLICITA</h3>
+                                    <p class="form-description">
+                                        Le sea concedida la baja como colegiado/a en esta Corporación.
+                                    </p>
+
+                                    <div class="form-group">
+                                        <label for="fecha">Fecha: <span class="required">*</span></label>
+                                        <div class="input-with-calendar">
+                                            <input type="date" id="fecha" name="fecha">
+                                            <i class="fas fa-calendar-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Notas importantes -->
+                                <div class="form-notes">
+                                    <div class="note-item">
+                                        <i class="fas fa-angle-right"></i>
+                                        <p><strong>Para que se conceda la baja colegial, es preciso que remita al Colegio su carné de colegiado/a.</strong></p>
+                                    </div>
+                                    <div class="note-item">
+                                        <i class="fas fa-angle-right"></i>
+                                        <p>Se advierte de que, en caso de poseer una cuenta de correo electrónico del Colegio y/o clave de acceso a la parte privada de la página web del Colegio, estos datos se darán de baja en cuanto se haga efectiva su baja colegial.</p>
+                                    </div>
+                                    <div class="note-item">
+                                        <i class="fas fa-angle-right"></i>
+                                        <p>Además se dará de baja del Consejo General de Colegios Oficiales de Farmacéuticos y el acceso a la parte privada de su web Portalfarma.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Botón de envío -->
+                                <div class="form-actions">
+                                    <button type="submit" class="btn btn-primary btn-submit">
+                                        <i class="fas fa-paper-plane"></i> Enviar
+                                    </button>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trámite 3 -->
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span class="accordion-title">
+                            <i class="fas fa-certificate"></i>
+                            Solicitud de Certificados
+                        </span>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="content-inner">
+                            <!-- Formulario de Solicitud de Certificados -->
+                            <form id="form-solicitud-certificados" class="tramite-form">
+                                
+                                <!-- Sección 1: Datos del solicitante -->
+                                <div class="form-section">
+                                    <h3 class="form-section-title">Datos del solicitante</h3>
+                                    
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="nombre">Nombre: </label>
+                                            <input type="text" id="nombre" name="nombre" placeholder="Nombre" >
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="apellido1">Apellido 1: </label>
+                                            <input type="text" id="apellido1" name="apellido1" placeholder="Apellido 1" >
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="apellido2">Apellido 2: </label>
+                                            <input type="text" id="apellido2" name="apellido2" placeholder="Apellido 2">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="nif-pasaporte">NIF/Pasaporte: </label>
+                                            <input type="text" id="nif-pasaporte" name="nif-pasaporte" placeholder="12345678A" >
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group form-group-direccion">
+                                            <label for="direccion">Dirección: </label>
+                                            <input type="text" id="direccion" name="direccion" placeholder="C. Castilla, 13, 39009 Santander, Cantabria" >
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="poblacion">Población: </label>
+                                            <div class="input-with-buttons">
+                                                <input type="text" id="poblacion" name="poblacion" placeholder="Santander">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="cp">CP: </label>
+                                            <input type="text" id="cp" name="cp" placeholder="39009" maxlength="5" >
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="pais">País: </label>
+                                            <select id="pais" name="pais" >
+                                                <option value="">Seleccione un país</option>
+                                                <option value="ESPAÑA" selected>ESPAÑA</option>
+                                                <option value="FRANCIA">FRANCIA</option>
+                                                <option value="PORTUGAL">PORTUGAL</option>
+                                                <option value="ALEMANIA">ALEMANIA</option>
+                                                <option value="ITALIA">ITALIA</option>
+                                                <option value="REINO UNIDO">REINO UNIDO</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="provincia">Provincia: </label>
+                                            <select id="provincia" name="provincia" >
+                                                <option value="">Seleccione una provincia</option>
+                                                <option value="CANTABRIA" selected>CANTABRIA</option>
+                                                <option value="ÁLAVA">ÁLAVA</option>
+                                                <option value="ALBACETE">ALBACETE</option>
+                                                <option value="ALICANTE">ALICANTE</option>
+                                                <option value="ALMERÍA">ALMERÍA</option>
+                                                <option value="ASTURIAS">ASTURIAS</option>
+                                                <option value="ÁVILA">ÁVILA</option>
+                                                <option value="BADAJOZ">BADAJOZ</option>
+                                                <option value="BARCELONA">BARCELONA</option>
+                                                <option value="BURGOS">BURGOS</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="telefono">Teléfono: </label>
+                                            <input type="tel" id="telefono" name="telefono" placeholder="942 31 44 18" >
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="email">E-mail: </label>
+                                            <input type="email" id="email" name="email" placeholder="cofcantabria@cofcantabria.org" >
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Sección 2: Solicita certificado de -->
+                                <div class="form-section">
+                                    <h3 class="form-section-title">Solicita certificado de</h3>
+                                    
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label>Tipo: </label>
+                                            <div class="checkbox-group">
+                                                <label class="checkbox-label">
+                                                    <input type="checkbox" name="tipo-certificado" value="colegiacion">
+                                                    <span>Colegiación</span>
+                                                </label>
+                                                <label class="checkbox-label">
+                                                    <input type="checkbox" name="tipo-certificado" value="cursos">
+                                                    <span>Cursos</span>
+                                                </label>
+                                                <label class="checkbox-label">
+                                                    <input type="checkbox" name="tipo-certificado" value="ejercicio-adjunto">
+                                                    <span>Ejercicio Adjunto en OF</span>
+                                                </label>
+                                                <label class="checkbox-label">
+                                                    <input type="checkbox" name="tipo-certificado" value="ejercicio-propietario">
+                                                    <span>Ejercicio Propietario en OF</span>
+                                                </label>
+                                                <label class="checkbox-label">
+                                                    <input type="checkbox" name="tipo-certificado" value="ejercicio-regente">
+                                                    <span>Ejercicio Regente en OF</span>
+                                                </label>
+                                                <label class="checkbox-label">
+                                                    <input type="checkbox" name="tipo-certificado" value="ejercicio-sustituto">
+                                                    <span>Ejercicio Sustituto en OF</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="motivo">Motivo: </label>
+                                            <div class="input-with-buttons">
+                                                <input type="text" id="motivo" name="motivo" placeholder="Motivo">
+                                            </div>
+                                            <div style="margin-top: 15px;">
+                                                <label for="otros-especificar">Otros especificar:</label>
+                                                <input type="text" id="otros-especificar" name="otros-especificar" placeholder="Otros">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Sección 3: Ejercicio Profesional -->
+                                <div class="form-section">
+                                    <h3 class="form-section-title">EJERCICIO PROFESIONAL</h3>
+                                    <p class="form-description">
+                                        En caso de solicitud de certificado para ejercicio profesional, es necesario especificar el nombre 
+                                        y la dirección de trabajo, así como las fechas previstas de comienzo y fin.
+                                    </p>
+                                    
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="nombre-trabajo">Nombre:</label>
+                                            <input type="text" id="nombre-trabajo" name="nombre-trabajo" placeholder="Nombre">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="direccion-trabajo">Dirección:</label>
+                                            <input type="text" id="direccion-trabajo" name="direccion-trabajo" placeholder="Dirección">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="fechas-previstas">Fechas previstas:</label>
+                                            <div class="input-with-calendar">
+                                                <input type="date" id="fechas-previstas" name="fechas-previstas">
+                                                <i class="fas fa-calendar-alt"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Sección 4: Observaciones -->
+                                <div class="form-section">
+                                    <h3 class="form-section-title">OBSERVACIONES</h3>
+                                    
+                                    <div class="form-row">
+                                        <div class="form-group" style="grid-column: 1 / -1;">
+                                            <label for="observaciones">Observaciones:</label>
+                                            <textarea id="observaciones" name="observaciones" rows="5" style="width: 100%; padding: 12px 15px; border: 1px solid #d1d5db; border-radius: 4px; font-size: 14px; font-family: var(--font-main); resize: vertical;"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="fecha-solicitud">Fecha:</label>
+                                            <div class="input-with-calendar">
+                                                <input type="date" id="fecha-solicitud" name="fecha-solicitud">
+                                                <i class="fas fa-calendar-alt"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Notas importantes -->
+                                <div class="form-notes">
+                                    <div class="note-item">
+                                        <i class="fas fa-info-circle"></i>
+                                        <p>Los certificados se entregan en un plazo de <strong>24-48 horas hábiles</strong>.</p>
+                                    </div>
+                                    <div class="note-item">
+                                        <i class="fas fa-info-circle"></i>
+                                        <p>Una vez procesada su solicitud, recibirá un correo electrónico con las instrucciones para la recogida del certificado.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Botones de acción -->
+                                <div class="form-actions">
+                                    <button type="submit" class="btn btn-primary btn-submit">
+                                        <i class="fas fa-paper-plane"></i>
+                                        Enviar Solicitud
+                                    </button>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Trámite 4 -->
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span class="accordion-title">
+                            <i class="fas fa-book"></i>
+                            Solicitud de Libros Oficiales
+                        </span>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="content-inner">
+                            <!-- Formulario de Solicitud de Libros Oficiales -->
+                            <form id="form-solicitud-libros" class="tramite-form">
+                                
+                                <!-- Sección 1: Datos del solicitante -->
+                                <div class="form-section">
+                                    <h3 class="form-section-title">Datos del solicitante</h3>
+                                    
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="nombre-libros">Nombre: </label>
+                                            <input type="text" id="nombre-libros" name="nombre-libros" placeholder="Nombre" >
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="apellido1-libros">Apellido 1: </label>
+                                            <input type="text" id="apellido1-libros" name="apellido1-libros" placeholder="Apellido 1" >
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="apellido2-libros">Apellido 2: </label>
+                                            <input type="text" id="apellido2-libros" name="apellido2-libros" placeholder="Apellido 2">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="nif-pasaporte-libros">NIF/Pasaporte: </label>
+                                            <input type="text" id="nif-pasaporte-libros" name="nif-pasaporte-libros" placeholder="12345678A" >
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group form-group-direccion">
+                                            <label for="direccion-libros">Dirección: </label>
+                                            <input type="text" id="direccion-libros" name="direccion-libros" placeholder="C/ Castilla, 13 - 7º y 8º 39009 Santander" >
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="poblacion-libros">Población: </label>
+                                            <div class="input-with-buttons">
+                                                <input type="text" id="poblacion-libros" name="poblacion-libros" placeholder="Santander" >
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="cp-libros">CP: </label>
+                                            <input type="text" id="cp-libros" name="cp-libros" placeholder="39009" maxlength="5" >
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="pais-libros">País: </label>
+                                            <select id="pais-libros" name="pais-libros" >
+                                                <option value="">Seleccione un país</option>
+                                                <option value="ESPAÑA" selected>ESPAÑA</option>
+                                                <option value="FRANCIA">FRANCIA</option>
+                                                <option value="PORTUGAL">PORTUGAL</option>
+                                                <option value="ALEMANIA">ALEMANIA</option>
+                                                <option value="ITALIA">ITALIA</option>
+                                                <option value="REINO UNIDO">REINO UNIDO</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="provincia-libros">Provincia: </label>
+                                            <select id="provincia-libros" name="provincia-libros" >
+                                                <option value="">Seleccione una provincia</option>
+                                                <option value="CANTABRIA" selected>CANTABRIA</option>
+                                                <option value="ÁLAVA">ÁLAVA</option>
+                                                <option value="ALBACETE">ALBACETE</option>
+                                                <option value="ALICANTE">ALICANTE</option>
+                                                <option value="ALMERÍA">ALMERÍA</option>
+                                                <option value="ASTURIAS">ASTURIAS</option>
+                                                <option value="ÁVILA">ÁVILA</option>
+                                                <option value="BADAJOZ">BADAJOZ</option>
+                                                <option value="BARCELONA">BARCELONA</option>
+                                                <option value="BURGOS">BURGOS</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="telefono-libros">Teléfono: </label>
+                                            <input type="tel" id="telefono-libros" name="telefono-libros" placeholder="942 31 44 18" >
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="email-libros">E-mail: </label>
+                                            <input type="email" id="email-libros" name="email-libros" placeholder="cofcantabria@cofcantabria.org" >
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Sección 2: SOLICITA -->
+                                <div class="form-section">
+                                    <h3 class="form-section-title">SOLICITA</h3>
+                                    
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label>Tipo de libro: </label>
+                                            <div class="checkbox-group">
+                                                <label class="checkbox-label">
+                                                    <input type="checkbox" name="tipo-libro" value="contabilidad-estupefacientes">
+                                                    <span>Libro de Contabilidad de Estupefacientes</span>
+                                                </label>
+                                                <label class="checkbox-label">
+                                                    <input type="checkbox" name="tipo-libro" value="recetario-oficial">
+                                                    <span>Libro Recetario Oficial</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Enviar por: </label>
+                                            <div class="checkbox-group">
+                                                <label class="checkbox-label">
+                                                    <input type="checkbox" name="enviar-por" value="cenfarte">
+                                                    <span>Cenfarte</span>
+                                                </label>
+                                                <label class="checkbox-label">
+                                                    <input type="checkbox" name="enviar-por" value="cofas">
+                                                    <span>Cofas</span>
+                                                </label>
+                                                <label class="checkbox-label">
+                                                    <input type="checkbox" name="enviar-por" value="difarca">
+                                                    <span>Difarca</span>
+                                                </label>
+                                                <label class="checkbox-label">
+                                                    <input type="checkbox" name="enviar-por" value="recoge-cof">
+                                                    <span>Se recoge en COF</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="fecha-libros">Fecha: </label>
+                                            <div class="input-with-calendar">
+                                                <input type="date" id="fecha-libros" name="fecha-libros">
+                                                <i class="fas fa-calendar-alt"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Notas importantes -->
+                                <div class="form-notes">
+                                    <div class="note-item">
+                                        <i class="fas fa-info-circle"></i>
+                                        <p>Los libros oficiales se entregarán según el método de envío seleccionado.</p>
+                                    </div>
+                                    <div class="note-item">
+                                        <i class="fas fa-info-circle"></i>
+                                        <p>Para recoger en COF, debe acudir en horario de <strong>lunes a viernes de 9:00 a 14:00h</strong>.</p>
+                                    </div>
+                                    <div class="note-item">
+                                        <i class="fas fa-info-circle"></i>
+                                        <p>El envío a través de distribuidoras puede tardar <strong>entre 3-5 días hábiles</strong>.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Botones de acción -->
+                                <div class="form-actions">
+                                    <button type="submit" class="btn btn-primary btn-submit">
+                                        <i class="fas fa-paper-plane"></i>
+                                        Enviar
+                                    </button>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trámite 5 -->
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span class="accordion-title">
+                            <i class="fas fa-user-tie"></i>
+                            Nombramiento de Regentes, Sustitutos y Adjuntos
+                        </span>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="content-inner">
+                            <p>Contenido pendiente de información...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trámite 6 -->
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span class="accordion-title">
+                            <i class="fas fa-exchange-alt"></i>
+                            Sustitución por un adjunto de la OF
+                        </span>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="content-inner">
+                            <p>Contenido pendiente de información...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trámite 7 -->
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span class="accordion-title">
+                            <i class="fas fa-clock"></i>
+                            Modificación de horario y cierre por vacaciones de las O. de F.
+                        </span>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="content-inner">
+                            <p>Contenido pendiente de información...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trámite 8 -->
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span class="accordion-title">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            Notificaciones de agresiones a farmacéuticos
+                        </span>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="content-inner">
+                            <p>Contenido pendiente de información...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trámite 9 -->
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span class="accordion-title">
+                            <i class="fas fa-coins"></i>
+                            Información fiscal. Cuotas colegiales 2024
+                        </span>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="content-inner">
+                            <p>Contenido pendiente de información...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trámite 10 -->
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span class="accordion-title">
+                            <i class="fas fa-file-alt"></i>
+                            Instancia general para las guardias
+                        </span>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="content-inner">
+                            <p>Contenido pendiente de información...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trámite 11 -->
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span class="accordion-title">
+                            <i class="fas fa-folder-open"></i>
+                            Registro Electrónico Común -REC- Gobierno de Cantabria
+                        </span>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="content-inner">
+                            <p>Contenido pendiente de información...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trámite 12 -->
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span class="accordion-title">
+                            <i class="fas fa-pen"></i>
+                            Otros escritos
+                        </span>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="content-inner">
+                            <p>Contenido pendiente de información...</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Logo y nombre -->
+            <div class="footer-section logo-section">
+                <img src="../assets/img/Logos/cof.png" alt="Logo COF" class="footer-logo">
+            </div>
+
+            <!-- Contacto -->
+            <div class="footer-section">
+                <h4 class="section-title">CONTACTO</h4>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:cofcantabria@cofcantabria.org">cofcantabria@cofcantabria.org</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:942314418">942 31 44 18</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>C/ Castilla, 13 - 7º y 8º<br>39009 Santander</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Síguenos -->
+            <div class="footer-section">
+                <h4 class="section-title">SÍGUENOS</h4>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/cofcantabria/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/people/Colegio-de-Farmac%C3%A9uticos-de-Cantabria/100063216339209/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@cofcantabria4819/featured" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://x.com/cofcantabria" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@cofcantabria" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/colegio-oficial-de-farmac%C3%A9uticos-de-cantabria/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://bsky.app/profile/cofcantabria.bsky.social" target="_blank" rel="noopener noreferrer" aria-label="BlueSky">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364.136-.02.275-.039.415-.056-.138.022-.276.04-.415.056-3.912.58-7.387 2.005-2.83 7.078 5.013 5.19 6.87-1.113 7.823-4.308.953 3.195 2.05 9.271 7.733 4.308 4.267-4.308 1.172-6.498-2.74-7.078a8.741 8.741 0 0 1-.415-.056c.14.017.279.036.415.056 2.67.297 5.568-.628 6.383-3.364.246-.828.624-5.79.624-6.478 0-.69-.139-1.861-.902-2.206-.659-.298-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8Z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="footer-bottom">
+            <p>© 2026 COLEGIO OFICIAL DE FARMACÉUTICOS DE CANTABRIA.</p>
+            <div class="footer-links">
+                <a href="#aviso-legal">AVISO LEGAL</a>
+                <a href="#privacidad">PRIVACIDAD</a>
+                <a href="#cookies">COOKIE</a>
+            </div>
+        </div>
+    </footer>
+    <script src="../assets/js/global-auth.js"></script>
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/VUtramites.js"></script>
+</body>
+</html>

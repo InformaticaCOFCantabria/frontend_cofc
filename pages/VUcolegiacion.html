@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COF Cantabria - Portal de Transparencia - Presentación</title>
+    <title>Colegiación - COF Cantabria</title>
     <!-- Fuentes Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +13,8 @@
     <!-- Iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="../assets/css/styles.css">
-    <link rel="stylesheet" href="../assets/css/PTpresentacion.css">
+    <link rel="stylesheet" href="../assets/css/sponsors-carousel.css">
+    <link rel="stylesheet" href="../assets/css/colegiacion.css">
 </head>
 <body>
 
@@ -35,7 +36,7 @@
                 <a href="#" class="login-link btn-acceso">
                     <i class="fas fa-lock"></i> Acceso Colegiado
                 </a>    
-                <a href="https://www.arsys.es/clientes" target="_blank" class="login-link">
+                <a href="https://serviciodecorreo.es/" target="_blank" class="login-link">
                     <i class="fas fa-envelope"></i> Web Mail
                 </a>
             </div>
@@ -56,9 +57,9 @@
                 <ul class="nav-list">
                     <li><a href="../index.html">Inicio</a></li>
                     <li class="dropdown">
-                        <a href="./PTpresentacion.html" class="active">Portal de Transparencia <i class="fas fa-chevron-down"></i></a>
+                        <a href="./PTpresentacion.html">Portal de Transparencia <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="./PTpresentacion.html" class="active">Presentación</a></li>
+                            <li><a href="./PTpresentacion.html">Presentación</a></li>
                             <li><a href="./PTjuntadegobierno.html">Junta de Gobierno</a></li>
                             <li><a href="./PTorganigrama.html">Organigrama COF</a></li>
                             <li><a href="./PTestatutosmemoria.html">Estatutos y Memoria Gestión</a></li>
@@ -66,22 +67,22 @@
                     </li>
                     <li><a href="./BolsaEmpleo.html">Bolsa de Empleo</a></li>
                     <li class="dropdown">
-                        <a href="./VUlistadocolegiados.html">Ventanilla Única <i class="fas fa-chevron-down"></i></a>
+                        <a href="./VUlistadocolegiados.html" class="active">Ventanilla Única <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="./VUcolegiacion.html">Colegiación</a></li>
-                            <li><a href="./VUtramites.html">Trámites (solicitudes, certificados...)</a></li>
+                            <li><a href="#">Trámites (solicitudes, certificados...)</a></li>
                             <li><a href="./VUcodigodeontologico.html">Código Deontológico</a></li>
                             <li><a href="./VUlistadocolegiados.html">Listado de Colegiados</a></li>
                             <li><a href="#">Atención Ciudadanía y Reclamaciones</a></li>
                             <li><a href="#">Canal de Denuncias</a></li>
-                            <li><a href="./VUlistadoperitos.html">Listado de Peritos Judiciales</a></li>
+                            <li><a href="#">Listado de Peritos Judiciales</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a href="#">Ciudadanía <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="https://view.genially.com/6981a6424032400e563879c4">Campañas de Vacunación</a></li>
-                            <li><a href="./CIrecetaelectronica.html">Receta Electrónica</a></li>
+                            <li><a href="#">Campañas de Vacunación</a></li>
+                            <li><a href="#">Receta Electrónica</a></li>
                             <li><a href="https://www.farmaceuticos.com/tu-farmaceutico-informa/escuela-con-pacientes-3/?_gl=1*mxu1nm*_up*MQ..&gclid=Cj0KCQiA4eHLBhCzARIsAJ2NZoK6bNyY0Lm33wj3GtXtWr8gx_CXSZ2INHI_YE0QTOMpP6ohcT7ti9kaAjlwEALw_wcB&gbraid=0AAAAADztVhhujVjlzM5GV8Wxabyo8EN3R">Escuela con Pacientes</a></li>
                         </ul>
                     </li>
@@ -98,61 +99,150 @@
     <!-- Mobile Menu Overlay -->
     <div class="mobile-menu" id="mobile-menu">
         <button id="close-menu-btn"><i class="fas fa-times"></i></button>
-        <ul>
-            <li><a href="../Inicio/index.html">Inicio</a></li>
-            <li><a href="#">El Colegio</a></li>
-            <li><a href="#">Ciudadanos</a></li>
-            <li><a href="#">Colegiados</a></li>
-            <li><a href="#">Profesionales</a></li>
-            <li><a href="#">Empleo</a></li>
-            <li><a href="#">Noticias</a></li>
-            <li><a href="#">Formación</a></li>
-            <li><a href="#">Contacto</a></li>
+        <ul class="nav-list">
+            <li><a href="../index.html">Inicio</a></li>
+            <li class="dropdown">
+                <a href="#">Portal de Transparencia <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="./PTpresentacion.html">Presentación</a></li>
+                    <li><a href="./PTjuntadegobierno.html">Junta de Gobierno</a></li>
+                    <li><a href="./PTorganigrama.html">Organigrama COF</a></li>
+                    <li><a href="./PTestatutos.html">Estatutos y Código Deontológico</a></li>
+                    <li><a href="#">Memoria Gestión</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Bolsa de Empleo <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="./BEoferta.html">Oferta (Ofrezco trabajo)</a></li>
+                    <li><a href="./BEdemanda.html">Demanda (Busco trabajo)</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="active">Ventanilla Única <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="./VUcolegiacion.html" class="active">Colegiación</a></li>
+                    <li><a href="./VUtramites.html">Trámites</a></li>
+                    <li><a href="./VUlistadocolegiados.html">Listado de Colegiados</a></li>
+                    <li><a href="#">Atención Ciudadanía y Reclamaciones</a></li>
+                    <li><a href="#">Canal de Denuncias</a></li>
+                    <li><a href="./VUlistadoperitos.html">Listado de Peritos Judiciales</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Ciudadania <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="https://view.genially.com/6981a6424032400e563879c4">Campañas de Vacunación</a></li>
+                    <li><a href="./CIrecetaelectronica.html">Receta Electrónica</a></li>
+                    <li><a href="https://www.farmaceuticos.com/tu-farmaceutico-informa/escuela-con-pacientes-3/?_gl=1*mxu1nm*_up*MQ..&gclid=Cj0KCQiA4eHLBhCzARIsAJ2NZoK6bNyY0Lm33wj3GtXtWr8gx_CXSZ2INHI_YE0QTOMpP6ohcT7ti9kaAjlwEALw_wcB&gbraid=0AAAAADztVhhujVjlzM5GV8Wxabyo8EN3R">Escuela con Pacientes</a></li>
+                </ul>
+            </li>
         </ul>
     </div>
 
-    <!-- Main Content -->
-    <main class="main-content">
+    <!-- Hero Section -->
+    <section class="colegiacion-hero">
         <div class="container">
-            <article class="content-article">
-                <header class="article-header">
-                    <h1 class="article-title">Presentación</h1>
-                    <div class="article-subtitle">
-                        <h2>Portal de Transparencia</h2>
+            <h1>Colegiación</h1>
+            <p>Ventanilla Única</p>
+        </div>
+    </section>
+
+    <!-- Colegiación Options Section -->
+    <section class="colegiacion-section">
+        <div class="colegiacion-grid">
+            <!-- Nueva Colegiación -->
+            <div class="colegiacion-card">
+                <div class="icon">
+                    <i class="fas fa-user-plus"></i>
+                </div>
+                <h3>Nueva Colegiación</h3>
+                <p>Inicia tu proceso de colegiación como nuevo miembro del Colegio Oficial de Farmacéuticos de Cantabria.</p>
+                <a href="./VUnuevacolegiacion.html" class="btn btn-primary">Nueva Colegiación</a>
+            </div>
+
+            <!-- Colegiación en Sede -->
+            <div class="colegiacion-card">
+                <div class="icon">
+                    <i class="fas fa-building"></i>
+                </div>
+                <h3>Colegiación en Sede Colegial</h3>
+                <p>Realiza tu trámite de colegiación de forma presencial en nuestra sede colegial.</p>
+                <a href="./VUcolegiacionensede.html" class="btn btn-primary">Colegiación en Sede</a>
+            </div>
+
+            <!-- Colegiación Online -->
+            <div class="colegiacion-card">
+                <div class="icon">
+                    <i class="fas fa-laptop"></i>
+                </div>
+                <h3>Colegiación On-line</h3>
+                <p>Completa tu proceso de colegiación de forma rápida y cómoda desde cualquier lugar a través de nuestra plataforma online.</p>
+                <a href="https://erpcolegial.cofcantabria.org/altacolegiados/comprobaridentificador.aspx" class="btn btn-primary">Colegiación Online</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Patrocinadores -->
+    <section class="sponsors-section">
+        <div class="container">           
+            <div class="sponsors-carousel">
+                <div class="sponsors-track">
+                    <div class="sponsor-slide">
+                        <a href="https://www.amaseguros.com/" target="_blank" rel="noopener noreferrer">
+                            <img src="../assets/img/Colaboradores/ama.png" alt="AMA" class="sponsor-logo">
+                        </a>
                     </div>
-                </header>
-
-                <div class="article-body">
-                    <p>
-                        El Colegio Oficial de Farmacéuticos de Cantabria agrupa a los farmacéuticos que ejercen su profesión en esta Comunidad Autónoma y desarrollan su trabajo en diferentes áreas, tales como Oficina de Farmacia, Laboratorio, Hospital, Docencia e Investigación, Industria, Veterinaria, Distribución Farmacéutica, Administración, Atención Primaria y Alimentación.
-                    </p>
-                    <p>
-                        Desde esta página se pretende dar un servicio a estos profesionales y, también, al resto de la población que, como bien sabemos, mantienen un estrecho contacto con el farmacéutico a través de las Oficinas de Farmacia.
-                    </p>
-                    <p>
-                        A los compañeros farmacéuticos se les ofrece, en su parte privada, información profesional totalmente actualizada y la posibilidad de establecer una ágil comunicación y un estrecho acercamiento a su Colegio.
-                    </p>
-                    <p>
-                        Al resto de internautas, se les refuerza, el consejo y la información que todas las Oficinas de Farmacia de esta región le ofrecen habitualmente. También encontrarán consejos sobre uso racional de medicamentos o campañas sanitarias informativas que periódicamente se desarrollan en las farmacias de Cantabria. Sin olvidarnos de las oficinas de farmacia que diariamente tienen servicio de guardia en las diferentes poblaciones.
-                    </p>
-                    <p>
-                        Es mi deseo que, tanto los compañeros farmacéuticos como el resto de visitantes, encuentren en esta página del Colegio una puerta abierta a la información.
-                    </p>
-
-                    <div class="signature-section">
-                        <p class="signature-welcome">
-                            A todos, en nombre propio, en el de la <strong>Junta de Gobierno</strong> y en el de los farmacéuticos que componen este Colegio, doy la <strong>BIENVENIDA</strong>.
-                        </p>
-
-                        <div class="signature-info">
-                            <p class="signature-name">María García del Hierro</p>
-                            <p class="signature-title">Presidenta</p>
-                        </div>
+                    <div class="sponsor-slide">
+                        <a href="https://cbnk.es/personas" target="_blank" rel="noopener noreferrer">
+                            <img src="../assets/img/Colaboradores/cbnk.png" alt="CBNK" class="sponsor-logo">
+                        </a>
+                    </div>
+                    <div class="sponsor-slide">
+                        <a href="https://www.farmaceuticos.com/" target="_blank" rel="noopener noreferrer">
+                            <img src="../assets/img/Colaboradores/ConsejoFarmaceuticos.png" alt="Consejo de Farmacéuticos" class="sponsor-logo">
+                        </a>
+                    </div>
+                    <div class="sponsor-slide">
+                        <a href="https://psn.es/" target="_blank" rel="noopener noreferrer">
+                            <img src="../assets/img/Colaboradores/psn.png" alt="PSN" class="sponsor-logo">
+                        </a>
+                    </div>
+                    <div class="sponsor-slide">
+                        <a href="https://sigre.es/" target="_blank" rel="noopener noreferrer">
+                            <img src="../assets/img/Colaboradores/sigre.png" alt="SIGRE" class="sponsor-logo">
+                        </a>
+                    </div>
+                    <!-- Duplicar para efecto infinito -->
+                    <div class="sponsor-slide">
+                        <a href="https://www.amaseguros.com/" target="_blank" rel="noopener noreferrer">
+                            <img src="../assets/img/Colaboradores/ama.png" alt="AMA" class="sponsor-logo">
+                        </a>
+                    </div>
+                    <div class="sponsor-slide">
+                        <a href="https://cbnk.es/personas" target="_blank" rel="noopener noreferrer">
+                            <img src="../assets/img/Colaboradores/cbnk.png" alt="CBNK" class="sponsor-logo">
+                        </a>
+                    </div>
+                    <div class="sponsor-slide">
+                        <a href="https://www.farmaceuticos.com/" target="_blank" rel="noopener noreferrer">
+                            <img src="../assets/img/Colaboradores/ConsejoFarmaceuticos.png" alt="Consejo de Farmacéuticos" class="sponsor-logo">
+                        </a>
+                    </div>
+                    <div class="sponsor-slide">
+                        <a href="https://psn.es/" target="_blank" rel="noopener noreferrer">
+                            <img src="../assets/img/Colaboradores/psn.png" alt="PSN" class="sponsor-logo">
+                        </a>
+                    </div>
+                    <div class="sponsor-slide">
+                        <a href="https://sigre.es/" target="_blank" rel="noopener noreferrer">
+                            <img src="../assets/img/Colaboradores/sigre.png" alt="SIGRE" class="sponsor-logo">
+                        </a>
                     </div>
                 </div>
-            </article>
+            </div>
         </div>
-    </main>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
@@ -216,13 +306,15 @@
         <div class="footer-bottom">
             <p>© 2026 COLEGIO OFICIAL DE FARMACÉUTICOS DE CANTABRIA.</p>
             <div class="footer-links">
-                <a href="#aviso-legal">AVISO LEGAL</a>
-                <a href="privacidad">PRIVACIDAD</a>
-                <a href="cookies">COOKIES</a>
+                <a href="#">Política de privacidad</a>
+                <a href="#">Aviso legal</a>
+                <a href="#">Cookies</a>
             </div>
         </div>
     </footer>
-    <script src="../assets/js/global-auth.js"></script>
+
+    <!-- Scripts -->
     <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/global-auth.js"></script>
 </body>
 </html>

@@ -437,6 +437,10 @@ img {
     padding: 80px 0;
 }
 
+.section-noticias {
+    padding: 0px 0;
+}
+
 .grid-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -680,7 +684,7 @@ img {
 
 /* Section Titles */
 .section-title {
-    font-size: 14px;
+    font-size: 28px;
     font-weight: 700;
     letter-spacing: 0.5px;
     margin-bottom: 20px;

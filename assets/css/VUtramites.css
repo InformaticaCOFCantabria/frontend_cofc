@@ -1,0 +1,740 @@
+/* =========================================
+   CSS PARA PÁGINA DE TRÁMITES
+   ========================================= */
+
+/* Sección Principal de Trámites */
+.tramites-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    min-height: calc(100vh - 400px);
+}
+
+/* Caja del Header con fondo blanco */
+.page-header-box {
+    background-color: #ffffff;
+    padding: 50px 40px;
+    margin-bottom: 50px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.page-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.page-subtitle {
+    font-size: 20px;
+    color: var(--text-color);
+    font-weight: 400;
+    margin: 0 0 30px 0;
+    line-height: 1.8;
+}
+
+/* Línea divisoria verde */
+.header-divider {
+    width: 100%;
+    height: 3px;
+    background-color: var(--primary-color);
+    margin: 0;
+}
+
+/* Header de la Sección - ELIMINADO (ya no se usa) */
+
+/* Contenedor del Acordeón */
+.accordion-container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Item del Acordeón */
+.accordion-item {
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.accordion-item:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* Header del Acordeón (Botón) */
+.accordion-header {
+    width: 100%;
+    background-color: #ffffff;
+    border: none;
+    padding: 24px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: left;
+    font-family: var(--font-heading);
+}
+
+.accordion-header:hover {
+    background-color: #f8f9fa;
+}
+
+.accordion-item.active .accordion-header {
+    background-color: var(--primary-color);
+    color: var(--heading-color);
+}
+
+/* Título del Acordeón */
+.accordion-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--heading-color);
+    transition: color 0.3s ease;
+}
+
+.accordion-title i {
+    font-size: 22px;
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+}
+
+.accordion-item.active .accordion-title {
+    color: var(--heading-color);
+}
+
+.accordion-item.active .accordion-title i {
+    color: var(--heading-color);
+}
+
+/* Icono de Chevron */
+.accordion-icon {
+    font-size: 20px;
+    color: var(--text-color);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.accordion-item.active .accordion-icon {
+    transform: rotate(180deg);
+    color: var(--heading-color);
+}
+
+/* Contenido del Acordeón */
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    background-color: #f8f9fa;
+}
+
+.accordion-item.active .accordion-content {
+    max-height: 2000px; /* Suficientemente alto para cualquier contenido */
+}
+
+/* Inner Content */
+.content-inner {
+    padding: 30px;
+    color: var(--text-color);
+    line-height: 1.8;
+    border-top: 1px solid #e0e0e0;
+}
+
+.content-inner p {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.content-inner h3 {
+    color: var(--heading-color);
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+
+.content-inner h3:first-child {
+    margin-top: 0;
+}
+
+.content-inner ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.content-inner ul li {
+    list-style: disc;
+    margin-bottom: 8px;
+    color: var(--text-color);
+}
+
+.content-inner a {
+    color: var(--primary-color);
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.content-inner a:hover {
+    color: var(--primary-dark);
+}
+
+/* Botones dentro del contenido */
+.content-inner .btn {
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .tramites-section {
+        padding: 60px 0;
+    }
+
+    .page-header-box {
+        padding: 40px 30px;
+        margin-bottom: 45px;
+    }
+
+    .page-title {
+        font-size: 36px;
+    }
+
+    .page-subtitle {
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+
+    .accordion-header {
+        padding: 20px 24px;
+    }
+
+    .accordion-title {
+        font-size: 17px;
+        gap: 12px;
+    }
+
+    .accordion-title i {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .tramites-section {
+        padding: 50px 0;
+    }
+
+    .page-header-box {
+        padding: 35px 25px;
+        margin-bottom: 40px;
+        border-radius: 6px;
+    }
+
+    .page-title {
+        font-size: 30px;
+        letter-spacing: 0.5px;
+        margin-bottom: 12px;
+    }
+
+    .page-subtitle {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .accordion-container {
+        padding: 0 10px;
+    }
+
+    .accordion-item {
+        margin-bottom: 12px;
+        border-radius: 6px;
+    }
+
+    .accordion-header {
+        padding: 18px 20px;
+    }
+
+    .accordion-title {
+        font-size: 16px;
+        gap: 10px;
+    }
+
+    .accordion-title i {
+        font-size: 18px;
+    }
+
+    .accordion-icon {
+        font-size: 18px;
+    }
+
+    .content-inner {
+        padding: 24px 20px;
+    }
+
+    .content-inner p,
+    .content-inner ul li {
+        font-size: 15px;
+    }
+
+    .content-inner h3 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tramites-section {
+        padding: 40px 0;
+    }
+
+    .page-header-box {
+        padding: 30px 20px;
+        margin-bottom: 35px;
+        border-radius: 6px;
+    }
+
+    .page-title {
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+
+    .page-subtitle {
+        font-size: 15px;
+        margin-bottom: 18px;
+    }
+
+    .accordion-header {
+        padding: 16px 18px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .accordion-title {
+        font-size: 15px;
+        flex-wrap: wrap;
+    }
+
+    .accordion-icon {
+        align-self: flex-end;
+        position: absolute;
+        right: 18px;
+        top: 20px;
+    }
+
+    .content-inner {
+        padding: 20px 18px;
+    }
+
+    .content-inner p,
+    .content-inner ul li {
+        font-size: 14px;
+    }
+
+    .content-inner h3 {
+        font-size: 17px;
+        margin-top: 20px;
+    }
+}
+
+/* Animaciones sutiles */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.accordion-item {
+    animation: fadeIn 0.5s ease;
+}
+
+/* =========================================
+   ESTILOS PARA FORMULARIOS DE TRÃMITES
+   ========================================= */
+
+/* Alerta de campos obligatorios */
+.form-alert {
+    background-color: #fffbea;
+    border-left: 4px solid #f59e0b;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
+}
+
+.form-alert i {
+    color: #f59e0b;
+    font-size: 20px;
+}
+
+/* Formulario General */
+.tramite-form {
+    width: 100%;
+}
+
+/* Secciones del formulario */
+.form-section {
+    margin-bottom: 40px;
+}
+
+.form-section-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--heading-color);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.form-description {
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--text-color);
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+}
+
+/* Filas del formulario */
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.form-row:last-child {
+    margin-bottom: 0;
+}
+
+/* Grupos de formulario */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group-direccion {
+    grid-column: 1 / -1;
+}
+
+.form-group-poblacion {
+    flex: 1.5;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--heading-color);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.required {
+    color: #dc2626;
+    font-weight: 700;
+}
+
+/* Inputs y selects */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="date"],
+.form-group select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: var(--font-main);
+    color: var(--heading-color);
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(187, 225, 100, 0.1);
+}
+
+.form-group input::placeholder {
+    color: #9ca3af;
+}
+
+.form-group select {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3E%3C/svg%3E");
+    background-position: right 0.5rem center;
+    background-repeat: no-repeat;
+    background-size: 1.5em 1.5em;
+    padding-right: 2.5rem;
+}
+
+/* Input con botones (Población) */
+.input-with-buttons {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.input-with-buttons input {
+    flex: 1;
+}
+
+.btn-dropdown,
+.btn-delete {
+    padding: 12px 15px;
+    border: 1px solid #d1d5db;
+    background-color: #ffffff;
+    color: var(--text-color);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.btn-dropdown:hover,
+.btn-delete:hover {
+    background-color: #f3f4f6;
+    border-color: var(--primary-color);
+}
+
+.btn-otro {
+    padding: 12px 20px;
+    border: 1px solid #d1d5db;
+    background-color: #1f2937;
+    color: #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.btn-otro:hover {
+    background-color: #111827;
+}
+
+/* Input con calendario */
+.input-with-calendar {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-with-calendar input {
+    flex: 1;
+    padding-right: 45px;
+}
+
+.input-with-calendar i {
+    position: absolute;
+    right: 15px;
+    color: #6b7280;
+    pointer-events: none;
+}
+
+/* Checkboxes */
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: var(--primary-color);
+}
+
+.checkbox-label span {
+    flex: 1;
+}
+
+/* Notas importantes */
+.form-notes {
+    background-color: #f0fdf4;
+    border-left: 4px solid var(--primary-color);
+    padding: 20px;
+    border-radius: 4px;
+    margin-top: 30px;
+}
+
+.note-item {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.note-item:last-child {
+    margin-bottom: 0;
+}
+
+.note-item i {
+    color: var(--primary-color);
+    font-size: 14px;
+    margin-top: 4px;
+    flex-shrink: 0;
+}
+
+.note-item p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+    color: var(--text-color);
+}
+
+.note-item strong {
+    color: var(--heading-color);
+    background-color: #dcfce7;
+    padding: 2px 4px;
+    border-radius: 2px;
+}
+
+/* Botón de envío */
+.form-actions {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-submit {
+    padding: 14px 35px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-submit i {
+    font-size: 16px;
+}
+
+/* Responsive Design para Formularios */
+@media (max-width: 768px) {
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .form-section-title {
+        font-size: 20px;
+    }
+
+    .form-description {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .input-with-buttons {
+        flex-wrap: wrap;
+    }
+
+    .input-with-buttons input {
+        width: 100%;
+    }
+
+    .btn-dropdown,
+    .btn-delete,
+    .btn-otro {
+        flex: 1;
+    }
+
+    .form-actions {
+        justify-content: stretch;
+    }
+
+    .btn-submit {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-alert {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+
+    .form-section {
+        margin-bottom: 30px;
+    }
+
+    .form-section-title {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .form-group label {
+        font-size: 13px;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="tel"],
+    .form-group input[type="date"],
+    .form-group select {
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+
+    .btn-dropdown,
+    .btn-delete {
+        padding: 10px 12px;
+    }
+
+    .btn-otro {
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+
+    .form-notes {
+        padding: 15px;
+    }
+
+    .note-item {
+        gap: 8px;
+    }
+
+    .note-item p {
+        font-size: 13px;
+    }
+
+    .btn-submit {
+        padding: 12px 25px;
+        font-size: 13px;
+    }
+}
+
+/* Estilos para cuando el acordeón está cargando */
+.accordion-item.loading .accordion-content {
+    opacity: 0.7;
+}
