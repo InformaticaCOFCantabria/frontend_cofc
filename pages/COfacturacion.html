@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COF Cantabria - Circulares</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/PTestatutosmemoria.css">
+    <link rel="stylesheet" href="../assets/css/COcirculares.css">
+</head>
+<body>
+
+    <!-- Header Redes Sociales y Acceso Colegiados -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="social-icons">
+                <a href="https://www.instagram.com/cofcantabria/" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/cofcantabria" target="_blank" title="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.facebook.com/people/Colegio-de-Farmac%C3%A9uticos-de-Cantabria/100063216339209/" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.tiktok.com/@cofcantabria" target="_blank" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.youtube.com/@cofcantabria9919" target="_blank" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/company/colegio-oficial-de-farmac%C3%A9uticos-de-cantabria/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://bsky.app/profile/cofcantabria.bsky.social" target="_blank" title="Bluesky"><i class="fa-brands fa-bluesky"></i></a>
+            </div>
+            <div class="top-links">
+                <a href="#" class="login-link btn-acceso"><i class="fas fa-lock"></i> Acceso Colegiado</a>
+                <a href="https://www.arsys.es/clientes" target="_blank" class="login-link"><i class="fas fa-envelope"></i> Web Mail</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header y Navegador -->
+    <header class="main-header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../assets/img/Logos/COFC_11.png" alt="COFCantabria Logo" class="logo-img">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="./PTpresentacion.html">Portal de Transparencia <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="./PTpresentacion.html">Presentación</a></li>
+                            <li><a href="./PTjuntadegobierno.html">Junta de Gobierno</a></li>
+                            <li><a href="./PTorganigrama.html">Organigrama COF</a></li>
+                            <li><a href="./PTestatutosmemoria.html">Estatutos y Memoria Gestión</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./BolsaEmpleo.html">Bolsa de Empleo</a></li>
+                    <li class="dropdown">
+                        <a href="./VUlistadocolegiados.html">Ventanilla Única <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="./VUcolegiacion.html">Colegiación</a></li>
+                            <li><a href="./VUtramites.html">Trámites (solicitudes, certificados...)</a></li>
+                            <li><a href="./VUcodigodeontologico.html">Código Deontológico</a></li>
+                            <li><a href="./VUlistadocolegiados.html">Listado de Colegiados</a></li>
+                            <li><a href="#">Atención Ciudadanía y Reclamaciones</a></li>
+                            <li><a href="#">Canal de Denuncias</a></li>
+                            <li><a href="./VUlistadoperitos.html">Listado de Peritos Judiciales</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Ciudadanía <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="https://view.genially.com/6981a6424032400e563879c4">Campañas de Vacunación</a></li>
+                            <li><a href="./CIrecetaelectronica.html">Receta Electrónica</a></li>
+                            <li><a href="https://www.farmaceuticos.com/tu-farmaceutico-informa/escuela-con-pacientes-3/">Escuela con Pacientes</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="./parteprivada.html" class="active">Colegiados</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+                <button id="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <button id="close-menu-btn"><i class="fas fa-times"></i></button>
+        <ul class="nav-list">
+            <li><a href="../index.html">Inicio</a></li>
+            <li class="dropdown">
+                <a href="#">Portal de Transparencia <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="./PTpresentacion.html">Presentación</a></li>
+                    <li><a href="./PTjuntadegobierno.html">Junta de Gobierno</a></li>
+                    <li><a href="./PTorganigrama.html">Organigrama COF</a></li>
+                    <li><a href="./PTestatutosmemoria.html">Estatutos y Memoria Gestión</a></li>
+                </ul>
+            </li>
+            <li><a href="./BolsaEmpleo.html">Bolsa de Empleo</a></li>
+            <li><a href="./Colegiados.html">Colegiados</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content — idéntico en estructura a PTestatutosmemoria -->
+    <main class="main-content">
+        <div class="container">
+            <article class="content-article">
+
+                <header class="article-header">
+                    <h1 class="article-title">Facturación</h1>
+                </header>
+
+                <div class="article-body">
+
+                    <!-- Intro -->
+                    <div class="intro-section">
+                        <div class="intro-icon">
+                            <i class="fas fa-envelope-open-text"></i>
+                        </div>
+                        <div class="intro-content">
+                            <p class="intro-text">
+                                Todos los documentos relacionados con la facturacón de recetas se encuentran en la pestaña "Mi farmacia". Puede descargarlos y guardarlos en su ordenador o imprimirlos.                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Facturación -->
+                    <div class="documents-section">
+                        <h3 class="section-title">
+                            <i class="fas fa-folder-open"></i>
+                            Facturación
+                        </h3>
+
+                        <!-- Calendario de entrega de recetas 2026 -->
+                        <div class="circular-accordion">
+                            <button class="circular-header" aria-expanded="false" aria-controls="panel-22">
+                                <span class="circular-header-text">
+                                    <strong>Calendario de entrega de recetas 2026</strong>
+                                </span>
+                                <i class="fas fa-chevron-down circular-chevron"></i>
+                            </button>
+                            <div class="circular-panel" id="panel-22" hidden>
+                                <div class="documents-grid">
+                                    <div class="document-card">
+                                        <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                        <div class="document-info"><h4 class="document-title">Calendario de entrega de recetas 2026</h4></div>
+                                        <a href="../assets/pdf/COfacturacion/calendarioentregarecetas2026/Calendario entrega de recetas 2026.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Facturación de recetas en papel -->
+                        <div class="circular-accordion">
+                            <button class="circular-header" aria-expanded="false" aria-controls="panel-21">
+                                <span class="circular-header-text">
+                                    <strong>Facturación de recetas en papel</strong>
+                                </span>
+                                <i class="fas fa-chevron-down circular-chevron"></i>
+                            </button>
+                            <div class="circular-panel" id="panel-21" hidden>
+                                <div class="documents-group">
+                                    <h5 class="documents-group-title">Hojas de entrega de recetas papel a partir de la facturacion de julio de 2022</h5>
+                                    <div class="documents-grid">
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Hoja de entrega de recetas e instrucciones</h4></div>
+                                            <a href="../assets/pdf/COfacturacion/facturacionderecetasenpapel/Hoja de entrega de recetas e instrucciones.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="documents-group">
+                                    <h5 class="documents-group-title">Receta electrónica</h5>
+                                    <div class="documents-grid">
+                                        <div class="document-card"> 
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Hoja de cupones precinto Receta Electrónica Servicio Cántabro de Salud </h4></div>
+                                            <a href="../assets/pdf/COfacturacion/facturacionderecetasenpapel/CuponesREServicioCántabroSalud.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Normas de dispensación para receta electrónica</h4></div>
+                                            <a href="../assets/pdf/COfacturacion/facturacionderecetasenpapel/Normas de dispensación para receta electrónica.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+
+                        <!--Facturación de receta electrónica -->
+                        <div class="circular-accordion">
+                            <button class="circular-header" aria-expanded="false" aria-controls="panel-20">
+                                <span class="circular-header-text"><strong>Facturación de receta electrónica</strong></span>
+                                <i class="fas fa-chevron-down circular-chevron"></i>
+                            </button>
+                            <div class="circular-panel" id="panel-20" hidden>
+                                <div class="documents-grid">
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">Errores más frecuentes en facturación</h4></div><a href="../assets/pdf/COfacturacion/facturacionrecetaelectronica/Errores más frecuentes en facturación.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">Hoja de cupones precinto, para imprimir</h4></div><a href="../assets/pdf/COfacturacion/facturacionrecetaelectronica/Hoja de cupones precinto, para imprimir.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">Normas de facturación para receta electrónica </h4></div><a href="../assets/pdf/COfacturacion/facturacionrecetaelectronica/Normas de facturación para receta electrónica.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Circulares sobre facturación -->
+                        <div class="circular-accordion">
+                            <button class="circular-header" aria-expanded="false" aria-controls="panel-19">
+                                <span class="circular-header-text"><strong>Circulares sobre facturación</strong></span>
+                                <i class="fas fa-chevron-down circular-chevron"></i>
+                            </button>
+                            <div class="circular-panel" id="panel-21" hidden>
+                                <div class="documents-group">
+                                    <h5 class="documents-group-title">Año 2021</h5>
+                                    <div class="documents-grid">
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">1 - MODELO 347 - EJERCICIO 2020</h4></div>
+                                            <a href="../assets/pdf/COfacturacion/circularesfacturacion/2021/1 - MODELO 347 - EJERCICIO 2020.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="documents-group">
+                                    <h5 class="documents-group-title">Año 2020</h5>
+                                    <div class="documents-grid">
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Circular 1/20 - Modelo 347</h4></div>
+                                            <a href="../assets/pdf/COfacturacion/circularesfacturacion/2020/Circular 1_20 - Modelo 347.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="documents-group">
+                                    <h5 class="documents-group-title">Año 2019</h5>
+                                    <div class="documents-grid">
+                                        <div class="document-card"> 
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">1 - Facturación de recetas 1/19 - Modelo 347 año 2018</h4></div>
+                                            <a href="../assets/pdf/COfacturacion/circularesfacturacion/2019/1 - Facturación de recetas 1_19.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="documents-group">
+                                    <h5 class="documents-group-title">Año 2018</h5>
+                                    <div class="documents-grid">
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title"> Facturación de recetas 1/18 - Modelo 347 año 2017</h4></div>
+                                            <a href="../assets/pdf/COfacturacion/circularesfacturacion/2018/1 - Facturación de recetas 1_18.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="documents-group">
+                                    <h5 class="documents-group-title">Año 2017</h5>
+                                    <div class="documents-grid">
+                                        <div class="document-card"> 
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">1 - Facturación de recetas 1/17 - Modelo 347 año 2016 </h4></div>
+                                            <a href="../assets/pdf/COfacturacion/circularesfacturacion/2017/1 - Facturación de recetas 1_17.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">2 - Facturación de recetas 2/17 - Recetas UNIÓN DE MUTUAS MCCS Nº 267</h4></div>
+                                            <a href="../assets/pdf/COfacturacion/circularesfacturacion/2017/2 - Facturación de recetas 2_17.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Datos de mutuas y entidades para facturas -->
+                        <div class="circular-accordion">
+                            <button class="circular-header" aria-expanded="false" aria-controls="panel-18">
+                                <span class="circular-header-text"><strong>Datos de mutuas y entidades para facturar</strong></span>
+                                <i class="fas fa-chevron-down circular-chevron"></i>
+                            </button>
+                            <div class="circular-panel" id="panel-18" hidden>
+                                <div class="documents-grid">
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">Datos fiscales para facturas de mutuas y entidades. Año 2023 </h4></div><a href="../assets/pdf/COfacturacion/datosmutuasyentidades/Datos fiscales para facturas de mutuas y entidades. Año 2023.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Devolución recetas -->
+                        <div class="circular-accordion">
+                            <button class="circular-header" aria-expanded="false" aria-controls="panel-17">
+                                <span class="circular-header-text"><strong>Devolución recetas</strong></span>
+                                <i class="fas fa-chevron-down circular-chevron"></i>
+                            </button>
+                            <div class="circular-panel" id="panel-17" hidden>
+
+                                <!-- Subgrupo 1 -->
+                                <div class="documents-group">
+                                    <button class="documents-group-toggle" aria-expanded="false" aria-controls="subgroup-devolucion-1">
+                                        <h5 class="documents-group-title">Aclaraciones sobre dispensación y causas frecuentes de devolución de recetas</h5>
+                                        <i class="fas fa-chevron-down group-chevron"></i>
+                                    </button>
+                                    <div class="documents-subpanel" id="subgroup-devolucion-1" hidden>
+
+                                        <!-- Año 2024 -->
+                                        <div class="documents-subgroup">
+                                            <button class="documents-subgroup-toggle" aria-expanded="false" aria-controls="subgroup-aclaraciones-2024">
+                                                <h6 class="documents-subgroup-title">Año 2024</h6>
+                                                <i class="fas fa-chevron-down subgroup-chevron"></i>
+                                            </button>
+                                            <div class="documents-subpanel" id="subgroup-aclaraciones-2024" hidden>
+                                                <div class="documents-grid">
+                                                <div class="document-card">
+                                                    <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                                    <div class="document-info"><h4 class="document-title">01 - Enero 2024</h4></div>
+                                                    <a href="../assets/pdf/COfacturacion/devolucionesreceta/aclaraciones/2024/01 - Enero 2024.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                                </div>
+                                                <div class="document-card">
+                                                    <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                                    <div class="document-info"><h4 class="document-title">02 - Febrero 2024</h4></div>
+                                                    <a href="../assets/pdf/COfacturacion/devolucionesreceta/aclaraciones/2024/02 - Febrero 2024.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                                </div>
+                                                <div class="document-card">
+                                                    <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                                    <div class="document-info"><h4 class="document-title">03 - Marzo 2024</h4></div>
+                                                    <a href="../assets/pdf/COfacturacion/devolucionesreceta/aclaraciones/2024/03 - Marzo 2024.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                                </div>
+                                                <div class="document-card">
+                                                    <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                                    <div class="document-info"><h4 class="document-title">04 - Abril 2024</h4></div>
+                                                    <a href="../assets/pdf/COfacturacion/devolucionesreceta/aclaraciones/2024/04 - Abril 2024.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                                </div>
+                                                <div class="document-card">
+                                                    <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                                    <div class="document-info"><h4 class="document-title">05 - Mayo 2024</h4></div>
+                                                    <a href="../assets/pdf/COfacturacion/devolucionesreceta/aclaraciones/2024/05 - Mayo 2024.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                                </div>
+                                                <div class="document-card">
+                                                    <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                                    <div class="document-info"><h4 class="document-title">06 - Junio 2024</h4></div>
+                                                    <a href="../assets/pdf/COfacturacion/devolucionesreceta/aclaraciones/2024/06 - Junio 2024.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                                </div>
+                                                <div class="document-card">
+                                                    <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                                    <div class="document-info"><h4 class="document-title">07 - Julio 2024</h4></div>
+                                                    <a href="../assets/pdf/COfacturacion/devolucionesreceta/aclaraciones/2024/07 - Julio 2024.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                                </div>
+                                                <div class="document-card">
+                                                    <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                                    <div class="document-info"><h4 class="document-title">08 - Agosto 2024</h4></div>
+                                                    <a href="../assets/pdf/COfacturacion/devolucionesreceta/aclaraciones/2024/08 - Agosto 2024.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                                </div>
+                                                <div class="document-card">
+                                                    <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                                    <div class="document-info"><h4 class="document-title">09 - Septiembre 2024</h4></div>
+                                                    <a href="../assets/pdf/COfacturacion/devolucionesreceta/aclaraciones/2024/09 - Septiembre 2024.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Año 2023 -->
+                                        <div class="documents-subgroup">
+                                            <button class="documents-subgroup-toggle" aria-expanded="false" aria-controls="subgroup-aclaraciones-2023">
+                                                <h6 class="documents-subgroup-title">Año 2023</h6>
+                                                <i class="fas fa-chevron-down subgroup-chevron"></i>
+                                            </button>
+                                            <div class="documents-subpanel" id="subgroup-aclaraciones-2023" hidden>
+                                                <div class="documents-grid">
+                                                <div class="document-card">
+                                                    <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                                    <div class="document-info"><h4 class="document-title">01 - Enero 2023</h4></div>
+                                                    <a href="../assets/pdf/COfacturacion/devolucionesreceta/aclaraciones/2023/01 - Enero 2023.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                                </div>
+                                                <div class="document-card">
+                                                    <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                                    <div class="document-info"><h4 class="document-title">02 - Febrero 2023</h4></div>
+                                                    <a href="../assets/pdf/COfacturacion/devolucionesreceta/aclaraciones/2023/02 - Febrero 2023.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                                </div>
+                                                <div class="document-card">
+                                                    <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                                    <div class="document-info"><h4 class="document-title">03 - Marzo 2023</h4></div>
+                                                    <a href="../assets/pdf/COfacturacion/devolucionesreceta/aclaraciones/2023/03 - Marzo 2023.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                                </div>
+                                                <div class="document-card">
+                                                    <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                                    <div class="document-info"><h4 class="document-title">04 - Abril 2023</h4></div>
+                                                    <a href="../assets/pdf/COfacturacion/devolucionesreceta/aclaraciones/2023/04 - Abril 2023.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                                </div>
+                                                <div class="document-card">
+                                                    <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                                    <div class="document-info"><h4 class="document-title">05 - Mayo 2023</h4></div>
+                                                    <a href="../assets/pdf/COfacturacion/devolucionesreceta/aclaraciones/2023/05 - Mayo 2023.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                                </div>
+                                                <div class="document-card">
+                                                    <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                                    <div class="document-info"><h4 class="document-title">06 - Junio 2023</h4></div>
+                                                    <a href="../assets/pdf/COfacturacion/devolucionesreceta/aclaraciones/2023/06 - Junio 2023.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                                </div>
+                                                <div class="document-card">
+                                                    <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                                    <div class="document-info"><h4 class="document-title">07 - Julio 2023</h4></div>
+                                                    <a href="../assets/pdf/COfacturacion/devolucionesreceta/aclaraciones/2023/07 - Julio 2023.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                                </div>
+                                                <div class="document-card">
+                                                    <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                                    <div class="document-info"><h4 class="document-title">08 - Agosto 2023</h4></div>
+                                                    <a href="../assets/pdf/COfacturacion/devolucionesreceta/aclaraciones/2023/08 - Agosto 2023.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                                </div>
+                                                <div class="document-card">
+                                                    <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                                    <div class="document-info"><h4 class="document-title">09 - Septiembre 2023</h4></div>
+                                                    <a href="../assets/pdf/COfacturacion/devolucionesreceta/aclaraciones/2023/09 - Septiembre 2023.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                                </div>
+                                                <div class="document-card">
+                                                    <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                                    <div class="document-info"><h4 class="document-title">10 - Octubre 2023</h4></div>
+                                                    <a href="../assets/pdf/COfacturacion/devolucionesreceta/aclaraciones/2023/10 - Octubre 2023.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                                </div>
+                                                <div class="document-card">
+                                                    <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                                    <div class="document-info"><h4 class="document-title">11 - Noviembre 2023</h4></div>
+                                                    <a href="../assets/pdf/COfacturacion/devolucionesreceta/aclaraciones/2023/11 - Noviembre 2023.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                                </div>
+                                                <div class="document-card">
+                                                    <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                                    <div class="document-info"><h4 class="document-title">12 - Diciembre 2023</h4></div>
+                                                    <a href="../assets/pdf/COfacturacion/devolucionesreceta/aclaraciones/2023/12 - Diciembre 2023.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <!-- Subgrupo 2 -->
+                                <div class="documents-group">
+                                    <button class="documents-group-toggle" aria-expanded="false" aria-controls="subgroup-devolucion-2">
+                                        <h5 class="documents-group-title">Causas de devolución de recetas</h5>
+                                        <i class="fas fa-chevron-down group-chevron"></i>
+                                    </button>
+                                    <div class="documents-subpanel" id="subgroup-devolucion-2" hidden>
+                                        <div class="documents-grid">
+                                            <div class="document-card">
+                                                <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                                <div class="document-info"><h4 class="document-title">Causas de devolución de recetas - MUFACE, ISFAS Y MUGEJU</h4></div>
+                                                <a href="../assets/pdf/COfacturacion/devolucionesreceta/causas/Causas de devolución de recetas - MUFACE, ISFAS Y MUGEJU.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                            </div>
+                                            <div class="document-card">
+                                                <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                                <div class="document-info"><h4 class="document-title">Causas de devolución de recetas - S.C.S.</h4></div>
+                                                <a href="../assets/pdf/COfacturacion/devolucionesreceta/causas/Causas de devolución de recetas - S.C.S..pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Gasto farmacéutico. Estadísticas -->
+                        <div class="circular-accordion">
+                            <button class="circular-header" aria-expanded="false" aria-controls="panel-16">
+                                <span class="circular-header-text"><strong>Gasto farmacéutico. Estadísticas</strong></span>
+                                <i class="fas fa-chevron-down circular-chevron"></i>
+                            </button>
+                            <div class="circular-panel" id="panel-16" hidden>
+                                <div class="documents-grid">
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">Servicio Cántabro de Salud</h4></div><a href="../assets/pdf/COfacturacion/gastofarmaceutico/1 - Servicio Cántabro de Salud.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">Sistema Nacional de Salud</h4></div><a href="https://www.sanidad.gob.es/areas/farmacia/consumoMedicamentos/facturacionRecetas/CCAA_INGESA/home.htm" class="download-btn" target="_blank"><i class="fas fa-search"></i><span>Ver</span></a></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Márgenes y descuentos -->
+                        <div class="circular-accordion">
+                            <button class="circular-header" aria-expanded="false" aria-controls="panel-15">
+                                <span class="circular-header-text"><strong>Márgenes y descuentos</strong></span>
+                                <i class="fas fa-chevron-down circular-chevron"></i>
+                            </button>
+                            <div class="circular-panel" id="panel-15" hidden>
+                                <div class="documents-group">
+                                    <h5 class="documents-group-title">Márgenes de los medicamentos, escala de deducciones e índice corrector de los márgenes</h5>
+                                    <div class="documents-grid">
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Circular informativa sobre deducciones e índice corrector de los márgenes desde 2012</h4></div>
+                                            <a href="../assets/pdf/COfacturacion/margenesydescuentos/margenes/deduccionesindicecorrectordesde2012.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Real Decreto 823/2008, por el que se establecen los márgenes, deducciones y descuentos...Texto consolidado</h4></div>
+                                            <a href="../assets/pdf/COfacturacion/margenesydescuentos/margenes/Real Decreto 823_2008.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="documents-group">
+                                    <h5 class="documents-group-title">Deducciones en los medicamentos. Farmaindustria</h5>
+                                    <div class="documents-grid">
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Deducción medicamentos 7,5% Farmaindustria. Ver artículo 8 de Real Decreto-Ley 8/2010</h4></div>
+                                            <a href="../assets/pdf/COfacturacion/margenesydescuentos/deducciones/Deducción medicamentos 7,5%.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Deducción medicamentos el 15% Farmaindustria. Ver artículo 10 de Real Decreto-Ley 9/2011</h4></div>
+                                            <a href="../assets/pdf/COfacturacion/margenesydescuentos/deducciones/Deducción medicamentos el 15%.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Ejemplo de aplicación del descuento RDL 8/2010 para medicamento PVP IVA = 100€</h4></div>
+                                            <a href="../assets/pdf/COfacturacion/margenesydescuentos/deducciones/descuentoRDL 8_2010medicamento100€.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Ejemplo de aplicación del descuento RDL 8/2010 para medicamento PVP IVA = 1000€</h4></div>
+                                            <a href="../assets/pdf/COfacturacion/margenesydescuentos/deducciones/descuentoRDL 8_2010medicamento1000€.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Inspecciones tributarias de oficinas de farmacia -->
+                        <div class="circular-accordion">
+                            <button class="circular-header" aria-expanded="false" aria-controls="panel-14">
+                                <span class="circular-header-text"><strong>Inspecciones tributarias de oficinas de farmacia</strong></span>
+                                <i class="fas fa-chevron-down circular-chevron"></i>
+                            </button>
+                            <div class="circular-panel" id="panel-14" hidden>
+                                <div class="documents-grid">
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">Nota sobre cuestiones procedimentales en las Inspecciones Tributarias de Oficinas de Farmacia</h4></div><a href="../assets/pdf/COfacturacion/inspeccionestributarias/notasprocediminetonsinspeccionesOF.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!-- /.documents-section -->
+                </div><!-- /.article-body -->
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Logo y nombre -->
+            <div class="footer-section logo-section">
+                <img src="../assets/img/Logos/cof.png" alt="Logo COF" class="footer-logo">
+            </div>
+
+            <!-- Contacto -->
+            <div class="footer-section">
+                <h4 class="section-title">CONTACTO</h4>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:cofcantabria@cofcantabria.org">cofcantabria@cofcantabria.org</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:942314418">942 31 44 18</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>C/ Castilla, 13 - 7º y 8º<br>39009 Santander</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Síguenos -->
+            <div class="footer-section">
+                <h4 class="section-title">SÍGUENOS</h4>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/cofcantabria/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/people/Colegio-de-Farmac%C3%A9uticos-de-Cantabria/100063216339209/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@cofcantabria4819/featured" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://x.com/cofcantabria" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@cofcantabria" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/colegio-oficial-de-farmac%C3%A9uticos-de-cantabria/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://bsky.app/profile/cofcantabria.bsky.social" target="_blank" rel="noopener noreferrer" aria-label="BlueSky">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364.136-.02.275-.039.415-.056-.138.022-.276.04-.415.056-3.912.58-7.387 2.005-2.83 7.078 5.013 5.19 6.87-1.113 7.823-4.308.953 3.195 2.05 9.271 7.733 4.308 4.267-4.308 1.172-6.498-2.74-7.078a8.741 8.741 0 0 1-.415-.056c.14.017.279.036.415.056 2.67.297 5.568-.628 6.383-3.364.246-.828.624-5.79.624-6.478 0-.69-.139-1.861-.902-2.206-.659-.298-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8Z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="footer-bottom">
+            <p>© 2026 COLEGIO OFICIAL DE FARMACÉUTICOS DE CANTABRIA.</p>
+            <div class="footer-links">
+                <a href="#aviso-legal">AVISO LEGAL</a>
+                <a href="#privacidad">PRIVACIDAD</a>
+                <a href="#cookies">COOKIE</a>
+            </div>
+        </div>
+    </footer>
+    <script src="../assets/js/styles.js"></script>
+    <script src="../assets/js/COcirculares.js"></script>
+    <script src="../assets/js/global-auth.js"></script>
+</body>
+</html>

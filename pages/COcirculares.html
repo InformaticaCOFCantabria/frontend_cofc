@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COF Cantabria - Circulares</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/PTestatutosmemoria.css">
+    <link rel="stylesheet" href="../assets/css/COcirculares.css">
+</head>
+<body>
+
+    <!-- Header Redes Sociales y Acceso Colegiados -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="social-icons">
+                <a href="https://www.instagram.com/cofcantabria/" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/cofcantabria" target="_blank" title="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.facebook.com/people/Colegio-de-Farmac%C3%A9uticos-de-Cantabria/100063216339209/" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.tiktok.com/@cofcantabria" target="_blank" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.youtube.com/@cofcantabria9919" target="_blank" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/company/colegio-oficial-de-farmac%C3%A9uticos-de-cantabria/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://bsky.app/profile/cofcantabria.bsky.social" target="_blank" title="Bluesky"><i class="fa-brands fa-bluesky"></i></a>
+            </div>
+            <div class="top-links">
+                <a href="#" class="login-link btn-acceso"><i class="fas fa-lock"></i> Acceso Colegiado</a>
+                <a href="https://www.arsys.es/clientes" target="_blank" class="login-link"><i class="fas fa-envelope"></i> Web Mail</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header y Navegador -->
+    <header class="main-header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../assets/img/Logos/COFC_11.png" alt="COFCantabria Logo" class="logo-img">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="./PTpresentacion.html">Portal de Transparencia <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="./PTpresentacion.html">Presentación</a></li>
+                            <li><a href="./PTjuntadegobierno.html">Junta de Gobierno</a></li>
+                            <li><a href="./PTorganigrama.html">Organigrama COF</a></li>
+                            <li><a href="./PTestatutosmemoria.html">Estatutos y Memoria Gestión</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./BolsaEmpleo.html">Bolsa de Empleo</a></li>
+                    <li class="dropdown">
+                        <a href="./VUlistadocolegiados.html">Ventanilla Única <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="./VUcolegiacion.html">Colegiación</a></li>
+                            <li><a href="./VUtramites.html">Trámites (solicitudes, certificados...)</a></li>
+                            <li><a href="./VUcodigodeontologico.html">Código Deontológico</a></li>
+                            <li><a href="./VUlistadocolegiados.html">Listado de Colegiados</a></li>
+                            <li><a href="#">Atención Ciudadanía y Reclamaciones</a></li>
+                            <li><a href="#">Canal de Denuncias</a></li>
+                            <li><a href="./VUlistadoperitos.html">Listado de Peritos Judiciales</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Ciudadanía <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="https://view.genially.com/6981a6424032400e563879c4">Campañas de Vacunación</a></li>
+                            <li><a href="./CIrecetaelectronica.html">Receta Electrónica</a></li>
+                            <li><a href="https://www.farmaceuticos.com/tu-farmaceutico-informa/escuela-con-pacientes-3/">Escuela con Pacientes</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="./parteprivada.html" class="active">Colegiados</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+                <button id="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <button id="close-menu-btn"><i class="fas fa-times"></i></button>
+        <ul class="nav-list">
+            <li><a href="../index.html">Inicio</a></li>
+            <li class="dropdown">
+                <a href="#">Portal de Transparencia <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="./PTpresentacion.html">Presentación</a></li>
+                    <li><a href="./PTjuntadegobierno.html">Junta de Gobierno</a></li>
+                    <li><a href="./PTorganigrama.html">Organigrama COF</a></li>
+                    <li><a href="./PTestatutosmemoria.html">Estatutos y Memoria Gestión</a></li>
+                </ul>
+            </li>
+            <li><a href="./BolsaEmpleo.html">Bolsa de Empleo</a></li>
+            <li><a href="./Colegiados.html">Colegiados</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content — idéntico en estructura a PTestatutosmemoria -->
+    <main class="main-content">
+        <div class="container">
+            <article class="content-article">
+
+                <header class="article-header">
+                    <h1 class="article-title">Circulares</h1>
+                    <div class="article-subtitle">
+                        <h2>Colegiados</h2>
+                    </div>
+                </header>
+
+                <div class="article-body">
+
+                    <!-- Intro -->
+                    <div class="intro-section">
+                        <div class="intro-icon">
+                            <i class="fas fa-envelope-open-text"></i>
+                        </div>
+                        <div class="intro-content">
+                            <p class="intro-text">
+                                Circulares informativas del Colegio Oficial de Farmacéuticos de Cantabria. Cada circular agrupa los documentos y comunicaciones emitidos en el período correspondiente, disponibles en formato PDF para su descarga.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Circulares -->
+                    <div class="documents-section">
+                        <h3 class="section-title">
+                            <i class="fas fa-folder-open"></i>
+                            Circulares 2025
+                        </h3>
+
+                        <!-- ══════════════ CIRCULAR 22/25 ══════════════ -->
+                        <div class="circular-accordion">
+                            <button class="circular-header" aria-expanded="false" aria-controls="panel-22">
+                                <span class="circular-header-text">
+                                    <strong>Circular 22/25</strong>
+                                    <span class="circular-period-label">Diciembre 2025</span>
+                                </span>
+                                <i class="fas fa-chevron-down circular-chevron"></i>
+                            </button>
+                            <div class="circular-panel" id="panel-22" hidden>
+                                <div class="documents-grid">
+                                    <div class="document-card">
+                                        <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                        <div class="document-info"><h4 class="document-title">01 - Vocalía Oficina de Farmacia 22/25</h4></div>
+                                        <a href="../assets/pdf/COcirculares/Circular 2225 - Diciembre/01 - Vocalía Oficina de Farmacia 22_25.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                    </div>
+                                    <div class="document-card">
+                                        <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                        <div class="document-info"><h4 class="document-title">02 - Aclaración en la dispensación de recetas 11/25</h4></div>
+                                        <a href="../assets/pdf/COcirculares/Circular 2225 - Diciembre/AclaraciónDispensaciónRecetas11_25.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ══════════════ CIRCULAR 21/25 ══════════════ -->
+                        <div class="circular-accordion">
+                            <button class="circular-header" aria-expanded="false" aria-controls="panel-21">
+                                <span class="circular-header-text">
+                                    <strong>Circular 21/25</strong>
+                                    <span class="circular-period-label">2ª Quincena Noviembre 2025</span>
+                                </span>
+                                <i class="fas fa-chevron-down circular-chevron"></i>
+                            </button>
+                            <div class="circular-panel" id="panel-21" hidden>
+                                <div class="documents-grid">
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">01 - Vocalía Oficina de Farmacia 21/25</h4></div><a href="../assets/pdf/COcirculares/Circular 2125 - 2ª Quincena Noviembre 2025/01 - Vocalía Oficina de Farmacia 21_25.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">02 - CARTA_INMACULADA CONCEPCIÓN 2025</h4></div><a href="../assets/pdf/COcirculares/Circular 2125 - 2ª Quincena Noviembre 2025/02 - CARTA_INMACULADA CONCEPCIÓN 2025.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">03 - PROGRAMA_Invitación Inmaculada 2025</h4></div><a href="../assets/pdf/COcirculares/Circular 2125 - 2ª Quincena Noviembre 2025/03 - PROGRAMA_Invitación Inmaculada 2025.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ══════════════ CIRCULAR 20/25 ══════════════ -->
+                        <div class="circular-accordion">
+                            <button class="circular-header" aria-expanded="false" aria-controls="panel-20">
+                                <span class="circular-header-text"><strong>Circular 20/25</strong><span class="circular-period-label">1ª Quincena Noviembre 2025</span></span>
+                                <i class="fas fa-chevron-down circular-chevron"></i>
+                            </button>
+                            <div class="circular-panel" id="panel-20" hidden>
+                                <div class="documents-grid">
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">01 - Vocalía de Oficina de Farmacia 20/25</h4></div><a href="../assets/pdf/COcirculares/Circular 2025 - 1ª quincena Noviembre 2025/01 - Vocalía de Oficina de Farmacia 20_25.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">02 - Aclaración en la dispensación de recetas 20/24</h4></div><a href="../assets/pdf/COcirculares/Circular 2025 - 1ª quincena Noviembre 2025/AclaraciónDispensaciónRecetas20_24.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">03 - Solicitudes cambios de horario OF períodos cortos 2025</h4></div><a href="../assets/pdf/COcirculares/Circular 2025 - 1ª quincena Noviembre 2025/SolicitudesCambiosHorariosPeriCortos2025.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">04 - Concurso dibujo de Navidad 2025</h4></div><a href="../assets/pdf/COcirculares/Circular 2025 - 1ª quincena Noviembre 2025/04 - Concurso dibujo de Navidad 2025..pdf - Solicitudes cambios de horario OF períodos cortos 2025..pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">05 - Farmamontañas</h4></div><a href="../assets/pdf/COcirculares/Circular 2025 - 1ª quincena Noviembre 2025/05 - Farmamontañas.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ══════════════ CIRCULAR 19/25 ══════════════ -->
+                        <div class="circular-accordion">
+                            <button class="circular-header" aria-expanded="false" aria-controls="panel-19">
+                                <span class="circular-header-text"><strong>Circular 19/25</strong><span class="circular-period-label">2ª Quincena Octubre 2025</span></span>
+                                <i class="fas fa-chevron-down circular-chevron"></i>
+                            </button>
+                            <div class="circular-panel" id="panel-19" hidden>
+                                <div class="documents-grid">
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">01 - Vocalía Oficina de Farmacia 19/25</h4></div><a href="../assets/pdf/COcirculares/Circular 1925 - 2ª Quincena Octubre 2025/01 - Vocalía Oficina de Farmacia 19_25.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">02 - Carta campaña I.T.S.</h4></div><a href="../assets/pdf/COcirculares/Circular 1925 - 2ª Quincena Octubre 2025/02 - Carta campaña I.T.S..pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">03 - Agenda 0825</h4></div><a href="../assets/pdf/COcirculares/Circular 1925 - 2ª Quincena Octubre 2025/03 - Agenda 0825..pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">04 - Carta Inmaculada Concepción 2025</h4></div><a href="../assets/pdf/COcirculares/Circular 1925 - 2ª Quincena Octubre 2025/04 - Carta Inmaculada Concepción 2025.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ══════════════ CIRCULAR 18/25 ══════════════ -->
+                        <div class="circular-accordion">
+                            <button class="circular-header" aria-expanded="false" aria-controls="panel-18">
+                                <span class="circular-header-text"><strong>Circular 18/25</strong><span class="circular-period-label">1ª Quincena Octubre 2025</span></span>
+                                <i class="fas fa-chevron-down circular-chevron"></i>
+                            </button>
+                            <div class="circular-panel" id="panel-18" hidden>
+                                <div class="documents-grid">
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">01 - Vocalía Oficina de Farmacia 18/25</h4></div><a href="../assets/pdf/COcirculares/Circular 1825 - 1ª Quincena Octubre 2025/01 - Vocalía Oficina de Farmacia 18_25.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">02 - Aclaración en la dispensación de recetas 09/25</h4></div><a href="../assets/pdf/COcirculares/Circular 1825 - 1ª Quincena Octubre 2025/AclaraciónDispensaciónRecetas09_25.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">03 - Carta farmacéuticos ACTIVIDADES SALUD</h4></div><a href="../assets/pdf/COcirculares/Circular 1825 - 1ª Quincena Octubre 2025/03 - Carta farmacéuticos ACTIVIDADES SALUD.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">04 - CURSO COMPETENCIAS DIGITALES 25</h4></div><a href="../assets/pdf/COcirculares/Circular 1825 - 1ª Quincena Octubre 2025/04 - CURSO COMPETENCIAS DIGITALES 25.pdf "class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ══════════════ CIRCULAR 17/25 ══════════════ -->
+                        <div class="circular-accordion">
+                            <button class="circular-header" aria-expanded="false" aria-controls="panel-17">
+                                <span class="circular-header-text"><strong>Circular 17/25</strong><span class="circular-period-label">2ª Quincena Septiembre 2025</span></span>
+                                <i class="fas fa-chevron-down circular-chevron"></i>
+                            </button>
+                            <div class="circular-panel" id="panel-17" hidden>
+                                <div class="documents-grid">
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">01 - Vocalía Oficina de Farmacia 17/25</h4></div><a href="../assets/pdf/COcirculares/Circular 1725 - 2ª Quincena Septiembre 2025/01 - Vocalía Oficina de Farmacia 17_25.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">02 - Acuerdo Asamblea 26 octubre 2021 y solicitud Farmacia Fija Nocturna para 2026</h4></div><a href="../assets/pdf/COcirculares/Circular 1725 - 2ª Quincena Septiembre 2025/AcuerdoAsamblea26oct2021FarmaciaNocturna.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">03 - Recordatorio Solicitudes sobre guardias y horarios mes SEP 2025</h4></div><a href="../assets/pdf/COcirculares/Circular 1725 - 2ª Quincena Septiembre 2025/RecordatorioSolicitudesGuardiasSEPT2025.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">04 - Solicitud de ampliación del horario para un año</h4></div><a href="../assets/pdf/COcirculares/Circular 1725 - 2ª Quincena Septiembre 2025/SolicitudAmpliaciónHorario.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">05 - Solicitud Guardia Fija Nocturna Santander</h4></div><a href="../assets/pdf/COcirculares/Circular 1725 - 2ª Quincena Septiembre 2025/SolicitudGuardiaFijaNocturnaSantander.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">06 - CURSO COMPETENCIAS DIGITALES 25</h4></div><a href="../assets/pdf/COcirculares/Circular 1725 - 2ª Quincena Septiembre 2025/06 - CURSO COMPETENCIAS DIGITALES 25.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">07 - DFM CARTA</h4></div><a href="../assets/pdf/COcirculares/Circular 1725 - 2ª Quincena Septiembre 2025/07 - DFM CARTA..pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">08 - DFM CARTEL</h4></div><a href="../assets/pdf/COcirculares/Circular 1725 - 2ª Quincena Septiembre 2025/08 - DFM CARTEL..pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ══════════════ CIRCULAR 16/25 ══════════════ -->
+                        <div class="circular-accordion">
+                            <button class="circular-header" aria-expanded="false" aria-controls="panel-16">
+                                <span class="circular-header-text"><strong>Circular 16/25</strong><span class="circular-period-label">1ª Quincena Septiembre 2025</span></span>
+                                <i class="fas fa-chevron-down circular-chevron"></i>
+                            </button>
+                            <div class="circular-panel" id="panel-16" hidden>
+                                <div class="documents-grid">
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">01 - Vocalía Oficina de Farmacia 16/25</h4></div><a href="../assets/pdf/COcirculares/Circular 1625 - 1ª Quincena Septiembre 2025/01 - Vocalía Oficina de Farmacia 16_25.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">02 - Reuniones zonales 2025</h4></div><a href="../assets/pdf/COcirculares/Circular 1625 - 1ª Quincena Septiembre 2025/02 - Reuniones zonales 2025.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">03 - Aclaración en la dispensación de recetas 8/25</h4></div><a href="../assets/pdf/COcirculares/Circular 1625 - 1ª Quincena Septiembre 2025/AclaraciónDispensaciónRecetas8_25.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">04 - Recordatorio Acuerdo Asamblea 26 octubre 2021 y solicitud Farmacia Fija Nocturna para 2026</h4></div><a href="../assets/pdf/COcirculares/Circular 1625 - 1ª Quincena Septiembre 2025/RecordatorioAcuerdoAsamblea26oct2021.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">05 - Solicitud Guardia Fija Nocturna Santander</h4></div><a href="../assets/pdf/COcirculares/Circular 1625 - 1ª Quincena Septiembre 2025/SolicitudGuardiaFijaNocturnaSantander.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">06 - Recordatorio Solicitudes sobre guardias y horarios mes SEP 2025</h4></div><a href="../assets/pdf/COcirculares/Circular 1625 - 1ª Quincena Septiembre 2025/RecordatorioSolicitudGuardiasSEPT2025.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">07 - Convocatoria Prácticas Tuteladas UPV</h4></div><a href="../assets/pdf/COcirculares/Circular 1625 - 1ª Quincena Septiembre 2025/ConvocatoriaPrácticasTuteladasUPV.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">08 - Curso Competencias Digitales 2025</h4></div><a href="../assets/pdf/COcirculares/Circular 1625 - 1ª Quincena Septiembre 2025/08 - Curso Competencias Digitales 2025..pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">09 - Alambique 52. Enero-junio 2025</h4></div><a href="../assets/pdf/COcirculares/Circular 1625 - 1ª Quincena Septiembre 2025/09 - Alambique 52. Enero-junio 2025..pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ══════════════ CIRCULAR 15/25 ══════════════ -->
+                        <div class="circular-accordion">
+                            <button class="circular-header" aria-expanded="false" aria-controls="panel-15">
+                                <span class="circular-header-text"><strong>Circular 15/25</strong><span class="circular-period-label">Agosto 2025</span></span>
+                                <i class="fas fa-chevron-down circular-chevron"></i>
+                            </button>
+                            <div class="circular-panel" id="panel-15" hidden>
+                                <div class="documents-grid">
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">01 - Vocalía Oficina de Farmacia 15/25</h4></div><a href="../assets/pdf/COcirculares/Circular 1525 - Agosto 2025/01 - Vocalía Oficina de Farmacia 15_25.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">02 - Aclaración en la dispensación de recetas 07/25</h4></div><a href="../assets/pdf/COcirculares/Circular 1525 - Agosto 2025/AclaraciónDispensaciónRecetas07_25.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">03 - Solicitudes sobre guardias y horarios mes SEP 2025</h4></div><a href="../assets/pdf/COcirculares/Circular 1525 - Agosto 2025/SolicitudesGuardiasHorariosSEPT2025.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">04 - BUENAS PRÁCTICAS CONTRASEÑAS</h4></div><a href="../assets/pdf/COcirculares/Circular 1525 - Agosto 2025/04 - BUENAS PRÁCTICAS CONTRASEÑAS.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">05 - CGCOF - Como modificar la contraseña correo-e_VersionLigera</h4></div><a href="../assets/pdf/COcirculares/Circular 1525 - Agosto 2025/CGCOFComoModificarContraseñaCorreo-eVersionLigera.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">06 - MUFACE (CARTEL + INFOGRAFÍA)</h4></div><a href="../assets/pdf/COcirculares/Circular 1525 - Agosto 2025/06 - MUFACE (CARTEL + INFOGRAFÍA).pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">07 - CAMPAÑA APLEC</h4></div><a href="../assets/pdf/COcirculares/Circular 1525 - Agosto 2025/07 - CAMPAÑA APLEC.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ══════════════ CIRCULAR 14/25 ══════════════ -->
+                        <div class="circular-accordion">
+                            <button class="circular-header" aria-expanded="false" aria-controls="panel-14">
+                                <span class="circular-header-text"><strong>Circular 14/25</strong><span class="circular-period-label">2ª Quincena Julio 2025</span></span>
+                                <i class="fas fa-chevron-down circular-chevron"></i>
+                            </button>
+                            <div class="circular-panel" id="panel-14" hidden>
+                                <div class="documents-grid">
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">01 - Vocalía Oficina de Farmacia 14/25</h4></div><a href="../assets/pdf/COcirculares/Circular 1425 - 2ª Quincena Julio 2025/01 - Vocalía Oficina de Farmacia 14_25.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">02 - Becas jornada alimentación</h4></div><a href="../assets/pdf/COcirculares/Circular 1425 - 2ª Quincena Julio 2025/02 - Becas jornada alimentación..pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ══════════════ CIRCULAR 13/25 ══════════════ -->
+                        <div class="circular-accordion">
+                            <button class="circular-header" aria-expanded="false" aria-controls="panel-13">
+                                <span class="circular-header-text"><strong>Circular 13/25</strong><span class="circular-period-label">1ª Quincena Julio 2025</span></span>
+                                <i class="fas fa-chevron-down circular-chevron"></i>
+                            </button>
+                            <div class="circular-panel" id="panel-13" hidden>
+                                <div class="documents-grid">
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">01 - Vocalía Oficina de Farmacia 13/25</h4></div><a href="../assets/pdf/COcirculares/Circular 1325 - 1ª Quincena Julio 2025/01 - Vocalía Oficina de Farmacia 13_25.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">02 - ACLARACIONES DISPENSACIÓN DE RECETAS 06.25</h4></div><a href="../assets/pdf/COcirculares/Circular 1325 - 1ª Quincena Julio 2025/ACLARACIONESDISPENSACIÓNRECETAS06.25.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">03 - INFOGRAFÍA Sustitución Medicamentos Veterinarios</h4></div><a href="../assets/pdf/COcirculares/Circular 1325 - 1ª Quincena Julio 2025/INFOGRAFIASustituciónMedicamentosVeterinarios.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">04 - CONSIDERACIONES OLA DE CALOR</h4></div><a href="../assets/pdf/COcirculares/Circular 1325 - 1ª Quincena Julio 2025/04 - CONSIDERACIONES OLA DE CALOR..pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">05 - Becas jornada alimentación 2025</h4></div><a href="../assets/pdf/COcirculares/Circular 1325 - 1ª Quincena Julio 2025/05 - Becas jornada alimentación 2025..pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">06 - Semana colegial - Complejo San Juan</h4></div><a href="../assets/pdf/COcirculares/Circular 1325 - 1ª Quincena Julio 2025/06 - Semana colegial - Complejo San Juan..pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">07 - Campaña Cuidados del Verano</h4></div><a href="../assets/pdf/COcirculares/Circular 1325 - 1ª Quincena Julio 2025/07 - Campaña Cuidados del Verano..pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">08 - ECOCUOTA</h4></div><a href="../assets/pdf/COcirculares/Circular 1325 - 1ª Quincena Julio 2025/08 - ECOCUOTA..pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ══════════════ CIRCULAR 12/25 ══════════════ -->
+                        <div class="circular-accordion">
+                            <button class="circular-header" aria-expanded="false" aria-controls="panel-12">
+                                <span class="circular-header-text"><strong>Circular 12/25</strong><span class="circular-period-label">2ª Quincena Junio 2025</span></span>
+                                <i class="fas fa-chevron-down circular-chevron"></i>
+                            </button>
+                            <div class="circular-panel" id="panel-12" hidden>
+                                <div class="documents-grid">
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">01 - Vocalía Oficina de Farmacia 12/25</h4></div><a href="../assets/pdf/COcirculares/Circular 1225 - 2ª Quincena Junio 2025/01 - Vocalía Oficina de Farmacia 12_25.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">02 - Vacunas 2025</h4></div><a href="../assets/pdf/COcirculares/Circular 1225 - 2ª Quincena Junio 2025/02 - Vacunas 2025.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">03 - Agenda de actividades</h4></div><a href="../assets/pdf/COcirculares/Circular 1225 - 2ª Quincena Junio 2025/03 - Agenda de actividades .pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">04 - Eventos, cursos y convocatorias Junio 2025</h4></div><a href="../assets/pdf/COcirculares/Circular 1225 - 2ª Quincena Junio 2025/EventosCursosConvocatoriasJunio2025.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ══════════════ CIRCULAR 11/25 ══════════════ -->
+                        <div class="circular-accordion">
+                            <button class="circular-header" aria-expanded="false" aria-controls="panel-11">
+                                <span class="circular-header-text"><strong>Circular 11/25</strong><span class="circular-period-label">1ª Quincena Junio 2025</span></span>
+                                <i class="fas fa-chevron-down circular-chevron"></i>
+                            </button>
+                            <div class="circular-panel" id="panel-11" hidden>
+                                <div class="documents-grid">
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">01 - Vocalía Oficina de Farmacia 11/25</h4></div><a href="../assets/pdf/COcirculares/Circular 1125 - 1ª Quincena Junio 2025/01 - Vocalía Oficina de Farmacia 11_25.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">02 - Aclaración en la dispensación de recetas 05/25</h4></div><a href="../assets/pdf/COcirculares/Circular 1125 - 1ª Quincena Junio 2025/AclaraciónDispensaciónRecetas05_25.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">03 - Dispensación fraccionada</h4></div><a href="../assets/pdf/COcirculares/Circular 1125 - 1ª Quincena Junio 2025/03 - Dispensación fraccionada..pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">04 - Campaña "Frena el sol, frena el lupus"</h4></div><a href="../assets/pdf/COcirculares/Circular 1125 - 1ª Quincena Junio 2025/04 - Campaña _Frena el sol, frena el lupus_.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">05 - Ecocuota y APP</h4></div><a href="../assets/pdf/COcirculares/Circular 1125 - 1ª Quincena Junio 2025/05 - Ecocuota y APP.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">06 - Eventos, cursos y convocatorias Junio 2025</h4></div><a href="../assets/pdf/COcirculares/Circular 1125 - 1ª Quincena Junio 2025/EventosCursosConvocatoriasJunio2025.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ══════════════ CIRCULAR 10/25 ══════════════ -->
+                        <div class="circular-accordion">
+                            <button class="circular-header" aria-expanded="false" aria-controls="panel-10">
+                                <span class="circular-header-text"><strong>Circular 10/25</strong><span class="circular-period-label">2ª Quincena Mayo 2025</span></span>
+                                <i class="fas fa-chevron-down circular-chevron"></i>
+                            </button>
+                            <div class="circular-panel" id="panel-10" hidden>
+                                <div class="documents-grid">
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">01 - Vocalía Oficina de Farmacia 10/25</h4></div><a href="../assets/pdf/COcirculares/Circular 1025 - 2ª Quincena Mayo 2025/01 - Vocalía Oficina de Farmacia 10_25.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">02 - Eventos, cursos y convocatorias Mayo 2025</h4></div><a href="../assets/pdf/COcirculares/Circular 1025 - 2ª Quincena Mayo 2025/EventosCursosConvocatoriasMayo2025.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">03 - Farmamontañas</h4></div><a href="../assets/pdf/COcirculares/Circular 1025 - 2ª Quincena Mayo 2025/03 - Farmamontañas.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ══════════════ CIRCULAR 09/25 ══════════════ -->
+                        <div class="circular-accordion">
+                            <button class="circular-header" aria-expanded="false" aria-controls="panel-09">
+                                <span class="circular-header-text"><strong>Circular 09/25</strong><span class="circular-period-label">1ª Quincena Mayo 2025</span></span>
+                                <i class="fas fa-chevron-down circular-chevron"></i>
+                            </button>
+                            <div class="circular-panel" id="panel-09" hidden>
+                                <div class="documents-grid">
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">01 - Vocalía Oficina de Farmacia 09/25</h4></div><a href="../assets/pdf/COcirculares/Circular 0925 - 1ª Quincena Mayo 2025/01 - Vocalía Oficina de Farmacia 09_25.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">02 - Aclaración en la dispensación de recetas 04/25</h4></div><a href="../assets/pdf/COcirculares/Circular 0925 - 1ª Quincena Mayo 2025/AclaraciónDispensaciónRecetas04_25.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">03 - Eventos, cursos y convocatorias Mayo 2025</h4></div><a href="../assets/pdf/COcirculares/Circular 0925 - 1ª Quincena Mayo 2025/EventosCursosConvocatoriasMayo2025.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">04 - Farmamontañas</h4></div><a href="../assets/pdf/COcirculares/Circular 0925 - 1ª Quincena Mayo 2025/04 - Farmamontañas..pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ══════════════ CIRCULAR 08/24 ══════════════ -->
+                        <div class="circular-accordion">
+                            <button class="circular-header" aria-expanded="false" aria-controls="panel-08">
+                                <span class="circular-header-text"><strong>Circular 08/24</strong><span class="circular-period-label">2ª Quincena Abril 2025</span></span>
+                                <i class="fas fa-chevron-down circular-chevron"></i>
+                            </button>
+                            <div class="circular-panel" id="panel-08" hidden>
+                                <div class="documents-grid">
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">01 - Vocalía Oficina de Farmacia 08/24</h4></div><a href="../assets/pdf/COcirculares/Circular 0824 - 2ª Quincena Abril 2025/01 - Vocalía Oficina de Farmacia 08_24.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">02 - Eventos, cursos y convocatorias Abril 2025</h4></div><a href="../assets/pdf/COcirculares/Circular 0824 - 2ª Quincena Abril 2025/EventosCursosConvocatoriasAbril2025.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ══════════════ CIRCULAR 07/25 ══════════════ -->
+                        <div class="circular-accordion">
+                            <button class="circular-header" aria-expanded="false" aria-controls="panel-07">
+                                <span class="circular-header-text"><strong>Circular 07/25</strong><span class="circular-period-label">1ª Quincena Abril 2025</span></span>
+                                <i class="fas fa-chevron-down circular-chevron"></i>
+                            </button>
+                            <div class="circular-panel" id="panel-07" hidden>
+                                <div class="documents-grid">
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">01 - Vocalía Oficina de Farmacia 07/25</h4></div><a href="../assets/pdf/COcirculares/Circular 0725 - 1ª Quincena Abril 2025/01 - Vocalía Oficina de Farmacia 07_25.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">02 - Aclaración en la dispensación de recetas 03/25</h4></div><a href="../assets/pdf/COcirculares/Circular 0725 - 1ª Quincena Abril 2025/AclaraciónDispensaciónRecetas03_25.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">03 - Sigre Auditoría y ubicación del contenedor</h4></div><a href="../assets/pdf/COcirculares/Circular 0725 - 1ª Quincena Abril 2025/SigreAuditoríaUbicaciónContenedor.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">04 - Información fiscal. Cuotas colegiales</h4></div><a href="../assets/pdf/COcirculares/Circular 0725 - 1ª Quincena Abril 2025/04 - Información fiscal. Cuotas colegiales..pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">05 - Boletín Colegial "ALAMBIQUE Nº 50". Primer Semestre 2024</h4></div><a href="../assets/pdf/COcirculares/Circular 0725 - 1ª Quincena Abril 2025/BoletínColegialALAMBIQUE50Semestre12024.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">06 - Boletín Colegial "ALAMBIQUE Nº 51". Segundo semestre 2024</h4></div><a href="../assets/pdf/COcirculares/Circular 0725 - 1ª Quincena Abril 2025/BoletínColegialALAMBIQUE51Semestre22024.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ══════════════ CIRCULAR 06/25 ══════════════ -->
+                        <div class="circular-accordion">
+                            <button class="circular-header" aria-expanded="false" aria-controls="panel-06">
+                                <span class="circular-header-text"><strong>Circular 06/25</strong><span class="circular-period-label">2ª Quincena Marzo 2025</span></span>
+                                <i class="fas fa-chevron-down circular-chevron"></i>
+                            </button>
+                            <div class="circular-panel" id="panel-06" hidden>
+                                <div class="documents-grid">
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">01 - Vocalía Oficina de Farmacia 07/25</h4></div><a href="../assets/pdf/COcirculares/Circular 0625 - 2ª Quincena Marzo 2025/01 - Vocalía Oficina de Farmacia 07_25.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">02 - Comprobación del DNI en la dispensación de medicamentos estupefacientes y psicotropos</h4></div><a href="../assets/pdf/COcirculares/Circular 0625 - 2ª Quincena Marzo 2025/ComprobaciónDNIDispensaciónMedicamentos.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">03 - Campaña sanitaria. Obesidad</h4></div><a href="../assets/pdf/COcirculares/Circular 0625 - 2ª Quincena Marzo 2025/03 - Campaña sanitaria. Obesidad.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">04 - ¡Ayúdanos a identificar a tus pacientes trasplantados!</h4></div><a href="../assets/pdf/COcirculares/Circular 0625 - 2ª Quincena Marzo 2025/AyúdanosIdentificarPacientesTrasplantados.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">05 - Jornada Medicamentos veterinarios</h4></div><a href="../assets/pdf/COcirculares/Circular 0625 - 2ª Quincena Marzo 2025/05 - Jornada Medicamentos veterinarios..pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">06 - Reuniones formativas 2025</h4></div><a href="../assets/pdf/COcirculares/Circular 0625 - 2ª Quincena Marzo 2025/06 - Reuniones formativas 2025..pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">07 - Eventos, cursos y convocatorias MARZO 2025</h4></div><a href="../assets/pdf/COcirculares/Circular 0625 - 2ª Quincena Marzo 2025/EventosCursosConvocatoriasMARZO2025.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ══════════════ CIRCULAR 05/25 ══════════════ -->
+                        <div class="circular-accordion">
+                            <button class="circular-header" aria-expanded="false" aria-controls="panel-05">
+                                <span class="circular-header-text"><strong>Circular 05/25</strong><span class="circular-period-label">1ª Quincena Marzo 2025</span></span>
+                                <i class="fas fa-chevron-down circular-chevron"></i>
+                            </button>
+                            <div class="circular-panel" id="panel-05" hidden>
+                                <div class="documents-grid">
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">01 - Vocalía Oficina de Farmacia 05/25</h4></div><a href="../assets/pdf/COcirculares/Circular 0525 - 1ª Quincena Marzo 2025/01 - Vocalía Oficina de Farmacia 05_25.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">02 - Aclaración en la dispensación de recetas 02/25</h4></div><a href="../assets/pdf/COcirculares/Circular 0525 - 1ª Quincena Marzo 2025/AclaraciónDispensaciónRecetas02_25.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">03 - Últimas actualizaciones de la página web del Colegio www.cofcantabria.org</h4></div><a href="../assets/pdf/COcirculares/Circular 0525 - 1ª Quincena Marzo 2025/ÚltimasActualizacionesWeb.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">04 - Reuniones formativas 2025</h4></div><a href="../assets/pdf/COcirculares/Circular 0525 - 1ª Quincena Marzo 2025/04 - Reuniones formativas 2025.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">05 - Solicitud cambio de horario, periodos cortos</h4></div><a href="../assets/pdf/COcirculares/Circular 0525 - 1ª Quincena Marzo 2025/SolicitudCambioHorarioPeriodosCortos..pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">06 - Agenda formación</h4></div><a href="../assets/pdf/COcirculares/Circular 0525 - 1ª Quincena Marzo 2025/06 - Agenda formacio´n.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">07 - Receta electrónica veterinaria. GENERARECETAS</h4></div><a href="../assets/pdf/COcirculares/Circular 0525 - 1ª Quincena Marzo 2025/RecetaElectrónicaVeterinariaGENERARECETAS.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">08 - Farmamontañas Marzo 2025</h4></div><a href="../assets/pdf/COcirculares/Circular 0525 - 1ª Quincena Marzo 2025/08 - Farmamontañas Marzo 2025.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ══════════════ CIRCULAR 04/25 ══════════════ -->
+                        <div class="circular-accordion">
+                            <button class="circular-header" aria-expanded="false" aria-controls="panel-04">
+                                <span class="circular-header-text"><strong>Circular 04/25</strong><span class="circular-period-label">2ª Quincena Febrero 2025</span></span>
+                                <i class="fas fa-chevron-down circular-chevron"></i>
+                            </button>
+                            <div class="circular-panel" id="panel-04" hidden>
+                                <div class="documents-grid">
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">01 - Vocalía de Oficina de Farmacia 04/25</h4></div><a href="../assets/pdf/COcirculares/Circular 0425 - 2ª Quincena Febrero 2025/01 - Vocalía de Oficina de Farmacia 04_25.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">02 - Agenda de formación Febrero 2025</h4></div><a href="../assets/pdf/COcirculares/Circular 0425 - 2ª Quincena Febrero 2025/02 - Agenda de formación Febrero 2025.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">03 - Campaña de alimentación</h4></div><a href="../assets/pdf/COcirculares/Circular 0425 - 2ª Quincena Febrero 2025/03 - Campaña de alimentación.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ══════════════ CIRCULAR 03/25 ══════════════ -->
+                        <div class="circular-accordion">
+                            <button class="circular-header" aria-expanded="false" aria-controls="panel-03">
+                                <span class="circular-header-text"><strong>Circular 03/25</strong><span class="circular-period-label">1ª Quincena Febrero 2025</span></span>
+                                <i class="fas fa-chevron-down circular-chevron"></i>
+                            </button>
+                            <div class="circular-panel" id="panel-03" hidden>
+                                <div class="documents-grid">
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">01 - Vocalía Oficina de Farmacia 03/25</h4></div><a href="../assets/pdf/COcirculares/Circular 0325 - 1ª Quincena Febrero 2025/01 - Vocalía Oficina de Farmacia 03_25.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">02 - Antimicrobianos en veterinaria ESVAC</h4></div><a href="../assets/pdf/COcirculares/Circular 0325 - 1ª Quincena Febrero 2025/02 - Antimicrobianos en veterinaria ESVAC.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">03 - Aclaración en la dispensación de recetas 01/25</h4></div><a href="../assets/pdf/COcirculares/Circular 0325 - 1ª Quincena Febrero 2025/AclaraciónDispensaciónRecetas01_25.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">04 - Honorarios SCS FEBRERO 2025</h4></div><a href="../assets/pdf/COcirculares/Circular 0325 - 1ª Quincena Febrero 2025/04 - Honorarios SCS FEBRERO 2025.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">05 - Últimas actualizaciones de la página web del Colegio www.cofcantabria.org</h4></div><a href="../assets/pdf/COcirculares/Circular 0325 - 1ª Quincena Febrero 2025/ÚltimasActualizacionesPáginaWeb.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">06 - Eventos, cursos y convocatorias FEBRERO 2025</h4></div><a href="../assets/pdf/COcirculares/Circular 0325 - 1ª Quincena Febrero 2025/EventosCursosConvocatoriasFEBRERO2025.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">07 - Agenda formación</h4></div><a href="../assets/pdf/COcirculares/Circular 0325 - 1ª Quincena Febrero 2025/07 - Agenda formación .pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">08 - Farmamontañas FEBRERO 2025</h4></div><a href="../assets/pdf/COcirculares/Circular 0325 - 1ª Quincena Febrero 2025/08 - Farmamontañas FEBRERO 2025.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ══════════════ CIRCULAR 02/25 ══════════════ -->
+                        <div class="circular-accordion">
+                            <button class="circular-header" aria-expanded="false" aria-controls="panel-02">
+                                <span class="circular-header-text"><strong>Circular 02/25</strong><span class="circular-period-label">2ª Quincena Enero 2025</span></span>
+                                <i class="fas fa-chevron-down circular-chevron"></i>
+                            </button>
+                            <div class="circular-panel" id="panel-02" hidden>
+                                <div class="documents-grid">
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">01 - Vocalía de Oficina de Farmacia 02/25</h4></div><a href="../assets/pdf/COcirculares/Circular 0225 - 2ª Quincena Enero 2025/01 - Vocalía de Oficina de Farmacia 02_25.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">02 - Ayudas a farmacias VEC 2025</h4></div><a href="../assets/pdf/COcirculares/Circular 0225 - 2ª Quincena Enero 2025/02 - Ayudas a farmacias VEC 2025.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">03 - Observatorio de agresiones a farmacéuticos</h4></div><a href="../assets/pdf/COcirculares/Circular 0225 - 2ª Quincena Enero 2025/Observatoriodeagresionesafarmacéuticos.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">04 - Agenda de formación</h4></div><a href="../assets/pdf/COcirculares/Circular 0225 - 2ª Quincena Enero 2025/04 - Agenda de formación..pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">05 - Invitación INFARMA 2025</h4></div><a href="../assets/pdf/COcirculares/Circular 0225 - 2ª Quincena Enero 2025/05 - Invitación INFARMA 2025.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">06 - Eventos, cursos y convocatorias ENERO 2025</h4></div><a href="../assets/pdf/COcirculares/Circular 0225 - 2ª Quincena Enero 2025/EventosCursosConvocatoriasENERO2025.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ══════════════ CIRCULAR 01/25 ══════════════ -->
+                        <div class="circular-accordion">
+                            <button class="circular-header" aria-expanded="false" aria-controls="panel-01">
+                                <span class="circular-header-text"><strong>Circular 01/25</strong><span class="circular-period-label">1ª Quincena Enero 2025</span></span>
+                                <i class="fas fa-chevron-down circular-chevron"></i>
+                            </button>
+                            <div class="circular-panel" id="panel-01" hidden>
+                                <div class="documents-grid">
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">01 - Vocalía de Oficina de Farmacia 01/25</h4></div><a href="../assets/pdf/COcirculares/Circular 0125 - 1ª Quincena Enero 2025/01 - Vocalía de Oficina de Farmacia 01_25.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">02 - Aclaración en la dispensación de recetas. Resumen 2024</h4></div><a href="../assets/pdf/COcirculares/Circular 0125 - 1ª Quincena Enero 2025/aclaraciondispensacionreceta.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">03 - Últimas actualizaciones de la página web. www.cofcantabria.org</h4></div><a href="../assets/pdf/COcirculares/Circular 0125 - 1ª Quincena Enero 2025/ÚltimasactualizacionesWeb.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">04 - Modelo 347 del ejercicio 2024</h4></div><a href="../assets/pdf/COcirculares/Circular 0125 - 1ª Quincena Enero 2025/04 - Modelo 347 del ejercicio 2024.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">05 - Facturación de recetas 2025</h4></div><a href="../assets/pdf/COcirculares/Circular 0125 - 1ª Quincena Enero 2025/05 - Facturación de recetas 2025.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">06 - Calendario de entrega de recetas 2025</h4></div><a href="../assets/pdf/COcirculares/Circular 0125 - 1ª Quincena Enero 2025/06 - Calendario de entrega de recetas 2025.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">07 - Eventos, cursos y convocatorias. Enero 2025</h4></div><a href="../assets/pdf/COcirculares/Circular 0125 - 1ª Quincena Enero 2025/EventosCursosConvocatoriasEnero2025.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                    <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">08 - Farmamontañas</h4></div><a href="../assets/pdf/COcirculares/Circular 0125 - 1ª Quincena Enero 2025/08 - Farmamontañas.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!-- /.documents-section -->
+                </div><!-- /.article-body -->
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Logo y nombre -->
+            <div class="footer-section logo-section">
+                <img src="../assets/img/Logos/cof.png" alt="Logo COF" class="footer-logo">
+            </div>
+
+            <!-- Contacto -->
+            <div class="footer-section">
+                <h4 class="section-title">CONTACTO</h4>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:cofcantabria@cofcantabria.org">cofcantabria@cofcantabria.org</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:942314418">942 31 44 18</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>C/ Castilla, 13 - 7º y 8º<br>39009 Santander</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Síguenos -->
+            <div class="footer-section">
+                <h4 class="section-title">SÍGUENOS</h4>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/cofcantabria/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/people/Colegio-de-Farmac%C3%A9uticos-de-Cantabria/100063216339209/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@cofcantabria4819/featured" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://x.com/cofcantabria" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@cofcantabria" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/colegio-oficial-de-farmac%C3%A9uticos-de-cantabria/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://bsky.app/profile/cofcantabria.bsky.social" target="_blank" rel="noopener noreferrer" aria-label="BlueSky">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364.136-.02.275-.039.415-.056-.138.022-.276.04-.415.056-3.912.58-7.387 2.005-2.83 7.078 5.013 5.19 6.87-1.113 7.823-4.308.953 3.195 2.05 9.271 7.733 4.308 4.267-4.308 1.172-6.498-2.74-7.078a8.741 8.741 0 0 1-.415-.056c.14.017.279.036.415.056 2.67.297 5.568-.628 6.383-3.364.246-.828.624-5.79.624-6.478 0-.69-.139-1.861-.902-2.206-.659-.298-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8Z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="footer-bottom">
+            <p>© 2026 COLEGIO OFICIAL DE FARMACÉUTICOS DE CANTABRIA.</p>
+            <div class="footer-links">
+                <a href="#aviso-legal">AVISO LEGAL</a>
+                <a href="#privacidad">PRIVACIDAD</a>
+                <a href="#cookies">COOKIE</a>
+            </div>
+        </div>
+    </footer>
+    <script src="../assets/js/global-auth.js"></script>
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/COcirculares.js"></script>
+</body>
+</html>

@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="./assets/css/sponsors-carousel.css">
+    <link rel="stylesheet" href="./assets/css/mobile-menu.css">
 </head>
 <body>
 
@@ -86,6 +87,9 @@
                             <li><a href="https://www.farmaceuticos.com/tu-farmaceutico-informa/escuela-con-pacientes-3/?_gl=1*mxu1nm*_up*MQ..&gclid=Cj0KCQiA4eHLBhCzARIsAJ2NZoK6bNyY0Lm33wj3GtXtWr8gx_CXSZ2INHI_YE0QTOMpP6ohcT7ti9kaAjlwEALw_wcB&gbraid=0AAAAADztVhhujVjlzM5GV8Wxabyo8EN3R">Escuela con Pacientes</a></li>
                         </ul>
                     </li>
+                    <li class="dropdown">
+                        <a href="./pages/parteprivada.html">Colegiados</a>
+                    </li>
                 </ul>
             </nav>
             <!-- Botón buscador -->
@@ -100,43 +104,38 @@
     <div class="mobile-menu" id="mobile-menu">
         <button id="close-menu-btn"><i class="fas fa-times"></i></button>
         <ul class="nav-list">
-            <li><a href="#" class="active">Inicio</a></li>
-            <li class="dropdown">
-                <a href="#">Portal de Transparencia <i class="fas fa-chevron-down"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="../Portal de Transparencia - Presentacion/PTpresentacion.html">Presentación</a></li>
-                    <li><a href="../Portal de Transparencia - Junta de Gobierno/PTjuntadegobierno.html">Junta de Gobierno</a></li>
-                    <li><a href="../Portal de Transparencia - Organigrama COF/PTorganigrama.html">Organigrama COF</a></li>
-                    <li><a href="../Portal de Transparencia - Estatutos/PTestatutos.html">Estatutos y Código Deontológico</a></li>
-                    <li><a href="#">Memoria Gestión</a></li>
+            <li><a href="./index.html" class="active">Inicio</a></li>
+            <li class="mobile-dropdown">
+                <button class="mobile-dropdown-toggle">Portal de Transparencia <i class="fas fa-chevron-down"></i></button>
+                <ul class="mobile-dropdown-menu">
+                    <li><a href="./pages/PTpresentacion.html">Presentación</a></li>
+                    <li><a href="./pages/PTjuntadegobierno.html">Junta de Gobierno</a></li>
+                    <li><a href="./pages/PTorganigrama.html">Organigrama COF</a></li>
+                    <li><a href="./pages/PTestatutosmemoria.html">Estatutos y Memoria Gestión</a></li>
                 </ul>
             </li>
-            <li class="dropdown">
-                <a href="#">Bolsa de Empleo <i class="fas fa-chevron-down"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="../Bolsa de Empleo - Oferta/BEoferta.html">Oferta (Ofrezco trabajo)</a></li>
-                    <li><a href="../Bolsa de Empleo - Demanda/BEdemanda.html">Demanda (Busco trabajo)</a></li>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a href="#">Ventanilla Única <i class="fas fa-chevron-down"></i></a>
-                <ul class="dropdown-menu">
+            <li><a href="./pages/BolsaEmpleo.html">Bolsa de Empleo</a></li>
+            <li class="mobile-dropdown">
+                <button class="mobile-dropdown-toggle">Ventanilla Única <i class="fas fa-chevron-down"></i></button>
+                <ul class="mobile-dropdown-menu">
                     <li><a href="./pages/VUcolegiacion.html">Colegiación</a></li>
-                    <li><a href="./pages/VUtramites.html">Trámites</a></li>
-                    <li><a href="../Ventanilla Unica - Listado de Colegiados/VUlistadocolegiados.html">Listado de Colegiados</a></li>
+                    <li><a href="./pages/VUtramites.html">Trámites (solicitudes, certificados...)</a></li>
+                    <li><a href="./pages/VUcodigodeontologico.html">Código Deontológico</a></li>
+                    <li><a href="./pages/VUlistadocolegiados.html">Listado de Colegiados</a></li>
                     <li><a href="#">Atención Ciudadanía y Reclamaciones</a></li>
                     <li><a href="#">Canal de Denuncias</a></li>
                     <li><a href="./pages/VUlistadoperitos.html">Listado de Peritos Judiciales</a></li>
                 </ul>
             </li>
-            <li class="dropdown">
-                <a href="#">Ciudadania <i class="fas fa-chevron-down"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Campañas de vacunación</a></li>
-                    <li><a href="#">Receta Electrónica</a></li>
-                    <li><a href="https://www.farmaceuticos.com/tu-farmaceutico-informa/escuela-con-pacientes-3/">Escuela con pacientes</a></li>
+            <li class="mobile-dropdown">
+                <button class="mobile-dropdown-toggle">Ciudadanía <i class="fas fa-chevron-down"></i></button>
+                <ul class="mobile-dropdown-menu">
+                    <li><a href="https://view.genially.com/6981a6424032400e563879c4">Campañas de Vacunación</a></li>
+                    <li><a href="./pages/CIrecetaelectronica.html">Receta Electrónica</a></li>
+                    <li><a href="https://www.farmaceuticos.com/tu-farmaceutico-informa/escuela-con-pacientes-3/">Escuela con Pacientes</a></li>
                 </ul>
             </li>
+            <li><a href="./pages/parteprivada.html">Colegiados</a></li>
         </ul>
     </div>
 
@@ -247,7 +246,7 @@
                 <ul class="custom-list" style="margin-top: 20px;">
                     <li><strong>Dirección:</strong> C. Castilla, 13, 39009 Santander, Cantabria.</li>
                     <li><strong>Horario:</strong> Lunes a Viernes de 8:00 a 15:00h y de 16:00 a 18:00h.</li>
-                    <li><strong>Correo Electrónico:</strong><a href="mailto:cofcantabria@cofcantabria.org"> cofcantabria@cofcantabria.org</a></li>
+                    <li><strong>Correo Electrónico:</strong><a href="/cdn-cgi/l/email-protection#d6b5b9b0b5b7b8a2b7b4a4bfb796b5b9b0b5b7b8a2b7b4a4bfb7f8b9a4b1"> <span class="__cf_email__" data-cfemail="cfaca0a9acaea1bbaeadbda6ae8faca0a9acaea1bbaeadbda6aee1a0bda8">[email&#160;protected]</span></a></li>
                     <li><strong>Número de Teléfono:</strong> (+34) 942 31 44 18</li>
                 </ul>
 
@@ -397,7 +396,7 @@
                 <div class="contact-info">
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
-                        <a href="mailto:cofcantabria@cofcantabria.org">cofcantabria@cofcantabria.org</a>
+                        <a href="/cdn-cgi/l/email-protection#d3b0bcb5b0b2bda7b2b1a1bab293b0bcb5b0b2bda7b2b1a1bab2fdbca1b4"><span class="__cf_email__" data-cfemail="01626e6762606f75606373686041626e6762606f7560637368602f6e7366">[email&#160;protected]</span></a>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
@@ -445,12 +444,15 @@
         <div class="footer-bottom">
             <p>© 2026 COLEGIO OFICIAL DE FARMACÉUTICOS DE CANTABRIA.</p>
             <div class="footer-links">
+             
                 <a href="#aviso-legal">AVISO LEGAL</a>
                 <a href="#privacidad">PRIVACIDAD</a>
-                <a href="#cookies">COOKIE</a>
+                <a href="#cookies">COOKIES</a>
             </div>
         </div>
     </footer>
+
+    <script src="./assets/js/mobile-menu.js"></script>
     <script src="./assets/js/global-auth.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>

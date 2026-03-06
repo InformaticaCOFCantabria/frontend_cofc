@@ -1,66 +1,63 @@
 document.addEventListener('DOMContentLoaded', function() {
-    
+
     // --- Menú Móvil ---
     const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-    const closeMenuBtn = document.getElementById('close-menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
+    const closeMenuBtn  = document.getElementById('close-menu-btn');
+    const mobileMenu    = document.getElementById('mobile-menu');
 
-    mobileMenuBtn.addEventListener('click', () => {
-        mobileMenu.classList.add('active');
-    });
+    if (mobileMenuBtn && closeMenuBtn && mobileMenu) {
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('active');
+        });
 
-    closeMenuBtn.addEventListener('click', () => {
-        mobileMenu.classList.remove('active');
-    });
-
-    // Cerrar menú al hacer click fuera (opcional)
-    document.addEventListener('click', (e) => {
-        if (!mobileMenu.contains(e.target) && !mobileMenuBtn.contains(e.target) && mobileMenu.classList.contains('active')) {
+        closeMenuBtn.addEventListener('click', () => {
             mobileMenu.classList.remove('active');
-        }
-    });
+        });
 
-
-    // --- Hero Slider Simple ---
-    const slides = document.querySelectorAll('.slide');
-    const nextBtn = document.querySelector('.next-slide');
-    const prevBtn = document.querySelector('.prev-slide');
-    let currentSlide = 0;
-    const slideInterval = 5000; // 5 segundos
-
-    function showSlide(index) {
-        slides.forEach(slide => slide.classList.remove('active'));
-        
-        // Loop logic
-        if (index >= slides.length) currentSlide = 0;
-        else if (index < 0) currentSlide = slides.length - 1;
-        else currentSlide = index;
-
-        slides[currentSlide].classList.add('active');
+        document.addEventListener('click', (e) => {
+            if (!mobileMenu.contains(e.target) && !mobileMenuBtn.contains(e.target) && mobileMenu.classList.contains('active')) {
+                mobileMenu.classList.remove('active');
+            }
+        });
     }
 
-    nextBtn.addEventListener('click', () => {
-        showSlide(currentSlide + 1);
+    // --- Dropdowns menú móvil ---
+    document.querySelectorAll('.mobile-dropdown-toggle').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            const parent = this.closest('.mobile-dropdown');
+            const isOpen = parent.classList.contains('is-open');
+            document.querySelectorAll('.mobile-dropdown').forEach(d => d.classList.remove('is-open'));
+            if (!isOpen) parent.classList.add('is-open');
+        });
     });
 
-    prevBtn.addEventListener('click', () => {
-        showSlide(currentSlide - 1);
-    });
+    // --- Hero Slider Simple ---
+    const slides  = document.querySelectorAll('.slide');
+    const nextBtn = document.querySelector('.next-slide');
+    const prevBtn = document.querySelector('.prev-slide');
+    const heroSlider = document.querySelector('.hero-slider');
 
-    // Auto play
-    let autoSlide = setInterval(() => {
-        showSlide(currentSlide + 1);
-    }, slideInterval);
+    if (slides.length && nextBtn && prevBtn && heroSlider) {
+        let currentSlide = 0;
+        const slideInterval = 5000;
 
-    // Pausar auto play al interactuar
-    document.querySelector('.hero-slider').addEventListener('mouseenter', () => {
-        clearInterval(autoSlide);
-    });
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            if (index >= slides.length) currentSlide = 0;
+            else if (index < 0) currentSlide = slides.length - 1;
+            else currentSlide = index;
+            slides[currentSlide].classList.add('active');
+        }
 
-    document.querySelector('.hero-slider').addEventListener('mouseleave', () => {
-        autoSlide = setInterval(() => {
-            showSlide(currentSlide + 1);
-        }, slideInterval);
-    });
+        nextBtn.addEventListener('click', () => showSlide(currentSlide + 1));
+        prevBtn.addEventListener('click', () => showSlide(currentSlide - 1));
+
+        let autoSlide = setInterval(() => showSlide(currentSlide + 1), slideInterval);
+
+        heroSlider.addEventListener('mouseenter', () => clearInterval(autoSlide));
+        heroSlider.addEventListener('mouseleave', () => {
+            autoSlide = setInterval(() => showSlide(currentSlide + 1), slideInterval);
+        });
+    }
 
 });

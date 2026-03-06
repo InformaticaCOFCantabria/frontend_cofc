@@ -1,0 +1,20 @@
+/* =========================================
+   CSS ADICIONAL PARA PÁGINA DE COLEGIADOS
+   ========================================= */
+
+/* Grid de 3 columnas fijas para 6 tarjetas (2 filas × 3) */
+.colegiados-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+}
+
+@media (max-width: 900px) {
+    .colegiados-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+@media (max-width: 580px) {
+    .colegiados-grid {
+        grid-template-columns: 1fr !important;
+    }
+}

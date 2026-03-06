@@ -1,0 +1,163 @@
+/* =========================================
+   MOBILE MENU — Incluir en todas las páginas
+   ========================================= */
+
+/* Botón hamburguesa — oculto en escritorio */
+#mobile-menu-btn {
+    display: none;
+}
+
+/* Mostrar en tablets y móvil */
+@media (max-width: 992px) {
+    #mobile-menu-btn {
+        display: block;
+    }
+
+    .main-nav {
+        display: none;
+    }
+}
+
+/* Panel lateral */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 280px;
+    height: 100%;
+    background: #1a1a1a;
+    z-index: 9999;
+    transition: right 0.3s ease;
+    padding: 70px 25px 40px;
+    overflow-y: auto;
+    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.mobile-menu.active {
+    right: 0;
+}
+
+/* Botón cerrar */
+#close-menu-btn {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background 0.2s;
+}
+
+#close-menu-btn:hover {
+    background: rgba(255,255,255,0.1);
+    color: var(--primary-color, #7ab648);
+}
+
+/* Lista principal — forzar visible aunque styles.css la oculte */
+.mobile-menu .nav-list {
+    display: block !important;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mobile-menu .nav-list > li {
+    border-bottom: 1px solid #2e2e2e;
+    padding: 4px 0;
+}
+
+.mobile-menu .nav-list > li:last-child {
+    border-bottom: none;
+}
+
+/* Enlace simple */
+.mobile-menu .nav-list > li > a {
+    display: block;
+    padding: 12px 4px;
+    color: #ccc;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.mobile-menu .nav-list > li > a:hover,
+.mobile-menu .nav-list > li > a.active {
+    color: var(--primary-color, #7ab648);
+}
+
+/* Botón toggle de dropdown */
+.mobile-dropdown-toggle {
+    width: 100%;
+    background: none;
+    border: none;
+    color: #ccc;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: inherit;
+    text-align: left;
+    padding: 12px 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: color 0.2s;
+}
+
+.mobile-dropdown-toggle:hover {
+    color: var(--primary-color, #7ab648);
+}
+
+.mobile-dropdown-toggle i {
+    font-size: 11px;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+}
+
+.mobile-dropdown.is-open > .mobile-dropdown-toggle {
+    color: var(--primary-color, #7ab648);
+}
+
+.mobile-dropdown.is-open > .mobile-dropdown-toggle i {
+    transform: rotate(180deg);
+}
+
+/* Submenú — oculto por defecto */
+.mobile-menu .mobile-dropdown-menu {
+    display: none !important;
+    list-style: none;
+    padding: 4px 0 8px 14px;
+    margin: 0;
+    border-left: 2px solid var(--primary-color, #7ab648);
+}
+
+/* Submenú abierto */
+.mobile-menu .mobile-dropdown.is-open > .mobile-dropdown-menu {
+    display: block !important;
+}
+
+.mobile-dropdown-menu li {
+    margin: 0;
+    padding: 0;
+}
+
+.mobile-dropdown-menu a {
+    display: block;
+    padding: 8px 4px;
+    color: #999;
+    text-decoration: none;
+    font-size: 13px;
+    transition: color 0.2s;
+}
+
+.mobile-dropdown-menu a:hover {
+    color: var(--primary-color, #7ab648);
+}

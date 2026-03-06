@@ -472,6 +472,16 @@ document.addEventListener('DOMContentLoaded', function() {
             Auth.updateAuthUI();
             showNotification(`¡Bienvenido ${result.userData.username}!`, 'success');
             
+            // Si hay una redirección pendiente (ej: pestaña Colegiados), navegar allí
+            const pendingRedirect = sessionStorage.getItem('pendingRedirect');
+            if (pendingRedirect) {
+                sessionStorage.removeItem('pendingRedirect');
+                setTimeout(() => {
+                    window.location.href = pendingRedirect;
+                }, 800);
+                return;
+            }
+
             // Si estamos en una página que requiere login, recargar
             const currentPage = window.location.pathname;
             if (currentPage.includes('BEoferta') || currentPage.includes('BEdemanda')) {
@@ -482,6 +492,34 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             errorMessage.textContent = result.error;
             errorMessage.classList.add('show');
+        }
+    });
+
+    // --- Protección pestaña Colegiados ---
+    // Intercepta CUALQUIER enlace del menú que apunte a páginas de colegiados
+    document.addEventListener('click', (e) => {
+        const link = e.target.closest('a');
+        if (!link) return;
+
+        const href = link.getAttribute('href') || '';
+        const text = link.textContent.trim().toLowerCase();
+
+        // Detectar SOLO el enlace a parteprivada.html
+        const esColegiados =
+            href.toLowerCase().includes('parteprivada.html');
+
+        if (esColegiados && !Auth.isAuthenticated()) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            // Guardar destino para redirigir tras login
+            if (href && href !== '#') {
+                sessionStorage.setItem('pendingRedirect', href);
+            }
+
+            // Abrir modal de login
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
         }
     });
     

@@ -343,6 +343,63 @@ img {
     color: var(--primary-color);
 }
 
+/* Mobile dropdown toggle button */
+.mobile-dropdown-toggle {
+    width: 100%;
+    background: none;
+    border: none;
+    color: #bbb;
+    font-family: var(--font-heading);
+    font-size: inherit;
+    text-align: left;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.mobile-dropdown-toggle:hover {
+    color: var(--primary-color);
+}
+
+.mobile-dropdown-toggle i {
+    transition: transform 0.3s ease;
+    font-size: 12px;
+}
+
+.mobile-dropdown.is-open .mobile-dropdown-toggle i {
+    transform: rotate(180deg);
+}
+
+/* Mobile submenu */
+.mobile-dropdown-menu {
+    display: none;
+    padding-left: 15px;
+    margin-top: 10px;
+    border-left: 2px solid var(--primary-color);
+}
+
+.mobile-dropdown.is-open .mobile-dropdown-menu {
+    display: block;
+}
+
+.mobile-dropdown-menu li {
+    border-bottom: none !important;
+    margin-bottom: 8px !important;
+    padding-bottom: 0 !important;
+}
+
+.mobile-dropdown-menu a {
+    font-size: 14px;
+    color: #999;
+}
+
+.mobile-dropdown-menu a:hover {
+    color: var(--primary-color);
+}
+
 /* =========================================
    6. HERO SLIDER
    ========================================= */

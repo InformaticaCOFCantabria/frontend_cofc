@@ -1,0 +1,198 @@
+/* =====================================================
+   COcirculares.css
+   Solo añade el comportamiento de acordeón.
+   Todos los colores, tipografía y formas vienen
+   de PTestatutosmemoria.css sin modificación.
+===================================================== */
+
+/* Contenedor de cada circular (acordeón) */
+.circular-accordion {
+    margin-bottom: 12px;
+    border: 2px solid #f0f0f0;
+    border-radius: 12px;
+    overflow: hidden;
+    background: white;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.circular-accordion:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Cabecera / botón del acordeón */
+.circular-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    background: white;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    gap: 16px;
+    transition: background 0.2s ease;
+}
+
+.circular-header:hover {
+    background: #f0f9e8;
+}
+
+.circular-accordion.is-open .circular-header {
+    background: linear-gradient(135deg, #f0f9e8 0%, #e8f5d8 100%);
+    border-bottom: 2px solid #f0f0f0;
+}
+
+/* Textos de la cabecera */
+.circular-header-text {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.circular-header-text strong {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.circular-period-label {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+/* Chevron */
+.circular-chevron {
+    flex-shrink: 0;
+    font-size: 16px;
+    color: var(--primary-color);
+    transition: transform 0.3s ease;
+}
+
+.circular-accordion.is-open .circular-chevron {
+    transform: rotate(180deg);
+}
+
+/* Panel de documentos */
+.circular-panel {
+    padding: 20px 30px 30px;
+    animation: fadeIn 0.3s ease-out;
+}
+
+.documents-group {
+    margin-bottom: 1.5rem;
+}
+
+.documents-group:last-child {
+    margin-bottom: 0;
+}
+
+.documents-group-title {
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--primary-color);
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 2px solid var(--primary-color);
+    opacity: 0.85;
+}
+
+/* Botón del subgrupo */
+.documents-group-toggle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f0f9e8;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    cursor: pointer;
+    gap: 12px;
+    transition: background 0.2s ease;
+}
+
+.documents-group-toggle:hover {
+    background: #e8f5d8;
+}
+
+.documents-group-toggle .documents-group-title {
+    margin: 0;
+    padding: 0;
+    border-bottom: none;
+    font-size: 14px;
+}
+
+/* Chevron del subgrupo */
+.group-chevron {
+    flex-shrink: 0;
+    font-size: 13px;
+    color: var(--primary-color);
+    transition: transform 0.3s ease;
+}
+
+.documents-group-toggle[aria-expanded="true"] .group-chevron {
+    transform: rotate(180deg);
+}
+
+/* Panel interno */
+.documents-subpanel {
+    padding: 16px 4px 4px;
+    animation: fadeIn 0.3s ease-out;
+}
+
+/* Tercer nivel: sub-subgrupo por año */
+.documents-subgroup {
+    margin-bottom: 8px;
+}
+
+.documents-subgroup:last-child {
+    margin-bottom: 0;
+}
+
+.documents-subgroup-toggle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f8fdf4;
+    border: 1px solid #d4edba;
+    border-radius: 6px;
+    padding: 8px 14px;
+    cursor: pointer;
+    gap: 10px;
+    transition: background 0.2s ease;
+}
+
+.documents-subgroup-toggle:hover {
+    background: #edf7e0;
+}
+
+.documents-subgroup-title {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.subgroup-chevron {
+    flex-shrink: 0;
+    font-size: 11px;
+    color: var(--primary-color);
+    transition: transform 0.3s ease;
+}
+
+.documents-subgroup-toggle[aria-expanded="true"] .subgroup-chevron {
+    transform: rotate(180deg);
+}
+
+/* Las .document-card dentro del panel usan exactamente
+   los estilos de PTestatutosmemoria.css */
