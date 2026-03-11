@@ -1,0 +1,438 @@
+/* =========================================
+   CSS PARA COcim
+   ========================================= */
+
+.main-content {
+    padding: 60px 0;
+    min-height: 60vh;
+    background-color: #f8f9fa;
+}
+
+.content-article {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.article-header {
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 3px solid var(--primary-color);
+    text-align: center;
+}
+
+.article-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.article-subtitle h2 {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--text-color);
+    margin: 0;
+}
+
+/* Layout dos columnas */
+.cim-layout {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+/* Índice lateral */
+.cim-sidebar {
+    position: sticky;
+    top: 100px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    border: 1px solid #e8e8e8;
+    overflow: hidden;
+}
+
+.cim-sidebar-header {
+    background: var(--primary-color);
+    color: #333;
+    padding: 16px 20px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.cim-nav {
+    list-style: none;
+    margin: 0;
+    padding: 8px 0;
+}
+
+.cim-nav li {
+    border-bottom: 1px solid #eee;
+}
+
+.cim-nav li:last-child {
+    border-bottom: none;
+}
+
+.cim-nav-btn {
+    width: 100%;
+    background: none;
+    border: none;
+    text-align: left;
+    padding: 13px 20px;
+    font-size: 13px;
+    font-family: inherit;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    line-height: 1.4;
+}
+
+.cim-nav-btn:hover {
+    background: #f0f9e0;
+    color: var(--heading-color);
+    padding-left: 25px;
+}
+
+.cim-nav-btn.active {
+    background: #e8f5d0;
+    color: var(--heading-color);
+    font-weight: 600;
+    border-left: 3px solid var(--primary-color);
+    padding-left: 17px;
+}
+
+.cim-nav-btn i {
+    color: var(--primary-color);
+    font-size: 11px;
+    flex-shrink: 0;
+}
+
+/* Contenido principal */
+.cim-content {
+    min-height: 400px;
+}
+
+/* Secciones de contenido */
+.cim-section {
+    display: none;
+    animation: fadeIn 0.4s ease;
+}
+
+.cim-section.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Bloque de info de contacto (sección inicial) */
+.cim-contact-banner {
+    background: linear-gradient(135deg, #f0f9e8 0%, #e8f5d8 100%);
+    border-radius: 12px;
+    padding: 25px 30px;
+    margin-bottom: 30px;
+    border-left: 5px solid var(--primary-color);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.cim-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cim-contact-item i {
+    color: var(--primary-color);
+    font-size: 20px;
+}
+
+.cim-contact-item strong {
+    color: var(--heading-color);
+    font-size: 16px;
+}
+
+.cim-schedule {
+    font-size: 13px;
+    color: var(--text-color);
+    line-height: 1.7;
+}
+
+.cim-schedule strong {
+    color: var(--heading-color);
+    display: block;
+    margin-top: 6px;
+}
+
+/* Cuerpo de texto */
+.cim-body p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--text-color);
+    margin-bottom: 18px;
+}
+
+.cim-body ul {
+    list-style: none;
+    margin: 15px 0 20px 0;
+}
+
+.cim-body ul li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 8px;
+    font-size: 15px;
+    color: var(--text-color);
+    line-height: 1.7;
+}
+
+.cim-body ul li::before {
+    content: '•';
+    color: var(--primary-color);
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    top: -4px;
+}
+
+/* Título de sección de contenido */
+.cim-section-title {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #f0f0f0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.cim-section-title i {
+    font-size: 28px;
+}
+
+/* Placeholder para secciones sin contenido */
+.cim-placeholder {
+    text-align: center;
+    padding: 60px 20px;
+    color: #aaa;
+}
+
+.cim-placeholder i {
+    font-size: 60px;
+    color: #ddd;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.cim-placeholder p {
+    font-size: 16px;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 900px) {
+    .cim-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .cim-sidebar {
+        position: static;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-content { padding: 30px 0; }
+    .content-article { padding: 30px 20px; border-radius: 0; box-shadow: none; }
+    .article-title { font-size: 26px; }
+}
+
+@media (max-width: 480px) {
+    .content-article { padding: 20px 15px; }
+    .article-title { font-size: 22px; }
+    .cim-contact-banner { padding: 20px; }
+}
+
+/* =====================================================
+   ACORDEÓN DE DOCUMENTOS (portado de COcirculares.css)
+===================================================== */
+
+.circular-accordion {
+    margin-bottom: 12px;
+    border: 2px solid #f0f0f0;
+    border-radius: 12px;
+    overflow: hidden;
+    background: white;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.circular-accordion:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.circular-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    background: white;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    gap: 16px;
+    transition: background 0.2s ease;
+}
+
+.circular-header:hover {
+    background: #f0f9e8;
+}
+
+.circular-accordion.is-open .circular-header {
+    background: linear-gradient(135deg, #f0f9e8 0%, #e8f5d8 100%);
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.circular-header-text {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.circular-header-text strong {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.circular-chevron {
+    flex-shrink: 0;
+    font-size: 16px;
+    color: var(--primary-color);
+    transition: transform 0.3s ease;
+}
+
+.circular-accordion.is-open .circular-chevron {
+    transform: rotate(180deg);
+}
+
+.circular-panel {
+    padding: 16px 24px 24px 24px;
+}
+
+.circular-header-static {
+    padding: 16px 24px;
+}
+
+.documents-group {
+    margin-bottom: 1.5rem;
+}
+
+.documents-group:last-child {
+    margin-bottom: 0;
+}
+
+.documents-group-title {
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--primary-color);
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 2px solid var(--primary-color);
+    opacity: 0.85;
+}
+
+.documents-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.document-card {
+    background: white;
+    border: 2px solid #f0f0f0;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: all 0.3s ease;
+}
+
+.document-card:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transform: translateY(-3px);
+}
+
+.document-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #f0f9e8 0%, #e8f5d8 100%);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    font-size: 28px;
+    margin: 0 auto;
+}
+
+.document-info {
+    text-align: center;
+    flex: 1;
+}
+
+.document-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--heading-color);
+    margin: 0;
+}
+
+.download-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: var(--primary-color);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.download-btn:hover {
+    background: var(--primary-dark);
+    transform: scale(1.03);
+    color: white;
+}

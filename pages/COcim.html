@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COF Cantabria - Centro de Información del Medicamento (CIM)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/mobile-menu.css">
+    <link rel="stylesheet" href="../assets/css/COcim.css">
+    <style>
+        .cim-subnav {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            border-top: 1px solid #e8e8e8;
+        }
+        .cim-nav-sub {
+            padding-left: 36px !important;
+            font-size: 12px !important;
+            color: #555;
+        }
+        .cim-nav-sub i {
+            font-size: 7px !important;
+        }
+        .cim-nav-sub:hover {
+            padding-left: 41px !important;
+        }
+        .cim-nav-sub.active {
+            padding-left: 33px !important;
+            border-left: 3px solid var(--primary-color) !important;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="social-icons">
+                <a href="https://www.instagram.com/cofcantabria/" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/cofcantabria" target="_blank" title="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.facebook.com/people/Colegio-de-Farmac%C3%A9uticos-de-Cantabria/100063216339209/" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.tiktok.com/@cofcantabria" target="_blank" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.youtube.com/@cofcantabria9919" target="_blank" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/company/colegio-oficial-de-farmac%C3%A9uticos-de-cantabria/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://bsky.app/profile/cofcantabria.bsky.social" target="_blank" title="Bluesky"><i class="fa-brands fa-bluesky"></i></a>
+            </div>
+            <div class="top-links">
+                <a href="#" class="login-link btn-acceso">
+                    <i class="fas fa-lock"></i> Acceso Colegiado
+                </a>
+                <a href="https://serviciodecorreo.es/" target="_blank" class="login-link">
+                    <i class="fas fa-envelope"></i> Web Mail
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../assets/img/Logos/COFC_11.png" alt="COFCantabria Logo" class="logo-img">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="./PTpresentacion.html">Portal de Transparencia <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="./PTpresentacion.html">Presentación</a></li>
+                            <li><a href="./PTjuntadegobierno.html">Junta de Gobierno</a></li>
+                            <li><a href="./PTorganigrama.html">Organigrama COF</a></li>
+                            <li><a href="./PTestatutosmemoria.html">Estatutos y Memoria Gestión</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./BolsaEmpleo.html">Bolsa de Empleo</a></li>
+                    <li class="dropdown">
+                        <a href="./VUlistadocolegiados.html">Ventanilla Única <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="./VUcolegiacion.html">Colegiación</a></li>
+                            <li><a href="./VUtramites.html">Trámites (solicitudes, certificados...)</a></li>
+                            <li><a href="./VUcodigodeontologico.html">Código Deontológico</a></li>
+                            <li><a href="./VUlistadocolegiados.html">Listado de Colegiados</a></li>
+                            <li><a href="#">Atención Ciudadanía y Reclamaciones</a></li>
+                            <li><a href="#">Canal de Denuncias</a></li>
+                            <li><a href="./VUlistadoperitos.html">Listado de Peritos Judiciales</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Ciudadanía <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="https://view.genially.com/6981a6424032400e563879c4">Campañas de Vacunación</a></li>
+                            <li><a href="./CIrecetaelectronica.html">Receta Electrónica</a></li>
+                            <li><a href="https://www.farmaceuticos.com/tu-farmaceutico-informa/escuela-con-pacientes-3/">Escuela con Pacientes</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./parteprivada.html">Colegiados</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+                <button id="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <button id="close-menu-btn"><i class="fas fa-times"></i></button>
+        <ul class="nav-list">
+            <li><a href="../index.html">Inicio</a></li>
+            <li class="mobile-dropdown">
+                <button class="mobile-dropdown-toggle">Portal de Transparencia <i class="fas fa-chevron-down"></i></button>
+                <ul class="mobile-dropdown-menu">
+                    <li><a href="./PTpresentacion.html">Presentación</a></li>
+                    <li><a href="./PTjuntadegobierno.html">Junta de Gobierno</a></li>
+                    <li><a href="./PTorganigrama.html">Organigrama COF</a></li>
+                    <li><a href="./PTestatutosmemoria.html">Estatutos y Memoria Gestión</a></li>
+                </ul>
+            </li>
+            <li><a href="./BolsaEmpleo.html">Bolsa de Empleo</a></li>
+            <li class="mobile-dropdown">
+                <button class="mobile-dropdown-toggle">Ventanilla Única <i class="fas fa-chevron-down"></i></button>
+                <ul class="mobile-dropdown-menu">
+                    <li><a href="./VUcolegiacion.html">Colegiación</a></li>
+                    <li><a href="./VUtramites.html">Trámites</a></li>
+                    <li><a href="./VUcodigodeontologico.html">Código Deontológico</a></li>
+                    <li><a href="./VUlistadocolegiados.html">Listado de Colegiados</a></li>
+                    <li><a href="#">Atención Ciudadanía y Reclamaciones</a></li>
+                    <li><a href="#">Canal de Denuncias</a></li>
+                    <li><a href="./VUlistadoperitos.html">Listado de Peritos Judiciales</a></li>
+                </ul>
+            </li>
+            <li class="mobile-dropdown">
+                <button class="mobile-dropdown-toggle">Ciudadanía <i class="fas fa-chevron-down"></i></button>
+                <ul class="mobile-dropdown-menu">
+                    <li><a href="https://view.genially.com/6981a6424032400e563879c4">Campañas de Vacunación</a></li>
+                    <li><a href="./CIrecetaelectronica.html">Receta Electrónica</a></li>
+                    <li><a href="https://www.farmaceuticos.com/tu-farmaceutico-informa/escuela-con-pacientes-3/">Escuela con Pacientes</a></li>
+                </ul>
+            </li>
+            <li><a href="./parteprivada.html">Colegiados</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <article class="content-article">
+
+                <!-- Cabecera -->
+                <header class="article-header">
+                    <h1 class="article-title">CIM</h1>
+                    <div class="article-subtitle">
+                        <h2>Centro de Información del Medicamento</h2>
+                    </div>
+                </header>
+
+                <!-- Layout -->
+                <div class="cim-layout">
+
+                    <!-- Índice lateral -->
+                    <aside class="cim-sidebar">
+                        <div class="cim-sidebar-header">
+                            <i class="fas fa-list"></i> Índice 
+                        </div>
+                        <ul class="cim-nav">
+                            <li>
+                                <button class="cim-nav-btn active" data-target="inicial">
+                                    <i class="fas fa-circle"></i> El Centro de Información del Medicamento
+                                </button>
+                            </li>
+                            <li>
+                                <button class="cim-nav-btn" data-target="actualidad">
+                                    <i class="fas fa-circle"></i> Actualidad CIM
+                                </button>
+                            </li>
+                            <li>
+                                <button class="cim-nav-btn" data-target="informes">
+                                    <i class="fas fa-circle"></i> Informes Técnicos de Medicamentos y Patologías
+                                </button>
+                                <ul class="cim-subnav">
+                                    <li>
+                                        <button class="cim-nav-btn cim-nav-sub" data-target="anticoncepcion">
+                                            <i class="fas fa-circle"></i> Anticoncepción de urgencia
+                                        </button>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <button class="cim-nav-btn" data-target="listados">
+                                    <i class="fas fa-circle"></i> Listados de interés para la dispensación
+                                </button>
+                            </li>
+                            <li>
+                                <button class="cim-nav-btn" data-target="farmacovigilancia">
+                                    <i class="fas fa-circle"></i> Farmacovigilancia
+                                </button>
+                            </li>
+                            <li>
+                                <button class="cim-nav-btn" data-target="recetas">
+                                    <i class="fas fa-circle"></i> Recetas. Normas de Dispensación
+                                </button>
+                            </li>
+                            <li>
+                                <button class="cim-nav-btn" data-target="tsi">
+                                    <i class="fas fa-circle"></i> Tarjeta Sanitaria Individual -TSI-
+                                </button>
+                            </li>
+                            <li>
+                                <button class="cim-nav-btn" data-target="incidencias">
+                                    <i class="fas fa-circle"></i> Incidencias con la medicación de pacientes del SCS
+                                </button>
+                            </li>
+                            <li>
+                                <button class="cim-nav-btn" data-target="hospitalarios">
+                                    <i class="fas fa-circle"></i> Entrega de Medicamentos Hospitalarios por las Farmacias
+                                </button>
+                            </li>
+                            <li>
+                                <button class="cim-nav-btn" data-target="domicilio">
+                                    <i class="fas fa-circle"></i> Autorización dispensación domicilio
+                                </button>
+                            </li>
+                            <li>
+                                <button class="cim-nav-btn" data-target="vacunas">
+                                    <i class="fas fa-circle"></i> Vacunas
+                                </button>
+                            </li>
+                            <li>
+                                <button class="cim-nav-btn" data-target="formulacion">
+                                    <i class="fas fa-circle"></i> Formulación Magistral
+                                </button>
+                            </li>
+                            <li>
+                                <button class="cim-nav-btn" data-target="especial">
+                                    <i class="fas fa-circle"></i> Medicamentos Dispensación Especial
+                                </button>
+                            </li>
+                            <li>
+                                <button class="cim-nav-btn" data-target="profesionales">
+                                    <i class="fas fa-circle"></i> Dispensación de medicamentos a profesionales sanitarios
+                                </button>
+                            </li>
+                            <li>
+                                <button class="cim-nav-btn" data-target="botiquines">
+                                    <i class="fas fa-circle"></i> Botiquines
+                                </button>
+                            </li>
+                            <li>
+                                <button class="cim-nav-btn" data-target="animal">
+                                    <i class="fas fa-circle"></i> Medicamentos de Uso Animal
+                                </button>
+                            </li>
+                        </ul>
+                    </aside>
+
+                    <!-- Área de contenido -->
+                    <div class="cim-content">
+
+                        <!-- INICIAL -->
+                        <div class="cim-section active" id="sec-inicial">
+                            <div class="cim-contact-banner">
+                                <div class="cim-contact-item">
+                                    <i class="fas fa-phone"></i>
+                                    <div>
+                                        <strong>942 21 68 26</strong>
+                                    </div>
+                                </div>
+                                <div class="cim-schedule">
+                                    <strong>Horario:</strong>
+                                    De lunes a viernes<br>
+                                    <strong>Mañanas:</strong> De 9:45 a 13:45 h.<br>
+                                    <strong>Tardes:</strong> De 16:30 a 20:00 h.<br>
+                                    <strong>Sábados:</strong> De 10:00 a 13:30 h.
+                                </div>
+                            </div>
+                            <div class="cim-body">
+                                <h2 class="cim-section-title"><i class="fas fa-pills"></i> Un servicio a los colegiados</h2>
+                                <p>El Colegio Oficial de Farmacéuticos de Cantabria cuenta, entre sus departamentos técnicos, con un Centro de Información del Medicamento, que ofrece un servicio a los colegiados, respondiendo a consultas relacionadas con el medicamento y con las diferentes áreas y disciplinas que engloban la profesión farmacéutica.</p>
+                                <p>El Centro de Información del Medicamento -CIM- es un servicio técnico cuyo objetivo fundamental es proporcionar al farmacéutico asesoramiento y orientación para todo tipo de problemas que le plantee el ejercicio de su profesión. Desde el CIM se le ofrece los datos y la información que necesite en cualquier momento, sobre temas diversos.</p>
+                                <p>Para ello el CIM cuenta con el personal técnico, en este caso tres farmacéuticas, y los medios materiales adecuados tales como bancos de datos informatizados, bibliografía actualizada en forma de libros, revistas y publicaciones. El disponer de estos fondos documentales es fundamental para resolver las consultas planteadas por los usuarios, así como el tener una infraestructura adecuada que permita dicha resolución en el menor tiempo posible.</p>
+                                <p>Los usuarios del CIM colegial son principalmente farmacéuticos, pero también se reciben, de forma esporádica, consultas de otros profesionales sanitarios, principalmente médicos.</p>
+                                <p>La información que se ofrece es tanto activa como pasiva.</p>
+                                <p>La información activa consiste en la elaboración y redacción de material informativo impreso con un contenido sobre temas de interés profesional y que se remite a todos los farmacéuticos colegiados en Cantabria.</p>
+                                <p>La información pasiva o resolución de consultas es aquella información generada por el CIM en respuesta a una pregunta concreta del usuario, la cual es realizada de forma personal en la sede colegial, por teléfono o por escrito; aunque es la forma telefónica la más habitual.</p>
+                                <p>Los temas de las consultas que pueden efectuarse al CIM van a estar siempre relacionados con la profesión farmacéutica y son principalmente:</p>
+                                <ul>
+                                    <li><strong>Farmacología:</strong> acción y mecanismo de fármacos, indicaciones, posología, farmacocinética, efectos secundarios, interacciones, contraindicaciones, toxicidad, uso en embarazo y lactancia.</li>
+                                    <li><strong>Especialidades farmacéuticas:</strong> altas, bajas, composición, sustituciones, medicamentos extranjeros, especialidades de uso animal.</li>
+                                    <li><strong>Formulación magistral:</strong> principios activos, excipientes, modus operandi, información al paciente, caducidad y estabilidad.</li>
+                                    <li><strong>Legislación sobre medicamentos:</strong> normas de dispensación de receta médica, estupefacientes, psicótropos, EFP.</li>
+                                    <li><strong>Normas de dispensación de recetas:</strong> Servicio Cántabro de Salud y otras entidades.</li>
+                                    <li><strong>Referencias bibliográficas.</strong></li>
+                                    <li><strong>Otros temas profesionales:</strong> Dietética, Dermofarmacia, Fitoterapia, etc.</li>
+                                </ul>
+                                <p>Dentro de la infraestructura del CIM se lleva un control de las consultas, con los datos del consultante, el tema de la pregunta y la respuesta que se facilita. Esto permite llevar la estadística del Centro que cada año es publicada en el Informe anual del Colegio.</p>
+                            </div>
+                        </div>
+
+                        <!-- ACTUALIDAD CIM -->
+                        <div class="cim-section" id="sec-actualidad">
+                            <h2 class="cim-section-title"><i class="fas fa-newspaper"></i> Actualidad CIM</h2>
+
+                            <!-- 1. Vacunas en viajes internacionales -->
+                            <div class="circular-accordion">
+                                <button class="circular-header" aria-expanded="false" aria-controls="panel-act-1">
+                                    <span class="circular-header-text">
+                                        <strong>Vacunas en viajes internacionales</strong>
+                                    </span>
+                                    <i class="fas fa-chevron-down circular-chevron"></i>
+                                </button>
+                                <div class="circular-panel" id="panel-act-1" hidden>
+                                    <div class="documents-grid">
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Vacunas en viajes internacionales</h4></div>
+                                            <a href="../assets/pdf/COcim/actualidad/vacunasviajesinternacionales.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 2. Metamizol: riesgo de agranulocitosis -->
+                            <div class="circular-accordion">
+                                <button class="circular-header" aria-expanded="false" aria-controls="panel-act-2">
+                                    <span class="circular-header-text">
+                                        <strong>Metamizol: riesgo de agranulocitosis</strong>
+                                    </span>
+                                    <i class="fas fa-chevron-down circular-chevron"></i>
+                                </button>
+                                <div class="circular-panel" id="panel-act-2" hidden>
+                                    <div class="documents-grid">
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Metamizol: riesgo de agranulocitosis</h4></div>
+                                            <a href="../assets/pdf/COcim/actualidad/Metamizol_ riesgo de agranulocitosis.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 3. Infografía sobre "Viruela del mono" -->
+                            <div class="circular-accordion">
+                                <button class="circular-header" aria-expanded="false" aria-controls="panel-act-3">
+                                    <span class="circular-header-text">
+                                        <strong>Infografía sobre "Viruela del mono"</strong>
+                                    </span>
+                                    <i class="fas fa-chevron-down circular-chevron"></i>
+                                </button>
+                                <div class="circular-panel" id="panel-act-3" hidden>
+                                    <div class="documents-grid">
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Infografía sobre "Viruela del mono"</h4></div>
+                                            <a href="../assets/pdf/COcim/actualidad/infografiaMpox.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 4. Recomendaciones de la AEMPS sobre la protección ante garrapatas -->
+                            <div class="circular-accordion">
+                                <button class="circular-header" aria-expanded="false" aria-controls="panel-act-4">
+                                    <span class="circular-header-text">
+                                        <strong>Recomendaciones de la AEMPS sobre la protección ante garrapatas</strong>
+                                    </span>
+                                    <i class="fas fa-chevron-down circular-chevron"></i>
+                                </button>
+                                <div class="circular-panel" id="panel-act-4" hidden>
+                                    <div class="documents-grid">
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Recomendaciones AEMPS sobre protección ante garrapatas</h4></div>
+                                            <a href="https://www.aemps.gob.es/informa/recomendaciones-de-la-aemps-sobre-la-proteccion-ante-garrapatas/" class="download-btn" target="_blank"><i class="fas fa-search"></i><span>Buscar</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 5. Cigarrillos electrónicos / Vapeadores -->
+                            <div class="circular-accordion">
+                                <button class="circular-header" aria-expanded="false" aria-controls="panel-act-5">
+                                    <span class="circular-header-text">
+                                        <strong>Cigarrillos electrónicos / Vapeadores</strong>
+                                    </span>
+                                    <i class="fas fa-chevron-down circular-chevron"></i>
+                                </button>
+                                <div class="circular-panel" id="panel-act-5" hidden>
+                                    <div class="documents-grid">
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Cigarrillos electrónicos / Vapeadores</h4></div>
+                                            <a href="../assets/pdf/COcim/actualidad/notaconsejogeneralvapeadores.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 6. De interés para viajeros -->
+                            <div class="circular-accordion">
+                                <button class="circular-header" aria-expanded="false" aria-controls="panel-act-6">
+                                    <span class="circular-header-text">
+                                        <strong>De interés para viajeros</strong>
+                                    </span>
+                                    <i class="fas fa-chevron-down circular-chevron"></i>
+                                </button>
+                                <div class="circular-panel" id="panel-act-6" hidden>
+                                    <div class="documents-grid">
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">De interés para viajeros - Documento 1</h4></div>
+                                            <a href="https://www.sanidad.gob.es/ciudadanos/proteccionSalud/vacunaciones/viajero" class="download-btn" target="_blank"><i class="fas fa-search"></i><span>Buscar</span></a>
+                                        </div>
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">De interés para viajeros - Documento 2</h4></div>
+                                            <a href="../assets/pdf/COcim/actualidad/erroresmedicacionmarcasigualespaises.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">De interés para viajeros - Documento 3</h4></div>
+                                            <a href="https://www.sanidad.gob.es/profesionales/saludPaises.do" class="download-btn" target="_blank"><i class="fas fa-search"></i><span>Buscar</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 7. Brotes de sarna. ¿Qué debes saber? -->
+                            <div class="circular-accordion">
+                                <button class="circular-header" aria-expanded="false" aria-controls="panel-act-7">
+                                    <span class="circular-header-text">
+                                        <strong>Brotes de sarna. ¿Qué debes saber?</strong>
+                                    </span>
+                                    <i class="fas fa-chevron-down circular-chevron"></i>
+                                </button>
+                                <div class="circular-panel" id="panel-act-7" hidden>
+                                    <div class="documents-grid">
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Brotes de sarna. ¿Qué debes saber?</h4></div>
+                                            <a href="../assets/pdf/COcim/actualidad/sarnaquehacer.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 8. Virus respiratorio sincitial (VRS) -->
+                            <div class="circular-accordion">
+                                <button class="circular-header" aria-expanded="false" aria-controls="panel-act-8">
+                                    <span class="circular-header-text">
+                                        <strong>Virus respiratorio sincitial (VRS)</strong>
+                                    </span>
+                                    <i class="fas fa-chevron-down circular-chevron"></i>
+                                </button>
+                                <div class="circular-panel" id="panel-act-8" hidden>
+                                    <div class="documents-grid">
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Virus respiratorio sincitial (VRS)</h4></div>
+                                            <a href="../assets/pdf/COcim/actualidad/notainformativaVRS.PDF" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 9. Información en prospectos -->
+                            <div class="circular-accordion">
+                                <button class="circular-header" aria-expanded="false" aria-controls="panel-act-9">
+                                    <span class="circular-header-text">
+                                        <strong>Información en prospectos</strong>
+                                    </span>
+                                    <i class="fas fa-chevron-down circular-chevron"></i>
+                                </button>
+                                <div class="circular-panel" id="panel-act-9" hidden>
+                                    <div class="documents-grid">
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Información en prospectos</h4></div>
+                                            <a href="../assets/pdf/COcim/actualidad/Informacionquedebenincluirlosprospectos.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 10. Enfermedad hemorrágica epizoótica -->
+                            <div class="circular-accordion">
+                                <button class="circular-header" aria-expanded="false" aria-controls="panel-act-10">
+                                    <span class="circular-header-text">
+                                        <strong>Enfermedad hemorrágica epizoótica</strong>
+                                    </span>
+                                    <i class="fas fa-chevron-down circular-chevron"></i>
+                                </button>
+                                <div class="circular-panel" id="panel-act-10" hidden>
+                                    <div class="documents-grid">
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Enfermedad hemorrágica epizoótica</h4></div>
+                                            <a href="../assets/pdf/COcim/actualidad/Enfermedadhemorragicaepizootica.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 11. Productos Milagro -->
+                            <div class="circular-accordion">
+                                <button class="circular-header" aria-expanded="false" aria-controls="panel-act-11">
+                                    <span class="circular-header-text">
+                                        <strong>Productos Milagro</strong>
+                                    </span>
+                                    <i class="fas fa-chevron-down circular-chevron"></i>
+                                </button>
+                                <div class="circular-panel" id="panel-act-11" hidden>
+                                    <div class="documents-grid">
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Artículo de interés</h4></div>
+                                            <a href="../assets/pdf/COcim/actualidad/Articulodeinteres.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Centro de detección de productos milagro</h4></div>
+                                            <a href="../assets/pdf/COcim/actualidad/CentrodedeteccióndeProductosMilagro.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 12. Actualidad Aceite de Palma -->
+                            <div class="circular-accordion">
+                                <button class="circular-header" aria-expanded="false" aria-controls="panel-act-12">
+                                    <span class="circular-header-text">
+                                        <strong>Actualidad Aceite de Palma</strong>
+                                    </span>
+                                    <i class="fas fa-chevron-down circular-chevron"></i>
+                                </button>
+                                <div class="circular-panel" id="panel-act-12" hidden>
+                                    <div class="documents-grid">
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Actualidad Aceite de Palma</h4></div>
+                                            <a href="../assets/pdf/COcim/actualidad/actualidadaceitepalma.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 13. Protégete de los insectos -->
+                            <div class="circular-accordion">
+                                <button class="circular-header" aria-expanded="false" aria-controls="panel-act-13">
+                                    <span class="circular-header-text">
+                                        <strong>Protégete de los insectos. Recomendaciones de la AEMPS sobre repelentes de uso humano</strong>
+                                    </span>
+                                    <i class="fas fa-chevron-down circular-chevron"></i>
+                                </button>
+                                <div class="circular-panel" id="panel-act-13" hidden>
+                                    <div class="documents-grid">
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Recomendaciones AEMPS sobre repelentes de uso humano</h4></div>
+                                            <a href="https://www.aemps.gob.es/informa/recomendaciones-de-la-aemps-sobre-repelentes-de-uso-humano/" class="download-btn" target="_blank"><i class="fas fa-search"></i><span>Buscar</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- INFORMES TÉCNICOS -->
+                        <div class="cim-section" id="sec-informes">
+                            <h2 class="cim-section-title"><i class="fas fa-file-medical-alt"></i> Informes Técnicos de Medicamentos y Patologías</h2>
+                            <div class="documents-grid">
+                                <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">Enfermedades tropicales desatendidas</h4></div><a href="../assets/pdf/COcim/informes_tecnicos/176EnfermedadesTropicalesDesatendidas.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">Tumores sólidos en la infancia</h4></div><a href="../assets/pdf/COcim/informes_tecnicos/177TumoresSólidosInfancia.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">El agua y la profesión farmacéutica</h4></div><a href="../assets/pdf/COcim/informes_tecnicos/178ElAguaProfesiónFarmacéutica.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">El ADN en la innovación de terapias génicas</h4></div><a href="../assets/pdf/COcim/informes_tecnicos/179ElADNInnovaciónTerapiasGénicas.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">Terapéutica del cáncer de ovario</h4></div><a href="../assets/pdf/COcim/informes_tecnicos/180TerapéuticaCáncerOvario.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">Vitíligo: Una enfermedad invisible</h4></div><a href="../assets/pdf/COcim/informes_tecnicos/181VitiligoUnaEnfermedadInvisible.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">Trastorno por déficit de atención e hiperactividad</h4></div><a href="../assets/pdf/COcim/informes_tecnicos/182TrastornoDéficitAtenciónHiperactividad.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">Enfermedad de Alzheimer. Avances en su abordaje</h4></div><a href="../assets/pdf/COcim/informes_tecnicos/183EnfermedadAlzheimer.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">¿Qué son y cómo se tratan las amiloidosis?</h4></div><a href="../assets/pdf/COcim/informes_tecnicos/184QueSonComoSeTratanAmiloidosis.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                                <div class="document-card"><div class="document-icon"><i class="fas fa-file-pdf"></i></div><div class="document-info"><h4 class="document-title">Panorama de las resistencias microbianas y nuevos antibióticos</h4></div><a href="../assets/pdf/COcim/informes_tecnicos/185ResistenciasMicrobianasNuevosAntibióticos.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a></div>
+                            </div>
+                        </div>
+
+                        <!-- ANTICONCEPCIÓN DE URGENCIA -->
+                        <div class="cim-section" id="sec-anticoncepcion">
+                            <h2 class="cim-section-title"><i class="fas fa-pills"></i> Anticoncepción de urgencia</h2>
+
+                            <!-- Píldora del día después -PDD- sin receta -->
+                            <div class="circular-accordion">
+                                <button class="circular-header" aria-expanded="false" aria-controls="panel-au-1">
+                                    <span class="circular-header-text">
+                                        <strong>Píldora del día después -PDD- sin receta</strong>
+                                    </span>
+                                    <i class="fas fa-chevron-down circular-chevron"></i>
+                                </button>
+                                <div class="circular-panel" id="panel-au-1" hidden>
+                                    <div class="documents-grid">
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Nota de prensa del Ministerio</h4></div>
+                                            <a href="../assets/pdf/COcim/anticoncepcionurgencia/NotaPrensaMinisterio.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Nota informativa del Colegio</h4></div>
+                                            <a href="../assets/pdf/COcim/anticoncepcionurgencia/NotaInformativaColegio.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Información para el usuario -->
+                            <div class="circular-accordion">
+                                <button class="circular-header" aria-expanded="false" aria-controls="panel-au-2">
+                                    <span class="circular-header-text">
+                                        <strong>Información para el usuario</strong>
+                                    </span>
+                                    <i class="fas fa-chevron-down circular-chevron"></i>
+                                </button>
+                                <div class="circular-panel" id="panel-au-2" hidden>
+                                    <div class="documents-grid">
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Tríptico sobre el uso de la PDD</h4></div>
+                                            <a href="../assets/pdf/COcim/anticoncepcionurgencia/TripticoSobreUsoPDD.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Tríptico sobre el VIH y otras enfermedades de transmisión sexual</h4></div>
+                                            <a href="../assets/pdf/COcim/anticoncepcionurgencia/TripticoSobreVIHOtrasETS.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Tríptico sobre métodos anticonceptivos</h4></div>
+                                            <a href="../assets/pdf/COcim/anticoncepcionurgencia/TripticoSobreMetodosAnticonceptivos.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Información para el farmacéutico -->
+                            <div class="circular-accordion">
+                                <button class="circular-header" aria-expanded="false" aria-controls="panel-au-3">
+                                    <span class="circular-header-text">
+                                        <strong>Información para el farmacéutico</strong>
+                                    </span>
+                                    <i class="fas fa-chevron-down circular-chevron"></i>
+                                </button>
+                                <div class="circular-panel" id="panel-au-3" hidden>
+                                    <div class="documents-grid">
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Informe técnico del Ministerio</h4></div>
+                                            <a href="../assets/pdf/COcim/anticoncepcionurgencia/InformeTecnicoMInisterio.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Ley 41/2002, básica reguladora de la autonomía del paciente y de derechos y obligaciones en materia de información...</h4></div>
+                                            <a href="../assets/pdf/COcim/anticoncepcionurgencia/leyautonomiapaciente.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Protocolo para la dispensación en anticoncepción de urgencia</h4></div>
+                                            <a href="../assets/pdf/COcim/anticoncepcionurgencia/ProtocoloDispensaciónAnticoncepciónUrg.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Listados de interés para la dispensación -->
+                        <div class="cim-section" id="sec-listados">
+                            <h2 class="cim-section-title"><i class="fas fa-newspaper"></i>Listados de interés para la dispensación</h2>
+
+                            <!-- 1. Medias terapéuticas de compresión fuerte -->
+                            <div class="circular-accordion">
+                                <button class="circular-header" aria-expanded="false" aria-controls="panel-act-1">
+                                    <span class="circular-header-text">
+                                        <strong>Medias terapéuticas de compresión fuerte</strong>
+                                    </span>
+                                    <i class="fas fa-chevron-down circular-chevron"></i>
+                                </button>
+                                <div class="circular-panel" id="panel-act-1" hidden>
+                                    <div class="documents-grid">
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Medias terapéuticas de compresión fuerte</h4></div>
+                                            <a href="../assets/pdf/COcim/ListadoInteres/MediasTerapeuticasCompresionFuerte.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 2. Medicamentos no financiados -NOFIN-, prescritos en receta del S.C.S. por principio activo y su correspondiente presentación. -->
+                            <div class="circular-accordion">
+                                <button class="circular-header" aria-expanded="false" aria-controls="panel-act-2">
+                                    <span class="circular-header-text">
+                                        <strong>Medicamentos no financiados -NOFIN-, prescritos en receta del S.C.S. por principio activo y su correspondiente presentación.</strong>
+                                    </span>
+                                    <i class="fas fa-chevron-down circular-chevron"></i>
+                                </button>
+                                <div class="circular-panel" id="panel-act-2" hidden>
+                                    <div class="documents-grid">
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Listado de medicamentos NOFIN. Enero 2024</h4></div>
+                                            <a href="../assets/pdf/COcim/ListadoInteres/ListadoMedicamentosNOFINEnero2024.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 3. Medicamentos solo financiados para ciertas indicaciones -EXOI-" -->
+                            <div class="circular-accordion">
+                                <button class="circular-header" aria-expanded="false" aria-controls="panel-act-3">
+                                    <span class="circular-header-text">
+                                        <strong>Medicamentos solo financiados para ciertas indicaciones -EXOI-</strong>
+                                    </span>
+                                    <i class="fas fa-chevron-down circular-chevron"></i>
+                                </button>
+                                <div class="circular-panel" id="panel-act-3" hidden>
+                                    <div class="documents-grid">
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Medicamentos Medicamentos solo financiados para ciertas indicaciones -EXOI- Septiembre 2025</h4></div>
+                                            <a href="../assets/pdf/COcim/ListadoInteres/MedicamentosFinanciados-EXOI-.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 4. Pares de nombres de medicamentos que se prestan a confusión -->
+                            <div class="circular-accordion">
+                                <button class="circular-header" aria-expanded="false" aria-controls="panel-act-4">
+                                    <span class="circular-header-text">
+                                        <strong>Pares de nombres de medicamentos que se prestan a confusión</strong>
+                                    </span>
+                                    <i class="fas fa-chevron-down circular-chevron"></i>
+                                </button>
+                                <div class="circular-panel" id="panel-act-4" hidden>
+                                    <div class="documents-grid">
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Medicamentos que se prestan a confusión por similitud fonética u ortográfica</h4></div>
+                                            <a href="../assets/pdf/COcim/ListadoInteres/MedicamentosConfusionSimilitud.pdf" class="download-btn" target="_blank"><i class="fas fa-search"></i><span>Buscar</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 5. Desabastecimiento de Medicamentos -->
+                            <div class="circular-accordion">
+                                <button class="circular-header" aria-expanded="false" aria-controls="panel-act-5">
+                                    <span class="circular-header-text">
+                                        <strong>Desabastecimiento de Medicamentos</strong>
+                                    </span>
+                                    <i class="fas fa-chevron-down circular-chevron"></i>
+                                </button>
+                                <div class="circular-panel" id="panel-act-5" hidden>
+                                    <div class="documents-grid">
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Listado de medicamentos con problemas de suministro</h4></div>
+                                            <a href="https://cima.aemps.es/cima/publico/listadesabastecimiento.html?activos=1" class="download-btn" target="_blank"><i class="fas fa-search"></i><span>Buscar</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 6. Medicamentos que no precisan receta médica para su dispensación -->
+                            <div class="circular-accordion">
+                                <button class="circular-header" aria-expanded="false" aria-controls="panel-act-6">
+                                    <span class="circular-header-text">
+                                        <strong>Medicamentos que no precisan receta médica para su dispensación</strong>
+                                    </span>
+                                    <i class="fas fa-chevron-down circular-chevron"></i>
+                                </button>
+                                <div class="circular-panel" id="panel-act-6" hidden>
+                                    <div class="documents-grid">
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Dispensación de medicamentos sin receta médica</h4></div>
+                                            <a href="../assets/pdf/COcim/ListadoInteres/DispensacionMedicamentosRecetaMedica.pdf" class="download-btn" target="_blank"><i class="fas fa-search"></i><span>Buscar</span></a>
+                                        </div>
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Medicamentos sin receta. Septiembre 2025 </h4></div>
+                                            <a href="../assets/pdf/COcim/ListadoInteres/MedicamentosSinRecetaSeptiembre2025.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 7. Uso Hospitalario -H- -->
+                            <div class="circular-accordion">
+                                <button class="circular-header" aria-expanded="false" aria-controls="panel-act-7">
+                                    <span class="circular-header-text">
+                                        <strong>Uso Hospitalario -H-</strong>
+                                    </span>
+                                    <i class="fas fa-chevron-down circular-chevron"></i>
+                                </button>
+                                <div class="circular-panel" id="panel-act-7" hidden>
+                                    <div class="documents-grid">
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Listado medicamentos H. Septiembre 2025</h4></div>
+                                            <a href="../assets/pdf/COcim/ListadoInteres/ListadoMedicamentosH.Septiembre2025.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Normas de dispensación medicamentos -H-</h4></div>
+                                            <a href="../assets/pdf/COcim/ListadoInteres/NormasDispensacionMedicamentos-H-.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 8. Cupón Precinto Diferenciado -CPD-, Edad > 75 años -E- y Paciente excepciones -EXOI- -->
+                            <div class="circular-accordion">
+                                <button class="circular-header" aria-expanded="false" aria-controls="panel-act-8">
+                                    <span class="circular-header-text">
+                                        <strong>Cupón Precinto Diferenciado -CPD-, Edad > 75 años -E- y Paciente excepciones -EXOI-</strong>
+                                    </span>
+                                    <i class="fas fa-chevron-down circular-chevron"></i>
+                                </button>
+                                <div class="circular-panel" id="panel-act-8" hidden>
+                                    <div class="documents-grid">
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Listado medicamentos CPD, E y EXOI. Septiembre 2025</h4></div>
+                                            <a href="../assets/pdf/COcim/ListadoInteres/ListadoMedicamentosCPD,EyEXOI.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Normas dispensación CPD y E</h4></div>
+                                            <a href="../assets/pdf/COcim/ListadoInteres/NormasDispensacionCPDyE.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Normas dispensación de medicamentos financiados si el paciente cumple excepciones EXOI</h4></div>
+                                            <a href="../assets/pdf/COcim/ListadoInteres/NormasDispensacionMedicamentosFinanciados.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 9. Antibióticos J01 -->
+                            <div class="circular-accordion">
+                                <button class="circular-header" aria-expanded="false" aria-controls="panel-act-9">
+                                    <span class="circular-header-text">
+                                        <strong>Antibióticos J01</strong>
+                                    </span>
+                                    <i class="fas fa-chevron-down circular-chevron"></i>
+                                </button>
+                                <div class="circular-panel" id="panel-act-9" hidden>
+                                    <div class="documents-grid">
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Listado antibióticos J01. Septiembre 2025</h4></div>
+                                            <a href="../assets/pdf/COcim/ListadoInteres/ListadoAntibioticosJ01.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Normas dispensación antibióticos J01</h4></div>
+                                            <a href="../assets/pdf/COcim/ListadoInteres/NormasDispensacionAntibioticosJ01.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 10. Absorbentes de Incontinencia de Orina -AIO- -->
+                            <div class="circular-accordion">
+                                <button class="circular-header" aria-expanded="false" aria-controls="panel-act-10">
+                                    <span class="circular-header-text">
+                                        <strong>Absorbentes de Incontinencia de Orina -AIO-</strong>
+                                    </span>
+                                    <i class="fas fa-chevron-down circular-chevron"></i>
+                                </button>
+                                <div class="circular-panel" id="panel-act-10" hidden>
+                                    <div class="documents-grid">
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Listado AIO Día. Septiembre 2025</h4></div>
+                                            <a href="../assets/pdf/COcim/ListadoInteres/ListadoAIODia.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Listado AIO Noche. Septiembre 2025</h4></div>
+                                            <a href="../assets/pdf/COcim/ListadoInteres/ListadoAIONoche.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Listado AIO Supernoche. Septiembre 2025</h4></div>
+                                            <a href="../assets/pdf/COcim/ListadoInteres/ListadoAIOSupernoche.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Normas dispensación AIO</h4></div>
+                                            <a href="../assets/pdf/COcim/ListadoInteres/NormasDispensacionAIO.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 11. Sustancias dopantes en el deporte -->
+                            <div class="circular-accordion">
+                                <button class="circular-header" aria-expanded="false" aria-controls="panel-act-11">
+                                    <span class="circular-header-text">
+                                        <strong>Sustancias dopantes en el deporte</strong>
+                                    </span>
+                                    <i class="fas fa-chevron-down circular-chevron"></i>
+                                </button>
+                                <div class="circular-panel" id="panel-act-11" hidden>
+                                    <div class="documents-grid">
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Medicamentos susceptibles de dar positivo en un test de dopaje. Septiembre 2025</h4></div>
+                                            <a href="../assets/pdf/COcim/ListadoInteres/MedicamentosSusceptiblesPositivoDopaje.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Normativa con listado de sustancias y métodos prohibidos en el deporte. Noviembre 2024</h4></div>
+                                            <a href="../assets/pdf/COcim/ListadoInteres/NormativaSustanciasMetodosProhibidosDeporte.PDF" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Texto enmendado aprobado en París el 15 de noviembre de 2025 del Anexo I, Listas de sustancias y métodos prohibidos, de la Convención Internacional contra el dopaje en el deporte, hecha en París el 18 de noviembre de 2005 (BOE 24/12/2025)</h4></div>
+                                            <a href="../assets/pdf/COcim/ListadoInteres/TextoEnmendadoAprobadoParís.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 12. Dietoterápicos facturables al S.C.S. -->
+                            <div class="circular-accordion">
+                                <button class="circular-header" aria-expanded="false" aria-controls="panel-act-12">
+                                    <span class="circular-header-text">
+                                        <strong>Dietoterápicos facturables al S.C.S.</strong>
+                                    </span>
+                                    <i class="fas fa-chevron-down circular-chevron"></i>
+                                </button>
+                                <div class="circular-panel" id="panel-act-12" hidden>
+                                    <div class="documents-grid">
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Características de Dietoterápicos</h4></div>
+                                            <a href="../assets/pdf/COcim/ListadoInteres/CaracteristicasDietoterapicos.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">PMF Dietoterápicos Febrero 2026</h4></div>
+                                            <a href="../assets/pdf/COcim/ListadoInteres/PMFDietoterapicosFebrero2026.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">PMF Dietoterápicos Marzo 2026</h4></div>
+                                            <a href="../assets/pdf/COcim/ListadoInteres/PMFDietoterapicosMarzo2026.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 13. Diagnóstico Hospitalario -DH- -->
+                            <div class="circular-accordion">
+                                <button class="circular-header" aria-expanded="false" aria-controls="panel-act-13">
+                                    <span class="circular-header-text">
+                                        <strong>Diagnóstico Hospitalario -DH-</strong>
+                                    </span>
+                                    <i class="fas fa-chevron-down circular-chevron"></i>
+                                </button>
+                                <div class="circular-panel" id="panel-act-13" hidden>
+                                    <div class="documents-grid">
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Listado medicamentos DH. Septiembre 2025</h4></div>
+                                            <a href="../assets/pdf/COcim/ListadoInteres/ListadoMedicamentosDH.pdf" class="download-btn" target="_blank"><i class="fas fa-search"></i><span>Buscar</span></a>
+                                        </div>
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Normas dispensación medicamentos DH</h4></div>
+                                            <a href="../assets/pdf/COcim/ListadoInteres/NormasDispensacionMedicamentosDH.pdf" class="download-btn" target="_blank"><i class="fas fa-search"></i><span>Buscar</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- FARMACOVIGILANCIA -->
+                        <div class="cim-section" id="sec-farmacovigilancia">
+                            <h2 class="cim-section-title"><i class="fas fa-newspaper"></i>Farmacovigilancia</h2>
+
+                            <!-- 1. Vitamina D. Errores en pauta posológica -->
+                            <div class="circular-accordion">
+                                <button class="circular-header" aria-expanded="false" aria-controls="panel-act-1">
+                                    <span class="circular-header-text">
+                                        <strong>Vitamina D. Errores en pauta posológica</strong>
+                                    </span>
+                                    <i class="fas fa-chevron-down circular-chevron"></i>
+                                </button>
+                                <div class="circular-panel" id="panel-act-1" hidden>
+                                    <div class="documents-grid">
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Vitamina D. errores en pauta posológica</h4></div>
+                                            <a href="../assets/pdf/COcim/Farmacovigilancia/VitaminaDErroresPautaPosologica.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 2. Actonel semanal®. Dos formulaciones -->
+                            <div class="circular-accordion">
+                                <button class="circular-header" aria-expanded="false" aria-controls="panel-act-2">
+                                    <span class="circular-header-text">
+                                        <strong>Actonel semanal®. Dos formulaciones</strong>
+                                    </span>
+                                    <i class="fas fa-chevron-down circular-chevron"></i>
+                                </button>
+                                <div class="circular-panel" id="panel-act-2" hidden>
+                                    <div class="documents-grid">
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Actonel Semanal®. Dos formulaciones</h4></div>
+                                            <a href="../assets/pdf/COcim/Farmacovigilancia/ActonelSemanalDosFormulaciones.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 3. Seguridad de medicamentos de uso humano -->
+                            <div class="circular-accordion">
+                                <button class="circular-header" aria-expanded="false" aria-controls="panel-act-3">
+                                    <span class="circular-header-text">
+                                        <strong>Seguridad de medicamentos de uso humano</strong>
+                                    </span>
+                                    <i class="fas fa-chevron-down circular-chevron"></i>
+                                </button>
+                                <div class="circular-panel" id="panel-act-3" hidden>
+                                    <div class="documents-grid">
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Informe anual sobre seguridad de medicamentos de uso humano</h4></div>
+                                            <a href="https://www.aemps.gob.es/medicamentos-de-uso-humano/farmacovigilancia-de-medicamentos-de-uso-humano/" class="download-btn" target="_blank"><i class="fas fa-search"></i><span>Buscar</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- RECETAS NORMAS DE DISPENSACION -->
+                        <div class="cim-section" id="sec-farmacovigilancia">
+                            <h2 class="cim-section-title"><i class="fas fa-newspaper"></i>Recetas. Normas de dispensación</h2>
+
+                            <!-- 1. Recetas del SCS -->
+                            <div class="circular-accordion">
+                                <button class="circular-header" aria-expanded="false" aria-controls="panel-act-1">
+                                    <span class="circular-header-text">
+                                        <strong>Recetas del SCS - Dispensación de recetas del SCS</strong>
+                                    </span>
+                                    <i class="fas fa-chevron-down circular-chevron"></i>
+                                </button>
+                                <div class="circular-panel" id="panel-act-1" hidden>
+                                    <div class="documents-grid">
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Concierto con el SCS 2008</h4></div>
+                                            <a href="../assets/pdf/COcim/recetasnormasdispensacion/SCS/ConciertoSCS2008.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Seguimiento del Concierto. Aclaración 09/11/2009</h4></div>
+                                            <a href="../assets/pdf/COcim/recetasnormasdispensacion/SCS/SeguimientoConciertoAclaracion09_11_2009.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 2. Recetas de MUFACE -->
+                            <div class="circular-accordion">
+                                <button class="circular-header" aria-expanded="false" aria-controls="panel-act-2">
+                                    <span class="circular-header-text">
+                                        <strong>Recetas de MUFACE - Dispensación de recetas de MUFACE</strong>
+                                    </span>
+                                    <i class="fas fa-chevron-down circular-chevron"></i>
+                                </button>
+                                <div class="circular-panel" id="panel-act-2" hidden>
+                                    <div class="documents-grid">
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Concierto con MUFACE. Entrada en vigor 1 de enero 2023</h4></div>
+                                            <a href="../assets/pdf/COcim/recetasnormasdispensacion/MUFACE/ConciertoMUFACEEntradaVigor01012023.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 3. Recetas de ISFAS -->
+                            <div class="circular-accordion">
+                                <button class="circular-header" aria-expanded="false" aria-controls="panel-act-3">
+                                    <span class="circular-header-text">
+                                        <strong>Recetas de ISFAS - Dispensación de recetas del ISFAS</strong>
+                                    </span>
+                                    <i class="fas fa-chevron-down circular-chevron"></i>
+                                </button>
+                                <div class="circular-panel" id="panel-act-3" hidden>
+                                    <div class="documents-grid">
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Concierto con ISFAS. Entrada en vigor 1 de noviembre 2023</h4></div>
+                                            <a href="../assets/pdf/COcim/recetasnormasdispensacion/ISFAS/ConciertoISFASEntradaVigor01112023.PDF" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 3. Recetas de MUGEJU -->
+                            <div class="circular-accordion">
+                                <button class="circular-header" aria-expanded="false" aria-controls="panel-act-3">
+                                    <span class="circular-header-text">
+                                        <strong>Recetas de MUGEJU - Dispensación de recetas de MUGEJU</strong>
+                                    </span>
+                                    <i class="fas fa-chevron-down circular-chevron"></i>
+                                </button>
+                                <div class="circular-panel" id="panel-act-3" hidden>
+                                    <div class="documents-grid">
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">1 - Concierto con MUGEJU 2018</h4></div>
+                                            <a href="../assets/pdf/COcim/recetasnormasdispensacion/MUGEJU/1-ConciertoMUGEJU2018.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">2 - Concierto MUGEJU. Aspectos más destacados</h4></div>
+                                            <a href="../assets/pdf/COcim/recetasnormasdispensacion/MUGEJU/2-ConciertoMUGEJUAspectosDestacados.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">3 - Adenda al Concierto 2018. Condiciones de dispensación y facturación de prescripciones electrónicas. Julio 2019</h4></div>
+                                            <a href="../assets/pdf/COcim/recetasnormasdispensacion/MUGEJU/3-AgendaConcierto2018.PDF" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">4 - Adenda al Concierto 2018. Condiciones prescripciones electrónicas. Modelo de factura. Agosto 2020</h4></div>
+                                            <a href="../assets/pdf/COcim/recetasnormasdispensacion/MUGEJU/4-AgendaConcierto2018CondicionesPresElec.PDF" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">5 - Prórroga del Concierto de 2018 con MUGEJU para 2024 y 2025</h4></div>
+                                            <a href="../assets/pdf/COcim/recetasnormasdispensacion/MUGEJU/5-ProrrogaConcierto2018.pdf" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 3. Recetas de ISFAS -->
+                            <div class="circular-accordion">
+                                <button class="circular-header" aria-expanded="false" aria-controls="panel-act-3">
+                                    <span class="circular-header-text">
+                                        <strong>Recetas de ISFAS - Dispensación de recetas del ISFAS</strong>
+                                    </span>
+                                    <i class="fas fa-chevron-down circular-chevron"></i>
+                                </button>
+                                <div class="circular-panel" id="panel-act-3" hidden>
+                                    <div class="documents-grid">
+                                        <div class="document-card">
+                                            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+                                            <div class="document-info"><h4 class="document-title">Concierto con ISFAS. Entrada en vigor 1 de noviembre 2023</h4></div>
+                                            <a href="../assets/pdf/COcim/recetasnormasdispensacion/ISFAS/ConciertoISFASEntradaVigor01112023.PDF" class="download-btn" target="_blank"><i class="fas fa-download"></i><span>Descargar</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- TSI -->
+                        <div class="cim-section" id="sec-tsi">
+                            <h2 class="cim-section-title"><i class="fas fa-id-card"></i> Tarjeta Sanitaria Individual -TSI-</h2>
+                            <div class="cim-placeholder">
+                                <i class="fas fa-id-card"></i>
+                                <p>Próximamente se publicará contenido en esta sección.</p>
+                            </div>
+                        </div>
+
+                        <!-- INCIDENCIAS -->
+                        <div class="cim-section" id="sec-incidencias">
+                            <h2 class="cim-section-title"><i class="fas fa-exclamation-triangle"></i> Incidencias con la medicación de pacientes del SCS</h2>
+                            <div class="cim-placeholder">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                <p>Próximamente se publicará contenido en esta sección.</p>
+                            </div>
+                        </div>
+
+                        <!-- HOSPITALARIOS -->
+                        <div class="cim-section" id="sec-hospitalarios">
+                            <h2 class="cim-section-title"><i class="fas fa-hospital"></i> Entrega de Medicamentos Hospitalarios por las Farmacias</h2>
+                            <div class="cim-placeholder">
+                                <i class="fas fa-hospital"></i>
+                                <p>Próximamente se publicará contenido en esta sección.</p>
+                            </div>
+                        </div>
+
+                        <!-- DOMICILIO -->
+                        <div class="cim-section" id="sec-domicilio">
+                            <h2 class="cim-section-title"><i class="fas fa-home"></i> Autorización dispensación domicilio</h2>
+                            <div class="cim-placeholder">
+                                <i class="fas fa-home"></i>
+                                <p>Próximamente se publicará contenido en esta sección.</p>
+                            </div>
+                        </div>
+
+                        <!-- VACUNAS -->
+                        <div class="cim-section" id="sec-vacunas">
+                            <h2 class="cim-section-title"><i class="fas fa-syringe"></i> Vacunas</h2>
+                            <div class="cim-placeholder">
+                                <i class="fas fa-syringe"></i>
+                                <p>Próximamente se publicará contenido en esta sección.</p>
+                            </div>
+                        </div>
+
+                        <!-- FORMULACIÓN -->
+                        <div class="cim-section" id="sec-formulacion">
+                            <h2 class="cim-section-title"><i class="fas fa-flask"></i> Formulación Magistral</h2>
+                            <div class="cim-placeholder">
+                                <i class="fas fa-flask"></i>
+                                <p>Próximamente se publicará contenido en esta sección.</p>
+                            </div>
+                        </div>
+
+                        <!-- ESPECIAL -->
+                        <div class="cim-section" id="sec-especial">
+                            <h2 class="cim-section-title"><i class="fas fa-star-of-life"></i> Medicamentos Dispensación Especial</h2>
+                            <div class="cim-placeholder">
+                                <i class="fas fa-star-of-life"></i>
+                                <p>Próximamente se publicará contenido en esta sección.</p>
+                            </div>
+                        </div>
+
+                        <!-- PROFESIONALES -->
+                        <div class="cim-section" id="sec-profesionales">
+                            <h2 class="cim-section-title"><i class="fas fa-user-md"></i> Dispensación de medicamentos a profesionales sanitarios</h2>
+                            <div class="cim-placeholder">
+                                <i class="fas fa-user-md"></i>
+                                <p>Próximamente se publicará contenido en esta sección.</p>
+                            </div>
+                        </div>
+
+                        <!-- BOTIQUINES -->
+                        <div class="cim-section" id="sec-botiquines">
+                            <h2 class="cim-section-title"><i class="fas fa-first-aid"></i> Botiquines</h2>
+                            <div class="cim-placeholder">
+                                <i class="fas fa-first-aid"></i>
+                                <p>Próximamente se publicará contenido en esta sección.</p>
+                            </div>
+                        </div>
+
+                        <!-- ANIMAL -->
+                        <div class="cim-section" id="sec-animal">
+                            <h2 class="cim-section-title"><i class="fas fa-paw"></i> Medicamentos de Uso Animal</h2>
+                            <div class="cim-placeholder">
+                                <i class="fas fa-paw"></i>
+                                <p>Próximamente se publicará contenido en esta sección.</p>
+                            </div>
+                        </div>
+
+                    </div><!-- /cim-content -->
+                </div><!-- /cim-layout -->
+
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section logo-section">
+                <img src="../assets/img/Logos/cof.png" alt="Logo COF" class="footer-logo">
+            </div>
+            <div class="footer-section">
+                <h4 class="section-title">CONTACTO</h4>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:cofcantabria@cofcantabria.org">cofcantabria@cofcantabria.org</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:942314418">942 31 44 18</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>C/ Castilla, 13 - 7º y 8º<br>39009 Santander</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4 class="section-title">SÍGUENOS</h4>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/cofcantabria/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/people/Colegio-de-Farmac%C3%A9uticos-de-Cantabria/100063216339209/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.youtube.com/@cofcantabria4819/featured" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="https://x.com/cofcantabria" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+                    <a href="https://www.tiktok.com/@cofcantabria" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.linkedin.com/company/colegio-oficial-de-farmac%C3%A9uticos-de-cantabria/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://bsky.app/profile/cofcantabria.bsky.social" target="_blank" rel="noopener noreferrer" aria-label="BlueSky">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364.136-.02.275-.039.415-.056-.138.022-.276.04-.415.056-3.912.58-7.387 2.005-2.83 7.078 5.013 5.19 6.87-1.113 7.823-4.308.953 3.195 2.05 9.271 7.733 4.308 4.267-4.308 1.172-6.498-2.74-7.078a8.741 8.741 0 0 1-.415-.056c.14.017.279.036.415.056 2.67.297 5.568-.628 6.383-3.364.246-.828.624-5.79.624-6.478 0-.69-.139-1.861-.902-2.206-.659-.298-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8Z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 COLEGIO OFICIAL DE FARMACÉUTICOS DE CANTABRIA.</p>
+            <div class="footer-links">
+                <a href="#aviso-legal">AVISO LEGAL</a>
+                <a href="#privacidad">PRIVACIDAD</a>
+                <a href="#cookies">COOKIES</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/COcim.js"></script>
+    <script src="../assets/js/mobile-menu.js"></script>
+    <script src="../assets/js/global-auth.js"></script>
+    <script src="../assets/js/script.js"></script>
+
+</body>
+</html>
