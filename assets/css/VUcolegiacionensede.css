@@ -110,41 +110,52 @@
     font-size: 32px;
 }
 
-/* Documents Grid - 4 columnas para 8 documentos */
+/* Documents Grid - 5 columnas: fila 1 = 5 docs, fila 2 = 2 docs + vídeo (3 cols) */
 .documents-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+    align-items: stretch;
+}
+
+/* Tarjeta de vídeo: ocupa las 3 columnas restantes de la segunda fila */
+.document-card-video {
+    grid-column: span 3;
+    margin-bottom: 0;
+    align-items: center;
 }
 
 /* Document Card */
 .document-card {
     background: white;
     border: 2px solid #f0f0f0;
-    border-radius: 12px;
-    padding: 25px;
+    border-radius: 10px;
+    padding: 16px 14px;
     transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 10px;
+    height: 100%;
+    box-sizing: border-box;
+    justify-content: space-between;
 }
 
 .document-card:hover {
     border-color: var(--primary-color);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+    transform: translateY(-4px);
 }
 
 .document-icon {
-    width: 70px;
-    height: 70px;
+    width: 48px;
+    height: 48px;
     background: linear-gradient(135deg, #f0f9e8 0%, #e8f5d8 100%);
-    border-radius: 12px;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--primary-color);
-    font-size: 36px;
+    font-size: 24px;
     margin: 0 auto;
 }
 
@@ -154,23 +165,23 @@
 }
 
 .document-title {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 700;
     color: var(--heading-color);
-    margin-bottom: 10px;
+    margin-bottom: 0;
     line-height: 1.3;
-    min-height: 48px;
+    min-height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .document-description {
-    font-size: 14px;
+    font-size: 13px;
     color: var(--text-color);
     line-height: 1.5;
-    margin-bottom: 12px;
-    min-height: 60px;
+    margin-bottom: 8px;
+    min-height: auto;
 }
 
 /* Download Button */
@@ -178,14 +189,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: 6px;
     background: var(--primary-color);
     color: white;
-    padding: 14px 24px;
-    border-radius: 8px;
+    padding: 9px 14px;
+    border-radius: 7px;
     text-decoration: none;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 12px;
     transition: all 0.3s ease;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -199,7 +210,7 @@
 }
 
 .download-btn i {
-    font-size: 16px;
+    font-size: 13px;
 }
 
 /* Info Section */
@@ -254,6 +265,10 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 22px;
     }
+
+    .document-card-video {
+        grid-column: span 3;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -264,6 +279,10 @@
     .documents-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
+    }
+
+    .document-card-video {
+        grid-column: span 2;
     }
 }
 
@@ -335,43 +354,49 @@
     
     /* Documents Grid */
     .documents-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+    }
+
+    .document-card-video {
+        grid-column: span 2;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
     
     /* Document Card */
     .document-card {
-        padding: 25px;
-        gap: 18px;
+        padding: 16px 12px;
+        gap: 10px;
     }
     
     .document-icon {
-        width: 70px;
-        height: 70px;
-        font-size: 35px;
+        width: 44px;
+        height: 44px;
+        font-size: 22px;
     }
     
     .document-title {
-        font-size: 20px;
-        margin-bottom: 10px;
+        font-size: 13px;
+        margin-bottom: 0;
         min-height: auto;
     }
     
     .document-description {
-        font-size: 14px;
-        margin-bottom: 12px;
+        font-size: 12px;
+        margin-bottom: 6px;
         min-height: auto;
     }
     
     /* Download Button */
     .download-btn {
-        padding: 14px 26px;
-        font-size: 14px;
-        gap: 8px;
+        padding: 9px 12px;
+        font-size: 11px;
+        gap: 5px;
     }
     
     .download-btn i {
-        font-size: 17px;
+        font-size: 13px;
     }
     
     /* Info Section */
@@ -464,40 +489,40 @@
     
     /* Documents Grid */
     .documents-grid {
-        gap: 18px;
+        gap: 12px;
     }
     
     /* Document Card */
     .document-card {
-        padding: 20px;
-        gap: 15px;
+        padding: 14px 10px;
+        gap: 8px;
     }
     
     .document-icon {
-        width: 60px;
-        height: 60px;
-        font-size: 30px;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
     }
     
     .document-title {
-        font-size: 18px;
-        margin-bottom: 8px;
+        font-size: 12px;
+        margin-bottom: 0;
     }
     
     .document-description {
-        font-size: 13px;
-        margin-bottom: 10px;
+        font-size: 11px;
+        margin-bottom: 6px;
     }
     
     /* Download Button */
     .download-btn {
-        padding: 12px 22px;
-        font-size: 13px;
-        gap: 6px;
+        padding: 8px 10px;
+        font-size: 11px;
+        gap: 4px;
     }
     
     .download-btn i {
-        font-size: 16px;
+        font-size: 12px;
     }
     
     /* Info Section */
@@ -524,6 +549,134 @@
     .info-card .info-content p {
         font-size: 13px;
         line-height: 1.5;
+    }
+}
+
+/* =========================================
+   TARJETA DESTACADA: IMPORTE CUOTAS 2026
+   ========================================= */
+.cuotas-highlight {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background: linear-gradient(135deg, #f0f9e8 0%, #e8f5d8 100%);
+    border: 2px solid var(--primary-color);
+    border-left: 6px solid var(--primary-color);
+    border-radius: 12px;
+    padding: 28px 30px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+    transition: box-shadow 0.3s ease;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.cuotas-highlight:hover {
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+.cuotas-highlight-icon {
+    flex-shrink: 0;
+    width: 64px;
+    height: 64px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 28px;
+}
+
+.cuotas-highlight-content {
+    flex: 1;
+}
+
+.cuotas-highlight-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 0 0 6px 0;
+}
+
+.cuotas-highlight-text {
+    font-size: 15px;
+    color: var(--text-color);
+    margin: 0;
+    line-height: 1.5;
+}
+
+.cuotas-highlight-btn {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--primary-color);
+    color: white;
+    padding: 14px 26px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.cuotas-highlight-btn:hover {
+    background: #9AB459;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(190, 225, 100, 0.3);
+    color: white;
+}
+
+.cuotas-highlight-btn i {
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .cuotas-highlight {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+        padding: 22px 20px;
+        margin-bottom: 30px;
+    }
+
+    .cuotas-highlight-icon {
+        width: 52px;
+        height: 52px;
+        font-size: 22px;
+    }
+
+    .cuotas-highlight-title {
+        font-size: 18px;
+    }
+
+    .cuotas-highlight-text {
+        font-size: 14px;
+    }
+
+    .cuotas-highlight-btn {
+        width: 100%;
+        justify-content: center;
+        padding: 13px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cuotas-highlight {
+        padding: 18px 16px;
+        margin-bottom: 25px;
+    }
+
+    .cuotas-highlight-title {
+        font-size: 16px;
+    }
+
+    .cuotas-highlight-text {
+        font-size: 13px;
     }
 }
 
